@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		56A99268230F178700A52350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A99267230F178700A52350 /* Assets.xcassets */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
 		56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A99275230F1D0300A52350 /* GoogleService-Info.plist */; };
+		645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645376E9230F273700E498ED /* QuizCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		56A9926A230F178700A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A9926C230F178700A52350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A99275230F1D0300A52350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		645376E9230F273700E498ED /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			children = (
 				56A99260230F178600A52350 /* AppDelegate.swift */,
 				56A99262230F178600A52350 /* ViewController.swift */,
+				645376E9230F273700E498ED /* QuizCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,7 +115,6 @@
 				A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */,
 				23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -234,6 +236,7 @@
 			files = (
 				56A99263230F178600A52350 /* ViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
+				645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
