@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>202786708025-u04rlqk8kfv55ds5kidrek0r81ahihkb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.202786708025-u04rlqk8kfv55ds5kidrek0r81ahihkb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAxQsgfIhiNSp2mBkBe4SJRZaIIxFquklI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>202786708025</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.brasunia.Brasunia</string>
+	<key>PROJECT_ID</key>
+	<string>brasunia-d561a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>brasunia-d561a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:202786708025:ios:ed6ead21bf03d2fd</string>
+	<key>DATABASE_URL</key>
+	<string>https://brasunia-d561a.firebaseio.com</string>
+</dict>
+</plist>

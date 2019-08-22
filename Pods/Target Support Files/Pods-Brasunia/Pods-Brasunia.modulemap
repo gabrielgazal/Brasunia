@@ -1,0 +1,6 @@
+framework module Pods_Brasunia {
+  umbrella header "Pods-Brasunia-umbrella.h"
+
+  export *
+  module * { export * }
+}

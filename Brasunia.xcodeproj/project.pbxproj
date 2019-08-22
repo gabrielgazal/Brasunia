@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99263230F178600A52350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* ViewController.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
 		56A99268230F178700A52350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A99267230F178700A52350 /* Assets.xcassets */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
+		56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A99275230F1D0300A52350 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brasunia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.release.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.release.xcconfig"; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99262230F178600A52350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		56A99267230F178700A52350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A9926A230F178700A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A9926C230F178700A52350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A99275230F1D0300A52350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A0C843CA0837B703902D39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56A99254230F178600A52350 = {
 			isa = PBXGroup;
 			children = (
 				56A9925F230F178600A52350 /* Brasunia */,
 				56A9925E230F178600A52350 /* Products */,
+				8FECC87EAF6A81EE15833F60 /* Pods */,
+				2A0C843CA0837B703902D39A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,49 @@
 		56A9925F230F178600A52350 /* Brasunia */ = {
 			isa = PBXGroup;
 			children = (
-				56A99260230F178600A52350 /* AppDelegate.swift */,
-				56A99262230F178600A52350 /* ViewController.swift */,
-				56A99264230F178600A52350 /* Main.storyboard */,
-				56A99267230F178700A52350 /* Assets.xcassets */,
-				56A99269230F178700A52350 /* LaunchScreen.storyboard */,
+				56A99272230F1CC400A52350 /* Model */,
+				56A99273230F1CDE00A52350 /* View */,
+				56A99274230F1CED00A52350 /* Controller */,
 				56A9926C230F178700A52350 /* Info.plist */,
 			);
 			path = Brasunia;
+			sourceTree = "<group>";
+		};
+		56A99272230F1CC400A52350 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A99275230F1D0300A52350 /* GoogleService-Info.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A99273230F1CDE00A52350 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56A99264230F178600A52350 /* Main.storyboard */,
+				56A99267230F178700A52350 /* Assets.xcassets */,
+				56A99269230F178700A52350 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56A99274230F1CED00A52350 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56A99260230F178600A52350 /* AppDelegate.swift */,
+				56A99262230F178600A52350 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FECC87EAF6A81EE15833F60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */,
+				23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56A9926F230F178700A52350 /* Build configuration list for PBXNativeTarget "Brasunia" */;
 			buildPhases = (
+				BE39634ECE6DA07A6460FA50 /* [CP] Check Pods Manifest.lock */,
 				56A99259230F178600A52350 /* Sources */,
 				56A9925A230F178600A52350 /* Frameworks */,
 				56A9925B230F178600A52350 /* Resources */,
+				E458FF8ED5B44E0CB667F5AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +179,53 @@
 				56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */,
 				56A99268230F178700A52350 /* Assets.xcassets in Resources */,
 				56A99266230F178600A52350 /* Main.storyboard in Resources */,
+				56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE39634ECE6DA07A6460FA50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brasunia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E458FF8ED5B44E0CB667F5AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasunia/Pods-Brasunia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brasunia/Pods-Brasunia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brasunia/Pods-Brasunia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56A99259230F178600A52350 /* Sources */ = {
@@ -280,6 +377,7 @@
 		};
 		56A99270230F178700A52350 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +396,7 @@
 		};
 		56A99271230F178700A52350 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
