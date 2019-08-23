@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import Firebase
+
+class DAOFirebase{
+    
+    func save(){
+        //pega variável/classe e salva na nuvem
+        
+    }
+    
+    func load(){
+        //pega as receitas da nuvem e salva num array local
+    }
+    
+    
+}
