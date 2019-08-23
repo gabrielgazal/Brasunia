@@ -14,8 +14,15 @@
 		56A99268230F178700A52350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A99267230F178700A52350 /* Assets.xcassets */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
 		56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A99275230F1D0300A52350 /* GoogleService-Info.plist */; };
+<<<<<<< HEAD
 		643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */; };
 		648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */; };
+=======
+		56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */; };
+		56C3B0402310769D00E2E6B4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03F2310769D00E2E6B4 /* Model.swift */; };
+		56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B0412310795500E2E6B4 /* UserInfo.swift */; };
+		645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645376E9230F273700E498ED /* QuizCollectionViewController.swift */; };
+>>>>>>> develop
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +36,15 @@
 		56A9926A230F178700A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A9926C230F178700A52350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A99275230F1D0300A52350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewControllerV2.swift; sourceTree = "<group>"; };
 		648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+=======
+		56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFirebase.swift; sourceTree = "<group>"; };
+		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		645376E9230F273700E498ED /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
+>>>>>>> develop
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				56A99275230F1D0300A52350 /* GoogleService-Info.plist */,
+				56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */,
+				56C3B03F2310769D00E2E6B4 /* Model.swift */,
+				56C3B0412310795500E2E6B4 /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,10 +254,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56A99263230F178600A52350 /* ViewController.swift in Sources */,
+				56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */,
 				643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */,
+=======
+				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
+				645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */,
+>>>>>>> develop
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

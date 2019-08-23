@@ -7,6 +7,8 @@ target 'Brasunia' do
 
   # Pods for Brasunia
 	pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 
 end
