@@ -14,7 +14,8 @@
 		56A99268230F178700A52350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A99267230F178700A52350 /* Assets.xcassets */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
 		56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A99275230F1D0300A52350 /* GoogleService-Info.plist */; };
-		645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645376E9230F273700E498ED /* QuizCollectionViewController.swift */; };
+		643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */; };
+		648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		56A9926A230F178700A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56A9926C230F178700A52350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56A99275230F1D0300A52350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		645376E9230F273700E498ED /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
+		643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewControllerV2.swift; sourceTree = "<group>"; };
+		648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +106,8 @@
 			children = (
 				56A99260230F178600A52350 /* AppDelegate.swift */,
 				56A99262230F178600A52350 /* ViewController.swift */,
-				645376E9230F273700E498ED /* QuizCollectionViewController.swift */,
+				648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */,
+				643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,7 +239,8 @@
 			files = (
 				56A99263230F178600A52350 /* ViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
-				645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */,
+				648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */,
+				643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = PS78UKHFKZ;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = PS78UKHFKZ;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
