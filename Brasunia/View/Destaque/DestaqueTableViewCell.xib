@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="265" id="KGk-i7-Jjw" customClass="DestaqueTableViewCell" customModule="Brasunia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="264.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destaque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urw-0w-dnF">
+                        <rect key="frame" x="10" y="10" width="300" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KeG-fS-Irk">
+                        <rect key="frame" x="10" y="92" width="300" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9by-SA-j2p">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQS-qp-2z3">
+                        <rect key="frame" x="10" y="55" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KeG-fS-Irk" secondAttribute="bottom" constant="18.5" id="07o-rB-FbF"/>
+                    <constraint firstItem="urw-0w-dnF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C6d-PG-0h6"/>
+                    <constraint firstItem="KeG-fS-Irk" firstAttribute="leading" secondItem="YQS-qp-2z3" secondAttribute="leading" id="Da0-bp-Vb9"/>
+                    <constraint firstAttribute="trailing" secondItem="urw-0w-dnF" secondAttribute="trailing" constant="10" id="PZL-c9-lEn"/>
+                    <constraint firstItem="YQS-qp-2z3" firstAttribute="top" secondItem="urw-0w-dnF" secondAttribute="bottom" constant="15" id="Q8U-BL-W1o"/>
+                    <constraint firstItem="KeG-fS-Irk" firstAttribute="top" secondItem="YQS-qp-2z3" secondAttribute="bottom" constant="16" id="Xmi-yH-mZ4"/>
+                    <constraint firstItem="YQS-qp-2z3" firstAttribute="trailing" secondItem="urw-0w-dnF" secondAttribute="trailing" id="Ydv-Ah-giQ"/>
+                    <constraint firstItem="urw-0w-dnF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Yxg-2O-eJR"/>
+                    <constraint firstItem="KeG-fS-Irk" firstAttribute="trailing" secondItem="YQS-qp-2z3" secondAttribute="trailing" id="gLE-Lq-bMz"/>
+                    <constraint firstItem="YQS-qp-2z3" firstAttribute="leading" secondItem="urw-0w-dnF" secondAttribute="leading" id="vVH-Tx-HO6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="KeG-fS-Irk" id="9mw-Vk-Z2s"/>
+                <outlet property="titleLabel" destination="urw-0w-dnF" id="vBP-UN-Kfs"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="193.19196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
