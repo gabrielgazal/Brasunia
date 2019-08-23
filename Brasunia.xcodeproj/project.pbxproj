@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBD78CE23107B7600D10523 /* DestaqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD78CA23107B7600D10523 /* DestaqueCell.swift */; };
+		3FBD78CF23107B7600D10523 /* DestaqueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD78CB23107B7600D10523 /* DestaqueTableViewCell.swift */; };
+		3FBD78D023107B7600D10523 /* DestaqueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBD78CC23107B7600D10523 /* DestaqueTableViewCell.xib */; };
+		3FBD78D123107B7600D10523 /* DestaqueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBD78CD23107B7600D10523 /* DestaqueCell.xib */; };
+		3FCA0F6E231071D700313CCE /* TrilhasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0F6C231071D700313CCE /* TrilhasTableViewCell.swift */; };
+		3FCA0F712310720D00313CCE /* PlanosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA0F6F2310720C00313CCE /* PlanosTableViewCell.swift */; };
+		3FCA0F722310744500313CCE /* TrilhasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0F6D231071D700313CCE /* TrilhasTableViewCell.xib */; };
+		3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */; };
 		44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
-		56A99263230F178600A52350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* ViewController.swift */; };
+		56A99263230F178600A52350 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* HomeViewController.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
 		56A99268230F178700A52350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A99267230F178700A52350 /* Assets.xcassets */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
@@ -28,9 +36,17 @@
 /* Begin PBXFileReference section */
 		055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brasunia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.release.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.release.xcconfig"; sourceTree = "<group>"; };
+		3FBD78CA23107B7600D10523 /* DestaqueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestaqueCell.swift; sourceTree = "<group>"; };
+		3FBD78CB23107B7600D10523 /* DestaqueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestaqueTableViewCell.swift; sourceTree = "<group>"; };
+		3FBD78CC23107B7600D10523 /* DestaqueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestaqueTableViewCell.xib; sourceTree = "<group>"; };
+		3FBD78CD23107B7600D10523 /* DestaqueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestaqueCell.xib; sourceTree = "<group>"; };
+		3FCA0F6C231071D700313CCE /* TrilhasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrilhasTableViewCell.swift; sourceTree = "<group>"; };
+		3FCA0F6D231071D700313CCE /* TrilhasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrilhasTableViewCell.xib; sourceTree = "<group>"; };
+		3FCA0F6F2310720C00313CCE /* PlanosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanosTableViewCell.swift; sourceTree = "<group>"; };
+		3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanosTableViewCell.xib; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56A99262230F178600A52350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56A99262230F178600A52350 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56A99265230F178600A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56A99267230F178700A52350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56A9926A230F178700A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +82,17 @@
 				055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FBD78C923107B7600D10523 /* Destaque */ = {
+			isa = PBXGroup;
+			children = (
+				3FBD78CA23107B7600D10523 /* DestaqueCell.swift */,
+				3FBD78CB23107B7600D10523 /* DestaqueTableViewCell.swift */,
+				3FBD78CC23107B7600D10523 /* DestaqueTableViewCell.xib */,
+				3FBD78CD23107B7600D10523 /* DestaqueCell.xib */,
+			);
+			path = Destaque;
 			sourceTree = "<group>";
 		};
 		56A99254230F178600A52350 = {
@@ -111,9 +138,14 @@
 		56A99273230F1CDE00A52350 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FBD78C923107B7600D10523 /* Destaque */,
 				56A99264230F178600A52350 /* Main.storyboard */,
 				56A99267230F178700A52350 /* Assets.xcassets */,
 				56A99269230F178700A52350 /* LaunchScreen.storyboard */,
+				3FCA0F6C231071D700313CCE /* TrilhasTableViewCell.swift */,
+				3FCA0F6D231071D700313CCE /* TrilhasTableViewCell.xib */,
+				3FCA0F6F2310720C00313CCE /* PlanosTableViewCell.swift */,
+				3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +157,8 @@
 				56A99262230F178600A52350 /* ViewController.swift */,
 				648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */,
 				643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */,
+				56A99262230F178600A52350 /* HomeViewController.swift */,
+				645376E9230F273700E498ED /* QuizCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,8 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */,
+				3FBD78D023107B7600D10523 /* DestaqueTableViewCell.xib in Resources */,
+				3FCA0F722310744500313CCE /* TrilhasTableViewCell.xib in Resources */,
 				56A99268230F178700A52350 /* Assets.xcassets in Resources */,
 				56A99266230F178600A52350 /* Main.storyboard in Resources */,
+				3FBD78D123107B7600D10523 /* DestaqueCell.xib in Resources */,
+				3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */,
 				56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +295,19 @@
 				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56A99263230F178600A52350 /* ViewController.swift in Sources */,
 				56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */,
+				56A99263230F178600A52350 /* HomeViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
 
 				648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */,
 				643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */,
 
 				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
+				3FCA0F6E231071D700313CCE /* TrilhasTableViewCell.swift in Sources */,
+				3FBD78CE23107B7600D10523 /* DestaqueCell.swift in Sources */,
+				3FBD78CF23107B7600D10523 /* DestaqueTableViewCell.swift in Sources */,
 				645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */,
 
+				3FCA0F712310720D00313CCE /* PlanosTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -396,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -413,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PS78UKHFKZ;
+				DEVELOPMENT_TEAM = MB2HURBT77;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PS78UKHFKZ;
+				DEVELOPMENT_TEAM = MB2HURBT77;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
