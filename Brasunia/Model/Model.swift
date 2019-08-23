@@ -7,5 +7,16 @@
 //
 
 import Foundation
+import UIKit
+
+class Model{
+    static var shared = Model()
+    
+    private init(){
+        
+    }
+    
+    
+}
 
 

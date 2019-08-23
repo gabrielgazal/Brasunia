@@ -16,6 +16,7 @@
 		56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A99275230F1D0300A52350 /* GoogleService-Info.plist */; };
 		56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */; };
 		56C3B0402310769D00E2E6B4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03F2310769D00E2E6B4 /* Model.swift */; };
+		56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B0412310795500E2E6B4 /* UserInfo.swift */; };
 		645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645376E9230F273700E498ED /* QuizCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		56A99275230F1D0300A52350 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFirebase.swift; sourceTree = "<group>"; };
 		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		645376E9230F273700E498ED /* QuizCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewController.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				56A99275230F1D0300A52350 /* GoogleService-Info.plist */,
 				56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */,
 				56C3B03F2310769D00E2E6B4 /* Model.swift */,
+				56C3B0412310795500E2E6B4 /* UserInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				56A99263230F178600A52350 /* ViewController.swift in Sources */,
 				56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
+				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
 				645376EA230F273700E498ED /* QuizCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
