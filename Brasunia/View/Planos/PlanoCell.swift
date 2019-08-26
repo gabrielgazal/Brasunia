@@ -1,17 +1,15 @@
 //
-//  DestaqueCell.swift
+//  PlanoCell.swift
 //  Brasunia
 //
-//  Created by Lary Tertuliano on 23/08/19.
+//  Created by Lary Tertuliano on 26/08/19.
 //  Copyright © 2019 Brasunia. All rights reserved.
 //
 
 import UIKit
 
-class DestaqueCell: UICollectionViewCell {
+class PlanoCell: UICollectionViewCell {
 
-    @IBOutlet weak var rateLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
