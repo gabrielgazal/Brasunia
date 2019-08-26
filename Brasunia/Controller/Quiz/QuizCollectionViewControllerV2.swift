@@ -13,11 +13,6 @@ private let reuseIdentifier = "QuizCollectionCell"
 class QuizCollectionViewControllerV2: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var quizcollectionView: UICollectionView!
-    @IBOutlet weak var quizTextViewTitle: UITextView!
-    @IBOutlet weak var quizTextViewSubTitle: UITextView!
-    @IBOutlet weak var quizTextViewSecondSubTitle: UITextView!
-    @IBOutlet weak var quizButton: UIButton!
-    @IBOutlet weak var quizButtonKnowMore: UIButton!
     
     //Aqui estão os dados que serão *recebidos* pelo banco de dados//
     
@@ -33,17 +28,11 @@ class QuizCollectionViewControllerV2: UICollectionViewController, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
         quizcollectionView.dataSource = self
         quizcollectionView.delegate = self
         
-        quizTextViewTitle!.text = "Escolha interesses:"
-        quizTextViewSubTitle!.text = "Esse quiz foi desenhado para que a gente possa conhecer mais sobre os seus interesses e te sugerir conteúdo personalizado!"
-        quizTextViewSecondSubTitle!.text = "Habilidades que eu gostaria de aprender"
-        quizButton.titleLabel!.text = "Enviar"
-        quizButtonKnowMore.titleLabel!.text = "Saber mais sobre as trilhas"
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
         
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
@@ -68,7 +57,7 @@ class QuizCollectionViewControllerV2: UICollectionViewController, UICollectionVi
         return cell
     }
 
-    //Aqui é a condiguração do espaçamento da collection//
+    //Aqui é a configuração do espaçamento da collection//
     
     let spacingCell : CGFloat = round(0.1 * UIScreen.main.bounds.width)
     
