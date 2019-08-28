@@ -17,7 +17,9 @@ class TrilhasTableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellTest")
+//        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellTest")
+        collectionView.register(UINib(nibName: "TrilhaCell", bundle: nil), forCellWithReuseIdentifier: "cellTrilha")
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -38,7 +40,7 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTest", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTrilha", for: indexPath)
         cell.backgroundColor = UIColor(white: CGFloat(indexPath.row) * 0.1, alpha: 1)
         return cell
     }
