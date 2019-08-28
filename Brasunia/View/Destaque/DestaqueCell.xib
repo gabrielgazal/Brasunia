@@ -13,16 +13,61 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DestaqueCell" customModule="Brasunia" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="98" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="98" height="96"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-nt-1Tb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="vDh-JJ-XPs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-eR-QAW">
+                                <rect key="frame" x="0.0" y="196" width="320" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-eB-ozw">
+                                <rect key="frame" x="10" y="204" width="47.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97591139609999999" green="1" blue="0.66457158279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="bottom" secondItem="vDh-JJ-XPs" secondAttribute="bottom" id="56A-ff-f2Z"/>
+                            <constraint firstAttribute="bottom" secondItem="Gxh-eB-ozw" secondAttribute="bottom" constant="5" id="Hwh-Wd-C9q"/>
+                            <constraint firstItem="vDh-JJ-XPs" firstAttribute="height" secondItem="xTT-nt-1Tb" secondAttribute="height" id="IQN-7w-teN"/>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="centerX" secondItem="vDh-JJ-XPs" secondAttribute="centerX" id="Jd0-Bg-KIP"/>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="width" secondItem="vDh-JJ-XPs" secondAttribute="width" id="Qzy-2t-jU4"/>
+                            <constraint firstItem="vDh-JJ-XPs" firstAttribute="centerX" secondItem="xTT-nt-1Tb" secondAttribute="centerX" id="RfF-si-Zgl"/>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="height" secondItem="vDh-JJ-XPs" secondAttribute="height" multiplier="0.2" id="aaz-qT-BR4"/>
+                            <constraint firstItem="Gxh-eB-ozw" firstAttribute="leading" secondItem="xTT-nt-1Tb" secondAttribute="leading" constant="10" id="fj5-4T-keT"/>
+                            <constraint firstItem="vDh-JJ-XPs" firstAttribute="centerY" secondItem="xTT-nt-1Tb" secondAttribute="centerY" id="oAa-QL-AIC"/>
+                            <constraint firstItem="vDh-JJ-XPs" firstAttribute="width" secondItem="xTT-nt-1Tb" secondAttribute="width" id="oki-Tv-jkg"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
-            <color key="backgroundColor" red="0.40871941649999999" green="0.25377641039999999" blue="0.65212912570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xTT-nt-1Tb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7g7-He-vqI"/>
+                <constraint firstItem="xTT-nt-1Tb" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ISq-mb-fjB"/>
+                <constraint firstItem="xTT-nt-1Tb" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-5" id="eSj-R4-lnL"/>
+                <constraint firstItem="xTT-nt-1Tb" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="ka5-kv-rb6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="98" height="96"/>
-            <point key="canvasLocation" x="171.01449275362319" y="113.16964285714285"/>
+            <size key="customSize" width="261" height="177"/>
+            <connections>
+                <outlet property="rateLabel" destination="Gxh-eB-ozw" id="1gV-R4-rVk"/>
+            </connections>
+            <point key="canvasLocation" x="287.68115942028987" y="129.57589285714286"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="TrilhaTeste2" width="1650" height="862"/>
+    </resources>
 </document>

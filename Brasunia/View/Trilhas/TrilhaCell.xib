@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TrilhaCell" customModule="Brasunia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTa-F3-gmE">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-NH-uae">
+                                <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
+                            </imageView>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13S-yj-Dlq">
+                                <rect key="frame" x="0.0" y="77" width="105" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trilha 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53F-ma-mol">
+                                <rect key="frame" x="5" y="84" width="58.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="53F-ma-mol" secondAttribute="bottom" constant="5" id="1K3-7H-6vz"/>
+                            <constraint firstItem="hSH-NH-uae" firstAttribute="height" secondItem="vTa-F3-gmE" secondAttribute="height" id="7Ol-KZ-eOt"/>
+                            <constraint firstItem="hSH-NH-uae" firstAttribute="centerY" secondItem="vTa-F3-gmE" secondAttribute="centerY" id="A2q-91-Stb"/>
+                            <constraint firstItem="13S-yj-Dlq" firstAttribute="centerX" secondItem="hSH-NH-uae" secondAttribute="centerX" id="MyI-Lu-HqM"/>
+                            <constraint firstItem="hSH-NH-uae" firstAttribute="centerX" secondItem="vTa-F3-gmE" secondAttribute="centerX" id="OnS-vN-JHy"/>
+                            <constraint firstItem="13S-yj-Dlq" firstAttribute="width" secondItem="hSH-NH-uae" secondAttribute="width" id="gdv-ie-D9V"/>
+                            <constraint firstAttribute="bottom" secondItem="13S-yj-Dlq" secondAttribute="bottom" id="lxO-Y6-oKT"/>
+                            <constraint firstItem="53F-ma-mol" firstAttribute="leading" secondItem="vTa-F3-gmE" secondAttribute="leading" constant="5" id="mL4-Zw-Tl4"/>
+                            <constraint firstItem="hSH-NH-uae" firstAttribute="width" secondItem="vTa-F3-gmE" secondAttribute="width" id="qvn-wt-VJ8"/>
+                            <constraint firstItem="13S-yj-Dlq" firstAttribute="height" secondItem="hSH-NH-uae" secondAttribute="height" multiplier="0.3" id="rvP-QO-hyr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vTa-F3-gmE" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="Iq2-tu-OvU"/>
+                <constraint firstItem="vTa-F3-gmE" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="YeF-xh-Tbu"/>
+                <constraint firstItem="vTa-F3-gmE" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ovX-5Y-OlK"/>
+                <constraint firstItem="vTa-F3-gmE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vZf-EH-G3L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="trilhaImage" destination="hSH-NH-uae" id="nUn-fy-7f9"/>
+                <outlet property="trilhaNameLabel" destination="53F-ma-mol" id="ygC-7G-2bc"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TrilhaTeste" width="780" height="780"/>
+    </resources>
+</document>
