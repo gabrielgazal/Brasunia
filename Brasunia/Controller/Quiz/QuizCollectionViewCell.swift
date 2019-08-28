@@ -11,5 +11,6 @@ import UIKit
 class QuizCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var CellImage: UIImageView?
+    
     @IBOutlet weak var CellLabel: UILabel?
 }
