@@ -29,13 +29,22 @@ class LoginViewController: UIViewController {
         }
         
         authUI?.delegate = self
+        authUI?.providers = [FUIEmailAuth()]
+//        authUI.viewCon
+
+
+        
         let authViewController = authUI!.authViewController()
+        let telaChata = authViewController.navigationController?.children
+        
+        print("telas",telaChata)
         
         present(authViewController, animated: true, completion: nil)
     }
 }
 
 extension LoginViewController: FUIAuthDelegate{
+    
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         guard error  == nil else{
             return
