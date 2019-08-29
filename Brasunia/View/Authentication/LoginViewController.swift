@@ -49,11 +49,16 @@ extension LoginViewController: FUIAuthDelegate{
         guard error  == nil else{
             return
         }
+        
         let ref  = Firestore.firestore()
         let userEmail = authDataResult?.user.email
         let userUID = authDataResult?.user.uid
-
+        
         let userInfo = UserInfoClass(databaseID: userUID!, email: userEmail!)
+        
+        userInfo.name = "novoNome"
+        
+        
         do {
             let encoder = JSONEncoder()
             let data = try encoder.encode(userInfo)
@@ -66,4 +71,5 @@ extension LoginViewController: FUIAuthDelegate{
         
         dismiss(animated: true, completion: nil)
     }
+    
 }

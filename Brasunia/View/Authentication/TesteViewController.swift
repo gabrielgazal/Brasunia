@@ -18,18 +18,21 @@ class TesteViewController: UIViewController {
     }
     
     @IBAction func Print(_ sender: Any) {
-        //
+        
         let db = Firestore.firestore()
+        
+        /* tira uma foto do documento uid */
         db.collection("users").document(Model.shared.userID).getDocument(){ (querySnapshot, err) in
             
             if let err = err{
                 print("fudeu")
             } else{
                 do{
-                    let document = querySnapshot!.data()
-                    let data = try JSONSerialization.data(withJSONObject: document as Any)
-                    let decodedUser = try JSONDecoder().decode(UserInfoClass.self, from:  data)
-                    print(decodedUser.email)
+                    
+                    let document = querySnapshot!.data() /* pega o snapshot no formato do database e transforma num JSON*/
+                    let data = try JSONSerialization.data(withJSONObject: document as Any) /*transforma JSON em dicionario*/
+                    let decodedUser = try JSONDecoder().decode(UserInfoClass.self, from:  data) /* transforma dic em UserInfo */
+                    print(decodedUser.email) /*agora é só usar decodedUser como um objeto de UserInfoClass */
                 } catch{
                     print("erro")
                 }
