@@ -33,14 +33,12 @@
 		56DB42192316FB520088A287 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB42182316FB520088A287 /* DesignableView.swift */; };
 		56DB421B2316FE760088A287 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421A2316FE760088A287 /* LoginViewController.swift */; };
 		56DB421D231700740088A287 /* Designablebutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421C231700740088A287 /* Designablebutton.swift */; };
-		643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */; };
+		641A1F4B2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641A1F4A2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard */; };
 		64512F322316F23A004DA075 /* QuizStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64512F312316F23A004DA075 /* QuizStoryboard.storyboard */; };
-		6456260A23145209005412FE /* MinhasTrilhasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456260923145209005412FE /* MinhasTrilhasCollectionViewController.swift */; };
 		6456260C2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */; };
 		6456260E231453D8005412FE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456260D231453D8005412FE /* QuizViewController.swift */; };
 		648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */; };
 		6495013023145BD3006108BC /* MinhasTrilhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495012F23145BD3006108BC /* MinhasTrilhasViewController.swift */; };
-		6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */; };
 		6495013623146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */; };
 		B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68E6EDE2316F50900793BA2 /* Projeto.storyboard */; };
 		B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */; };
@@ -75,18 +73,16 @@
 		56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFirebase.swift; sourceTree = "<group>"; };
 		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		64512F312316F23A004DA075 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
 		56DB42152316F95D0088A287 /* Autentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autentication.storyboard; sourceTree = "<group>"; };
 		56DB42182316FB520088A287 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		56DB421A2316FE760088A287 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56DB421C231700740088A287 /* Designablebutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designablebutton.swift; sourceTree = "<group>"; };
-		643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewControllerV2.swift; sourceTree = "<group>"; };
-		6456260923145209005412FE /* MinhasTrilhasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasCollectionViewController.swift; sourceTree = "<group>"; };
+		641A1F4A2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MinhasTrilhasStoryboard.storyboard; sourceTree = "<group>"; };
+		64512F312316F23A004DA075 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
 		6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasCollectionViewCell.swift; sourceTree = "<group>"; };
 		6456260D231453D8005412FE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		648E376A23105C0800B29D6C /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		6495012F23145BD3006108BC /* MinhasTrilhasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasViewController.swift; sourceTree = "<group>"; };
-		6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasSkillsCollectionViewController.swift; sourceTree = "<group>"; };
 		6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasSkillsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 		B68E6EDE2316F50900793BA2 /* Projeto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projeto.storyboard; sourceTree = "<group>"; };
@@ -193,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				64512F302316F1FC004DA075 /* Quiz */,
+				641A1F492318444800EDAA1A /* MinhasTrilhas */,
 				3FBD78C923107B7600D10523 /* Destaque */,
 				56A99264230F178600A52350 /* Main.storyboard */,
 				56A99267230F178700A52350 /* Assets.xcassets */,
@@ -228,6 +225,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		641A1F492318444800EDAA1A /* MinhasTrilhas */ = {
+			isa = PBXGroup;
+			children = (
+				641A1F4A2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard */,
+			);
+			path = MinhasTrilhas;
+			sourceTree = "<group>";
+		};
 		64512F302316F1FC004DA075 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,9 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				6495012F23145BD3006108BC /* MinhasTrilhasViewController.swift */,
-				6456260923145209005412FE /* MinhasTrilhasCollectionViewController.swift */,
 				6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */,
-				6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */,
 				6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */,
 			);
 			path = MinhasTrilhas;
@@ -357,6 +360,7 @@
 				3FBD78D123107B7600D10523 /* DestaqueCell.xib in Resources */,
 				3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */,
 				56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */,
+				641A1F4B2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard in Resources */,
 				56DB42162316F95D0088A287 /* Autentication.storyboard in Resources */,
 				64512F322316F23A004DA075 /* QuizStoryboard.storyboard in Resources */,
 			);
@@ -428,7 +432,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */,
 				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56DB421D231700740088A287 /* Designablebutton.swift in Sources */,
 				3FBD78D623144FDF00D10523 /* TrilhaCell.swift in Sources */,
@@ -447,7 +450,6 @@
 				56DB42192316FB520088A287 /* DesignableView.swift in Sources */,
 				B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */,
 				6456260C2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift in Sources */,
-				6456260A23145209005412FE /* MinhasTrilhasCollectionViewController.swift in Sources */,
 				6495013623146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift in Sources */,
 				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
 				3FCA0F6E231071D700313CCE /* TrilhasTableViewCell.swift in Sources */,
