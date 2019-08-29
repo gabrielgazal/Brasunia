@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UserInfoClass{
+class UserInfoClass: Codable{
     internal init(databaseID: String, name: String, lastName: String, age: Int, adress: String, cellNumb: String, payedCourses: [String], abilities: [String], abilitiesFuture: [String]) {
         self.databaseID = databaseID
         self.name = name
@@ -22,15 +22,20 @@ class UserInfoClass{
         self.abilitiesFuture = abilitiesFuture
     }
     
-    
-    var databaseID: String
-    var name: String
-    var lastName: String
-    var age: Int
-    var adress: String
-    var cellNumb: String
-    var payedCourses: [String]
-    var abilities: [String]
-    var abilitiesFuture: [String]
+    public init(databaseID: String, email: String){
+        self.databaseID = databaseID
+        self.email = email
+    }
+
+    var databaseID: String =  ""
+    var name: String = ""
+    var email: String = ""
+    var lastName: String = ""
+    var age: Int = 0
+    var adress: String = ""
+    var cellNumb: String = ""
+    var payedCourses: [String] = []
+    var abilities: [String] = []
+    var abilitiesFuture: [String] = []
 }
 
