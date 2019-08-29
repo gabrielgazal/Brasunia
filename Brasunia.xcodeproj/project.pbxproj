@@ -37,6 +37,11 @@
 		6495013023145BD3006108BC /* MinhasTrilhasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495012F23145BD3006108BC /* MinhasTrilhasViewController.swift */; };
 		6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */; };
 		6495013623146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */; };
+		B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68E6EDE2316F50900793BA2 /* Projeto.storyboard */; };
+		B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */; };
+		B68E6EE42316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */; };
+		B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */; };
+		B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasSkillsCollectionViewController.swift; sourceTree = "<group>"; };
 		6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasSkillsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
+		B68E6EDE2316F50900793BA2 /* Projeto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projeto.storyboard; sourceTree = "<group>"; };
+		B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTableViewController.swift; sourceTree = "<group>"; };
+		B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTitleTableViewCell.swift; sourceTree = "<group>"; };
+		B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoListasTableViewCell.swift; sourceTree = "<group>"; };
+		B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoBotaoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +188,7 @@
 				56A99269230F178700A52350 /* LaunchScreen.storyboard */,
 				3FBD78D223144F3B00D10523 /* Trilhas */,
 				3FBD78D323144F8400D10523 /* Planos */,
+				B68E6EE02316F50F00793BA2 /* Projeto */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 				6495013123145BF3006108BC /* Quiz */,
 				6495013223145C1C006108BC /* MinhasTrilhas */,
 				56A99262230F178600A52350 /* HomeViewController.swift */,
+				B68E6EDD2316F4E800793BA2 /* Projeto */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +234,25 @@
 				23A180D9480A93C30D77E6D4 /* Pods-Brasunia.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B68E6EDD2316F4E800793BA2 /* Projeto */ = {
+			isa = PBXGroup;
+			children = (
+				B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */,
+			);
+			path = Projeto;
+			sourceTree = "<group>";
+		};
+		B68E6EE02316F50F00793BA2 /* Projeto */ = {
+			isa = PBXGroup;
+			children = (
+				B68E6EDE2316F50900793BA2 /* Projeto.storyboard */,
+				B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */,
+				B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */,
+				B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */,
+			);
+			path = Projeto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */,
+				B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */,
 				3FBD78D723144FDF00D10523 /* TrilhaCell.xib in Resources */,
 				3FBD78D023107B7600D10523 /* DestaqueTableViewCell.xib in Resources */,
 				3FCA0F722310744500313CCE /* TrilhasTableViewCell.xib in Resources */,
@@ -351,12 +383,16 @@
 				3FBD78D623144FDF00D10523 /* TrilhaCell.swift in Sources */,
 				56A99263230F178600A52350 /* HomeViewController.swift in Sources */,
 				56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */,
+				B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */,
+				B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */,
 				3FBD78DA2314590300D10523 /* PlanoCell.swift in Sources */,
 				56A99263230F178600A52350 /* HomeViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
+				B68E6EE42316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift in Sources */,
 				648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */,
 				6495013023145BD3006108BC /* MinhasTrilhasViewController.swift in Sources */,
 				6456260E231453D8005412FE /* QuizViewController.swift in Sources */,
+				B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */,
 				6456260C2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift in Sources */,
 				6456260A23145209005412FE /* MinhasTrilhasCollectionViewController.swift in Sources */,
 				643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */,
@@ -513,7 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PS78UKHFKZ;
+				DEVELOPMENT_TEAM = F88DY6S927;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PS78UKHFKZ;
+				DEVELOPMENT_TEAM = F88DY6S927;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
