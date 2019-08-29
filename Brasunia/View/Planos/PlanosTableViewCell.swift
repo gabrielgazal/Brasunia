@@ -17,7 +17,8 @@ class PlanosTableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellTest")
+//        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellTest")
+        collectionView.register(UINib(nibName: "PlanoCell", bundle: nil), forCellWithReuseIdentifier: "cellPlano")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,16 +35,16 @@ extension PlanosTableViewCell: UICollectionViewDelegate, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTest", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellPlano", for: indexPath)
         cell.backgroundColor = UIColor(white: CGFloat(indexPath.row) * 0.1, alpha: 1)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        return CGSize(width: 200, height: 300)
     }
 }
