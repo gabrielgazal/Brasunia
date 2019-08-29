@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseUI
+import Foundation
 
 class LoginViewController: UIViewController {
 
@@ -37,7 +38,6 @@ class LoginViewController: UIViewController {
         let authViewController = authUI!.authViewController()
         let telaChata = authViewController.navigationController?.children
         
-        print("telas",telaChata)
         
         present(authViewController, animated: true, completion: nil)
     }
@@ -49,8 +49,27 @@ extension LoginViewController: FUIAuthDelegate{
         guard error  == nil else{
             return
         }
-//        authDataResult?.user.uid
+        
+        let ref  = Firestore.firestore()
+        let userEmail = authDataResult?.user.email
+        let userUID = authDataResult?.user.uid
+        
+        let userInfo = UserInfoClass(databaseID: userUID!, email: userEmail!)
+        
+        userInfo.name = "novoNome"
+        
+        
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(userInfo)
+            let dict = try JSONSerialization.jsonObject(with: data) as! [String:Any]
+            ref.collection("users").document(userUID!).setData(dict)
+            Model.shared.userID = userUID!
+        }catch{
+            print("deu merda")
+        }
         
         dismiss(animated: true, completion: nil)
     }
+    
 }

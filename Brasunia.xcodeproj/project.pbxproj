@@ -20,6 +20,7 @@
 		3FCA0F722310744500313CCE /* TrilhasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0F6D231071D700313CCE /* TrilhasTableViewCell.xib */; };
 		3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */; };
 		44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */; };
+		5635A0122318535A00A273CB /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635A0112318535A00A273CB /* TesteViewController.swift */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99263230F178600A52350 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* HomeViewController.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
@@ -33,7 +34,6 @@
 		56DB42192316FB520088A287 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB42182316FB520088A287 /* DesignableView.swift */; };
 		56DB421B2316FE760088A287 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421A2316FE760088A287 /* LoginViewController.swift */; };
 		56DB421D231700740088A287 /* Designablebutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421C231700740088A287 /* Designablebutton.swift */; };
-		643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */; };
 		64512F322316F23A004DA075 /* QuizStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64512F312316F23A004DA075 /* QuizStoryboard.storyboard */; };
 		6456260A23145209005412FE /* MinhasTrilhasCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456260923145209005412FE /* MinhasTrilhasCollectionViewController.swift */; };
 		6456260C2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */; };
@@ -64,6 +64,7 @@
 		3FCA0F6D231071D700313CCE /* TrilhasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrilhasTableViewCell.xib; sourceTree = "<group>"; };
 		3FCA0F6F2310720C00313CCE /* PlanosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanosTableViewCell.swift; sourceTree = "<group>"; };
 		3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanosTableViewCell.xib; sourceTree = "<group>"; };
+		5635A0112318535A00A273CB /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99262230F178600A52350 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -75,12 +76,11 @@
 		56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFirebase.swift; sourceTree = "<group>"; };
 		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		64512F312316F23A004DA075 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
 		56DB42152316F95D0088A287 /* Autentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autentication.storyboard; sourceTree = "<group>"; };
 		56DB42182316FB520088A287 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		56DB421A2316FE760088A287 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		56DB421C231700740088A287 /* Designablebutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Designablebutton.swift; sourceTree = "<group>"; };
-		643DCA3B23105FE4001BE68A /* QuizCollectionViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewControllerV2.swift; sourceTree = "<group>"; };
+		64512F312316F23A004DA075 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
 		6456260923145209005412FE /* MinhasTrilhasCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasCollectionViewController.swift; sourceTree = "<group>"; };
 		6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasCollectionViewCell.swift; sourceTree = "<group>"; };
 		6456260D231453D8005412FE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				56DB42152316F95D0088A287 /* Autentication.storyboard */,
+				5635A0112318535A00A273CB /* TesteViewController.swift */,
 				56DB421A2316FE760088A287 /* LoginViewController.swift */,
 				56DB42182316FB520088A287 /* DesignableView.swift */,
 				56DB421C231700740088A287 /* Designablebutton.swift */,
@@ -439,6 +440,7 @@
 				3FBD78DA2314590300D10523 /* PlanoCell.swift in Sources */,
 				56A99263230F178600A52350 /* HomeViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
+				5635A0122318535A00A273CB /* TesteViewController.swift in Sources */,
 				B68E6EE42316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift in Sources */,
 				648E376B23105C0800B29D6C /* QuizCollectionViewCell.swift in Sources */,
 				6495013023145BD3006108BC /* MinhasTrilhasViewController.swift in Sources */,
@@ -601,7 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F88DY6S927;
+				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,7 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F88DY6S927;
+				DEVELOPMENT_TEAM = 7994PXZY59;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
