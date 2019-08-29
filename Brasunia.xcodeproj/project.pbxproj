@@ -42,10 +42,10 @@
 		6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013323146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift */; };
 		6495013623146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */; };
 		B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68E6EDE2316F50900793BA2 /* Projeto.storyboard */; };
-		B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */; };
 		B68E6EE42316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */; };
 		B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */; };
 		B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */; };
+		B68E6EEA23185CEF00793BA2 /* ProjetoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,10 +88,10 @@
 		6495013523146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhasTrilhasSkillsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A06F086FDBEA3472A2979009 /* Pods-Brasunia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brasunia.debug.xcconfig"; path = "Target Support Files/Pods-Brasunia/Pods-Brasunia.debug.xcconfig"; sourceTree = "<group>"; };
 		B68E6EDE2316F50900793BA2 /* Projeto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Projeto.storyboard; sourceTree = "<group>"; };
-		B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTableViewController.swift; sourceTree = "<group>"; };
 		B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoTitleTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoListasTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoBotaoTableViewCell.swift; sourceTree = "<group>"; };
+		B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +259,7 @@
 		B68E6EDD2316F4E800793BA2 /* Projeto */ = {
 			isa = PBXGroup;
 			children = (
-				B68E6EE12316FC4400793BA2 /* ProjetoTableViewController.swift */,
+				B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */,
 			);
 			path = Projeto;
 			sourceTree = "<group>";
@@ -417,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68E6EEA23185CEF00793BA2 /* ProjetoViewController.swift in Sources */,
 				6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */,
 				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56DB421D231700740088A287 /* Designablebutton.swift in Sources */,
@@ -434,7 +435,6 @@
 				56DB421B2316FE760088A287 /* LoginViewController.swift in Sources */,
 				6456260E231453D8005412FE /* QuizViewController.swift in Sources */,
 				56DB42192316FB520088A287 /* DesignableView.swift in Sources */,
-				B68E6EE22316FC4400793BA2 /* ProjetoTableViewController.swift in Sources */,
 				6456260C2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift in Sources */,
 				6456260A23145209005412FE /* MinhasTrilhasCollectionViewController.swift in Sources */,
 				643DCA3C23105FE4001BE68A /* QuizCollectionViewControllerV2.swift in Sources */,
