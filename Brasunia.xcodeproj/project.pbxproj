@@ -21,6 +21,7 @@
 		3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */; };
 		44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */; };
 		5635A0122318535A00A273CB /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635A0112318535A00A273CB /* TesteViewController.swift */; };
+		5641ACC22319A5D200573223 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC12319A5D200573223 /* CourseInfo.swift */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99263230F178600A52350 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* HomeViewController.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		3FCA0F6F2310720C00313CCE /* PlanosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanosTableViewCell.swift; sourceTree = "<group>"; };
 		3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanosTableViewCell.xib; sourceTree = "<group>"; };
 		5635A0112318535A00A273CB /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
+		5641ACC12319A5D200573223 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99262230F178600A52350 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		3FBD78C923107B7600D10523 /* Destaque */ = {
 			isa = PBXGroup;
 			children = (
+				56A99262230F178600A52350 /* HomeViewController.swift */,
 				3FBD78CA23107B7600D10523 /* DestaqueCell.swift */,
 				3FBD78CB23107B7600D10523 /* DestaqueTableViewCell.swift */,
 				3FBD78CC23107B7600D10523 /* DestaqueTableViewCell.xib */,
@@ -183,6 +186,7 @@
 				56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */,
 				56C3B03F2310769D00E2E6B4 /* Model.swift */,
 				56C3B0412310795500E2E6B4 /* UserInfo.swift */,
+				5641ACC12319A5D200573223 /* CourseInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,8 +214,6 @@
 				56A99260230F178600A52350 /* AppDelegate.swift */,
 				6495013123145BF3006108BC /* Quiz */,
 				6495013223145C1C006108BC /* MinhasTrilhas */,
-				56A99262230F178600A52350 /* HomeViewController.swift */,
-				B68E6EDD2316F4E800793BA2 /* Projeto */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,14 +274,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B68E6EDD2316F4E800793BA2 /* Projeto */ = {
-			isa = PBXGroup;
-			children = (
-				B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */,
-			);
-			path = Projeto;
-			sourceTree = "<group>";
-		};
 		B68E6EE02316F50F00793BA2 /* Projeto */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +281,7 @@
 				B68E6EE32316FE6B00793BA2 /* ProjetoTitleTableViewCell.swift */,
 				B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */,
 				B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */,
+				B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */,
 			);
 			path = Projeto;
 			sourceTree = "<group>";
@@ -436,7 +431,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68E6EEA23185CEF00793BA2 /* ProjetoViewController.swift in Sources */,
-				6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */,
 				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56DB421D231700740088A287 /* Designablebutton.swift in Sources */,
 				3FBD78D623144FDF00D10523 /* TrilhaCell.swift in Sources */,
@@ -459,6 +453,7 @@
 				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
 				3FCA0F6E231071D700313CCE /* TrilhasTableViewCell.swift in Sources */,
 				3FBD78CE23107B7600D10523 /* DestaqueCell.swift in Sources */,
+				5641ACC22319A5D200573223 /* CourseInfo.swift in Sources */,
 				3FBD78CF23107B7600D10523 /* DestaqueTableViewCell.swift in Sources */,
 				3FCA0F712310720D00313CCE /* PlanosTableViewCell.swift in Sources */,
 			);

@@ -23,10 +23,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sXM-ss-vp2"/>
+                    <connections>
+                        <segue destination="49a-nn-0sh" kind="show" identifier="projetoID" id="e6A-Eu-KF2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY7-mD-C4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2733.3333333333335" y="-82.366071428571431"/>
+        </scene>
+        <!--Projeto-->
+        <scene sceneID="H4k-cO-7oJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Projeto" id="49a-nn-0sh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-TN-ICt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3643" y="-281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pks-ye-OBT">
