@@ -436,7 +436,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68E6EEA23185CEF00793BA2 /* ProjetoViewController.swift in Sources */,
-				6495013423146553006108BC /* MinhasTrilhasSkillsCollectionViewController.swift in Sources */,
 				56C3B0402310769D00E2E6B4 /* Model.swift in Sources */,
 				56DB421D231700740088A287 /* Designablebutton.swift in Sources */,
 				3FBD78D623144FDF00D10523 /* TrilhaCell.swift in Sources */,
@@ -608,7 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = F88DY6S927;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -627,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = F88DY6S927;
 				INFOPLIST_FILE = Brasunia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

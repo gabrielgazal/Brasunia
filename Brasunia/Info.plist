@@ -23,7 +23,6 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Autentication</string>
 	<string>Projeto</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
