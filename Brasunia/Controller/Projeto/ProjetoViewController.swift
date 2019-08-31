@@ -50,7 +50,6 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.materiaisTxt.text = "Materiais"
             cell.itensMateriaisTxt.text = "Prego\nOvo\nPapel"
             cell.habilidadesTxt.text = "Habilidades"
-            cell.itensHabilidadesTxt.text = "teste\nteste\nteste"
             return cell
             
         case 2:
