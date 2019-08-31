@@ -25,10 +25,10 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
-//    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -50,7 +50,7 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.materiaisTxt.text = "Materiais"
             cell.itensMateriaisTxt.text = "Prego\nOvo\nPapel"
             cell.habilidadesTxt.text = "Habilidades"
-            cell.itensHabilidadesTxt.text = "1\n233\n23"
+            cell.itensHabilidadesTxt.text = "teste\nteste\nteste"
             return cell
             
         case 2:
