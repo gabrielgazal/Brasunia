@@ -30,12 +30,15 @@ class HomeViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDestaque", for: indexPath) as! DestaqueTableViewCell
+            cell.parent = self
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellTrilhas", for: indexPath) as! TrilhasTableViewCell
+            cell.parent = self
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellPlanos", for: indexPath) as! PlanosTableViewCell
+            cell.parent = self
             return cell
         default:
             return UITableViewCell()
@@ -56,5 +59,10 @@ class HomeViewController: UITableViewController {
         return CGFloat.leastNonzeroMagnitude
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "projetoID", let vc = segue.destination as? ProjetoViewController{
+            vc.curso = Model.shared.cursos[sender as! Int]
+        }
+    }
 }
 

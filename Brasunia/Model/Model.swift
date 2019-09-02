@@ -18,6 +18,15 @@ class Model{
     var userID = ""
     
     
+    var cursos: [CourseInfo] = [ CourseInfo(nota: 1, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 2, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 3, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 4, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 5, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 6, image: UIImage(named: "TrilhaTeste2")!),
+                                 CourseInfo(nota: 7, image: UIImage(named: "TrilhaTeste2")!),
+    ]
+    
 }
 
 

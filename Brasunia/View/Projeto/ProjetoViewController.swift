@@ -14,11 +14,17 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var table: UITableView!
     
+    var curso: CourseInfo?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         table.delegate = self
         table.dataSource = self
+        
+        if curso != nil{
+            
+        }
+    
     }
     
 

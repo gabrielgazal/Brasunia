@@ -42,6 +42,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a5p-gQ-U4v"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="eCf-XJ-JDT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJj-lG-rJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
