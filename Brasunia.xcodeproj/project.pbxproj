@@ -22,6 +22,7 @@
 		44042907081BE8B349424CD3 /* Pods_Brasunia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055C7C33665B8A7E65F20BDF /* Pods_Brasunia.framework */; };
 		5635A0122318535A00A273CB /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635A0112318535A00A273CB /* TesteViewController.swift */; };
 		5641ACC22319A5D200573223 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC12319A5D200573223 /* CourseInfo.swift */; };
+		5641ACC6231D8B9900573223 /* JornadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC5231D8B9900573223 /* JornadaViewController.swift */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99263230F178600A52350 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99262230F178600A52350 /* HomeViewController.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
@@ -47,7 +48,6 @@
 		B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */; };
 		B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */; };
 		B68E6EEA23185CEF00793BA2 /* ProjetoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */; };
-		B69D44FE231C1EE6001401EA /* JornadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D44FD231C1EE6001401EA /* JornadaViewController.swift */; };
 		B69D4503231C1F99001401EA /* Jornada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D4502231C1F99001401EA /* Jornada.storyboard */; };
 		B69D4505231C7344001401EA /* JornadaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69D4504231C7344001401EA /* JornadaInfo.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +69,7 @@
 		3FCA0F702310720D00313CCE /* PlanosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanosTableViewCell.xib; sourceTree = "<group>"; };
 		5635A0112318535A00A273CB /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		5641ACC12319A5D200573223 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		5641ACC5231D8B9900573223 /* JornadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JornadaViewController.swift; path = Brasunia/Controller/JornadaViewController.swift; sourceTree = SOURCE_ROOT; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99262230F178600A52350 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +98,6 @@
 		B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoListasTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoBotaoTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoViewController.swift; sourceTree = "<group>"; };
-		B69D44FD231C1EE6001401EA /* JornadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JornadaViewController.swift; path = ../JornadaViewController.swift; sourceTree = "<group>"; };
 		B69D4502231C1F99001401EA /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		B69D4504231C7344001401EA /* JornadaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,8 +222,8 @@
 				56A99260230F178600A52350 /* AppDelegate.swift */,
 				6495013123145BF3006108BC /* Quiz */,
 				6495013223145C1C006108BC /* MinhasTrilhas */,
-				56A99262230F178600A52350 /* HomeViewController.swift */,
 				B68E6EDD2316F4E800793BA2 /* Projeto */,
+				56A99262230F178600A52350 /* HomeViewController.swift */,
 				B69D4500231C1F40001401EA /* Jornada */,
 			);
 			path = Controller;
@@ -300,7 +300,7 @@
 		B69D4500231C1F40001401EA /* Jornada */ = {
 			isa = PBXGroup;
 			children = (
-				B69D44FD231C1EE6001401EA /* JornadaViewController.swift */,
+				5641ACC5231D8B9900573223 /* JornadaViewController.swift */,
 			);
 			path = Jornada;
 			sourceTree = "<group>";
@@ -467,6 +467,7 @@
 				B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */,
 				B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */,
 				3FBD78DA2314590300D10523 /* PlanoCell.swift in Sources */,
+				5641ACC6231D8B9900573223 /* JornadaViewController.swift in Sources */,
 				56A99263230F178600A52350 /* HomeViewController.swift in Sources */,
 				56A99261230F178600A52350 /* AppDelegate.swift in Sources */,
 				5635A0122318535A00A273CB /* TesteViewController.swift in Sources */,
@@ -480,7 +481,6 @@
 				6495013623146572006108BC /* MinhasTrilhasSkillsCollectionViewCell.swift in Sources */,
 				56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */,
 				3FCA0F6E231071D700313CCE /* TrilhasTableViewCell.swift in Sources */,
-				B69D44FE231C1EE6001401EA /* JornadaViewController.swift in Sources */,
 				3FBD78CE23107B7600D10523 /* DestaqueCell.swift in Sources */,
 				B69D4505231C7344001401EA /* JornadaInfo.swift in Sources */,
 				5641ACC22319A5D200573223 /* CourseInfo.swift in Sources */,
