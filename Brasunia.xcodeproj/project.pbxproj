@@ -95,7 +95,7 @@
 		B68E6EE52316FE8800793BA2 /* ProjetoListasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoListasTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE72316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoBotaoTableViewCell.swift; sourceTree = "<group>"; };
 		B68E6EE923185CEF00793BA2 /* ProjetoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjetoViewController.swift; sourceTree = "<group>"; };
-		B69D44FD231C1EE6001401EA /* JornadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JornadaViewController.swift; path = ../JornadaViewController.swift; sourceTree = "<group>"; };
+		B69D44FD231C1EE6001401EA /* JornadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaViewController.swift; sourceTree = "<group>"; };
 		B69D4502231C1F99001401EA /* Jornada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jornada.storyboard; sourceTree = "<group>"; };
 		B69D4504231C7344001401EA /* JornadaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JornadaInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +215,7 @@
 		56A99274230F1CED00A52350 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B69D44FD231C1EE6001401EA /* JornadaViewController.swift */,
 				56A99260230F178600A52350 /* AppDelegate.swift */,
 				6495013123145BF3006108BC /* Quiz */,
 				6495013223145C1C006108BC /* MinhasTrilhas */,
@@ -303,7 +304,6 @@
 		B69D4500231C1F40001401EA /* Jornada */ = {
 			isa = PBXGroup;
 			children = (
-				B69D44FD231C1EE6001401EA /* JornadaViewController.swift */,
 			);
 			path = Jornada;
 			sourceTree = "<group>";
