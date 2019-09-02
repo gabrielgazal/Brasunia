@@ -40,7 +40,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eZ-fK-siV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4298" y="320"/>
+            <point key="canvasLocation" x="2733" y="380"/>
         </scene>
         <!--Projeto-->
         <scene sceneID="H4k-cO-7oJ">
@@ -48,7 +48,7 @@
                 <viewControllerPlaceholder storyboardName="Projeto" id="49a-nn-0sh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-TN-ICt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4552.1739130434789" y="-281.25"/>
+            <point key="canvasLocation" x="4365" y="-82"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pks-ye-OBT">
@@ -76,6 +76,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ut7-sM-J4y"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXc-Vn-Bcv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
