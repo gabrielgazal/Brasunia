@@ -13,7 +13,8 @@ class TesteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Model.shared.userID = "TqxdasPpP9XmAOB2VuVxW0cRxqh2"
+//        Model.shared.userID = "TqxdasPpP9XmAOB2VuVxW0cRxqh2"
+        
         // Do any additional setup after loading the view.
     }
     

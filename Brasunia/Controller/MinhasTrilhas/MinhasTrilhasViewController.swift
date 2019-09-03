@@ -13,8 +13,6 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var minhasTrilhasLabelTitle: UILabel!
     @IBOutlet weak var minhasTrilhasLabelSubTitle: UILabel!
     @IBOutlet weak var minhasTrilhasButton: UIButton!
-    @IBOutlet weak var minhasTrilhasMoreButton: UIButton!
-    
     @IBOutlet weak var minhasTrilhasCollectionView: UICollectionView!
     
     @IBOutlet weak var minhasTrilhasSkillsCollectionView: UICollectionView!

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qMt-m0-w0m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iVB-Cc-Ejk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,51 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Teste View Controller-->
-        <scene sceneID="G43-Ww-9bK">
-            <objects>
-                <viewController id="qMt-m0-w0m" customClass="TesteViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pd5-TB-g8D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwx-kJ-BNC">
-                                <rect key="frame" x="102" y="366" width="210" height="164"/>
-                                <color key="backgroundColor" red="0.0" green="0.83137254900000002" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="9T9-2S-Sjy"/>
-                                    <constraint firstAttribute="height" constant="164" id="HZs-ms-Nlf"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="iVB-Cc-Ejk" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Cok-74-P2V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taC-V3-kr2">
-                                <rect key="frame" x="102" y="600" width="210" height="164"/>
-                                <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="print"/>
-                                <connections>
-                                    <action selector="Print:" destination="qMt-m0-w0m" eventType="touchUpInside" id="GZL-vB-tvy"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="dwx-kJ-BNC" firstAttribute="centerY" secondItem="Pd5-TB-g8D" secondAttribute="centerY" id="BmU-Lc-cz7"/>
-                            <constraint firstItem="dwx-kJ-BNC" firstAttribute="centerX" secondItem="Pd5-TB-g8D" secondAttribute="centerX" id="UZo-hG-fwb"/>
-                            <constraint firstItem="taC-V3-kr2" firstAttribute="centerX" secondItem="dwx-kJ-BNC" secondAttribute="centerX" id="ehb-3Z-6j4"/>
-                            <constraint firstItem="taC-V3-kr2" firstAttribute="top" secondItem="dwx-kJ-BNC" secondAttribute="bottom" constant="70" id="fKq-6d-zJW"/>
-                            <constraint firstItem="taC-V3-kr2" firstAttribute="width" secondItem="dwx-kJ-BNC" secondAttribute="width" id="ijY-GU-kDQ"/>
-                            <constraint firstItem="taC-V3-kr2" firstAttribute="height" secondItem="dwx-kJ-BNC" secondAttribute="height" id="zPl-sp-2UZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="RaW-61-iEb"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SKa-8Q-sEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-755.07246376811599" y="130.58035714285714"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="mGU-xk-WEA">
             <objects>

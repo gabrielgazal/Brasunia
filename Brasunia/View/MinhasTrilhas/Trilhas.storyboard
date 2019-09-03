@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Minhas Trilhas View Controller-->
+        <scene sceneID="QyK-kD-NfQ">
+            <objects>
+                <viewController id="JhG-km-uze" customClass="MinhasTrilhasViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zeg-0L-KDU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da trilha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfB-4P-mh8">
+                                <rect key="frame" x="25" y="93" width="193.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2o1-0d-PCE">
+                                <rect key="frame" x="20.5" y="165" width="373" height="697"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aHw-Rv-LLl">
+                                    <size key="itemSize" width="226" height="226"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dhG-5y-RKh">
+                                        <rect key="frame" x="73.5" y="0.0" width="226" height="226"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="226" height="226"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-ue-eS4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="226" height="226"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ndy-ue-eS4" secondAttribute="height" multiplier="1:1" id="9FB-zT-ZgH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-Tw-XdD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="226" height="226"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOme do curso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvL-5f-XEY">
+                                                    <rect key="frame" x="13" y="190" width="133.5" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="gvL-5f-XEY" secondAttribute="height" multiplier="133:23" id="Lu2-TR-e4H"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ndy-ue-eS4" secondAttribute="trailing" id="4pk-UO-Doi"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="gvL-5f-XEY" secondAttribute="bottom" constant="5" id="D8i-KG-WlK"/>
+                                            <constraint firstItem="BqV-Tw-XdD" firstAttribute="width" secondItem="ndy-ue-eS4" secondAttribute="width" id="E9D-w6-liu"/>
+                                            <constraint firstItem="BqV-Tw-XdD" firstAttribute="height" secondItem="ndy-ue-eS4" secondAttribute="height" id="J9C-TY-ZGN"/>
+                                            <constraint firstItem="gvL-5f-XEY" firstAttribute="leading" secondItem="dhG-5y-RKh" secondAttribute="leadingMargin" constant="5" id="g26-cg-c7m"/>
+                                            <constraint firstItem="ndy-ue-eS4" firstAttribute="top" secondItem="dhG-5y-RKh" secondAttribute="top" id="get-ST-v1d"/>
+                                            <constraint firstItem="BqV-Tw-XdD" firstAttribute="centerY" secondItem="dhG-5y-RKh" secondAttribute="centerY" id="mUc-Ol-aG5"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="gvL-5f-XEY" secondAttribute="trailing" constant="71.5" id="ppr-Wt-bUh"/>
+                                            <constraint firstItem="ndy-ue-eS4" firstAttribute="leading" secondItem="dhG-5y-RKh" secondAttribute="leading" id="tb5-zf-7U0"/>
+                                            <constraint firstItem="BqV-Tw-XdD" firstAttribute="centerX" secondItem="ndy-ue-eS4" secondAttribute="centerX" id="xFK-CC-xxW"/>
+                                            <constraint firstAttribute="bottom" secondItem="ndy-ue-eS4" secondAttribute="bottom" id="zU5-vz-km4"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2o1-0d-PCE" firstAttribute="centerX" secondItem="d1e-th-fwd" secondAttribute="centerX" id="B3H-aL-b89"/>
+                            <constraint firstItem="LfB-4P-mh8" firstAttribute="leading" secondItem="d1e-th-fwd" secondAttribute="leading" constant="25" id="Fbq-hz-9wL"/>
+                            <constraint firstItem="d1e-th-fwd" firstAttribute="trailing" secondItem="LfB-4P-mh8" secondAttribute="trailing" constant="195.5" id="JJK-z8-haZ"/>
+                            <constraint firstItem="d1e-th-fwd" firstAttribute="bottom" secondItem="2o1-0d-PCE" secondAttribute="bottom" id="VJb-6t-Hdg"/>
+                            <constraint firstItem="2o1-0d-PCE" firstAttribute="top" secondItem="LfB-4P-mh8" secondAttribute="bottom" constant="35" id="fB1-mv-0EA"/>
+                            <constraint firstItem="LfB-4P-mh8" firstAttribute="top" secondItem="d1e-th-fwd" secondAttribute="top" constant="49" id="tob-vJ-ZBj"/>
+                            <constraint firstItem="2o1-0d-PCE" firstAttribute="width" secondItem="Zeg-0L-KDU" secondAttribute="width" multiplier="0.9" id="xQl-VR-zyZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d1e-th-fwd"/>
+                    </view>
+                    <connections>
+                        <outlet property="minhasTrilhasCollectionView" destination="2o1-0d-PCE" id="Zv9-8c-TsG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ya-kv-Ock" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.08695652173915" y="-159.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TrilhaTeste" width="780" height="780"/>
+    </resources>
+</document>

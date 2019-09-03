@@ -29,6 +29,9 @@ class JornadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if Model.shared.userID == "" {
+            performSegue(withIdentifier: "jornada", sender: self)
+        }
 //        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     

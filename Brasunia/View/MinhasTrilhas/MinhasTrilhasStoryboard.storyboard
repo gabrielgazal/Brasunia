@@ -18,54 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minhas trilhas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-hb-EAq">
-                                <rect key="frame" x="46" y="65" width="150" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Triilha X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-hb-EAq">
+                                <rect key="frame" x="46" y="65" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-1r-opq">
-                                <rect key="frame" x="46" y="103" width="257" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5SO-7h-jYF">
-                                    <size key="itemSize" width="90" height="32"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MinhasTrilhasSkillsCollectionCell" id="Wiy-3m-hSd" customClass="MinhasTrilhasSkillsCollectionViewCell" customModule="Brasunia" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="njA-r9-H76">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Costura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FV-eR-Z0R">
-                                                            <rect key="frame" x="15" y="6" width="61" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.85305219889999995" green="0.0" blue="0.3882432878" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </view>
-                                            </subviews>
-                                        </view>
-                                        <connections>
-                                            <outlet property="CellLabel" destination="9FV-eR-Z0R" id="82Z-D1-BPY"/>
-                                            <outlet property="CellView" destination="njA-r9-H76" id="vYl-zw-yED"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Próximos passos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2B-3I-zes">
                                 <rect key="frame" x="46" y="161" width="129" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,71 +64,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-vf-fWl">
-                                                    <rect key="frame" x="100" y="64" width="200.5" height="62"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-Jh-4K9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="eMh-Jh-4K9" secondAttribute="height" multiplier="1:1" id="bb1-ZI-38a"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-27-Ndh">
-                                                            <rect key="frame" x="69" y="0.0" width="62.5" height="62"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="sF9-27-Ndh" secondAttribute="height" multiplier="1:1" id="0sc-CS-xRZ"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Pg-u0-sLF">
-                                                            <rect key="frame" x="138.5" y="0.0" width="62" height="62"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="1Pg-u0-sLF" secondAttribute="height" multiplier="1:1" id="SCl-ca-9ac"/>
-                                                            </constraints>
-                                                        </imageView>
-                                                    </subviews>
-                                                </stackView>
                                             </subviews>
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="NQR-3s-ZXn" secondAttribute="trailing" id="6Sh-xA-xp2"/>
-                                            <constraint firstItem="WZM-vf-fWl" firstAttribute="top" secondItem="NQR-3s-ZXn" secondAttribute="topMargin" constant="12" id="Bnt-HS-lbq"/>
                                             <constraint firstItem="jrx-rp-9Dp" firstAttribute="width" secondItem="NQR-3s-ZXn" secondAttribute="height" multiplier="47:78" id="FP3-qA-5UY"/>
                                             <constraint firstItem="NQR-3s-ZXn" firstAttribute="top" secondItem="D2m-tg-MV7" secondAttribute="top" id="Fqz-66-6Lr"/>
                                             <constraint firstAttribute="bottom" secondItem="NQR-3s-ZXn" secondAttribute="bottom" id="Hnf-di-caO"/>
                                             <constraint firstItem="jrx-rp-9Dp" firstAttribute="leading" secondItem="NQR-3s-ZXn" secondAttribute="leading" constant="12" id="SVB-mb-LLx"/>
-                                            <constraint firstItem="eMh-Jh-4K9" firstAttribute="width" secondItem="NQR-3s-ZXn" secondAttribute="width" multiplier="0.2" id="bEb-64-7Ss"/>
                                             <constraint firstItem="NQR-3s-ZXn" firstAttribute="leading" secondItem="D2m-tg-MV7" secondAttribute="leading" id="hMT-dZ-4ct"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="jrx-rp-9Dp" secondAttribute="bottom" constant="12" id="mYg-Gs-Z7k"/>
-                                            <constraint firstItem="WZM-vf-fWl" firstAttribute="leading" secondItem="D2m-tg-MV7" secondAttribute="leading" constant="100" id="tLv-BV-W2j"/>
                                         </constraints>
-                                        <connections>
-                                            <outlet property="CellImage" destination="NQR-3s-ZXn" id="KpS-T5-1QG"/>
-                                            <outlet property="CellLabel" destination="jrx-rp-9Dp" id="zzT-Pj-PIY"/>
-                                            <outlet property="CellTag0" destination="1Pg-u0-sLF" id="jPW-6h-Mlz"/>
-                                            <outlet property="CellTag1" destination="sF9-27-Ndh" id="RQZ-K5-urq"/>
-                                            <outlet property="CellTag2" destination="eMh-Jh-4K9" id="8cl-gY-I2b"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-ve-7Qe">
-                                <rect key="frame" x="323" y="108" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qBv-zq-GzK"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostRecent" id="R6G-eC-rIC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="minhasTrilhasButton" destination="mlQ-xr-IXI" id="gEp-2J-Pme"/>
-                        <outlet property="minhasTrilhasCollectionView" destination="p4J-1a-Twd" id="r3z-da-WOy"/>
-                        <outlet property="minhasTrilhasLabelSubTitle" destination="Y2B-3I-zes" id="R5s-hC-AZm"/>
-                        <outlet property="minhasTrilhasLabelTitle" destination="CIE-hb-EAq" id="gnw-8Y-iVD"/>
-                        <outlet property="minhasTrilhasMoreButton" destination="z1Z-ve-7Qe" id="n4P-Jp-SDG"/>
-                        <outlet property="minhasTrilhasSkillsCollectionView" destination="fc6-1r-opq" id="uMz-7v-gc1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uK-J7-CkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +92,5 @@
     </scenes>
     <resources>
         <image name="TrilhaTeste2" width="1650" height="862"/>
-        <image name="google.png" width="18" height="18"/>
     </resources>
 </document>

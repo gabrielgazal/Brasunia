@@ -23,6 +23,7 @@
 		5635A0122318535A00A273CB /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635A0112318535A00A273CB /* TesteViewController.swift */; };
 		5641ACC22319A5D200573223 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC12319A5D200573223 /* CourseInfo.swift */; };
 		5641ACC6231D8B9900573223 /* JornadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC5231D8B9900573223 /* JornadaViewController.swift */; };
+		564C3F5F231EF5280082175C /* Trilhas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564C3F5E231EF5280082175C /* Trilhas.storyboard */; };
 		567E1693231D8DA500499188 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E1692231D8DA500499188 /* HomeViewController.swift */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		5635A0112318535A00A273CB /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		5641ACC12319A5D200573223 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
 		5641ACC5231D8B9900573223 /* JornadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JornadaViewController.swift; path = Brasunia/Controller/JornadaViewController.swift; sourceTree = SOURCE_ROOT; };
+		564C3F5E231EF5280082175C /* Trilhas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trilhas.storyboard; sourceTree = "<group>"; };
 		567E1692231D8DA500499188 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				641A1F4A2318447D00EDAA1A /* MinhasTrilhasStoryboard.storyboard */,
+				564C3F5E231EF5280082175C /* Trilhas.storyboard */,
 			);
 			path = MinhasTrilhas;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564C3F5F231EF5280082175C /* Trilhas.storyboard in Resources */,
 				B69D4503231C1F99001401EA /* Jornada.storyboard in Resources */,
 				56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */,
 				B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */,
