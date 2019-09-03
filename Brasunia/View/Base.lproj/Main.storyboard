@@ -42,6 +42,16 @@
             </objects>
             <point key="canvasLocation" x="2733" y="380"/>
         </scene>
+        <!--MinhasTrilhasStoryboard-->
+        <scene sceneID="1zJ-Nw-PdK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MinhasTrilhasStoryboard" id="KJY-LT-OLU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VHl-Xt-veJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJW-F7-fSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3695" y="412"/>
+        </scene>
         <!--Projeto-->
         <scene sceneID="H4k-cO-7oJ">
             <objects>

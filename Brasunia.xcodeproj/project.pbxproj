@@ -157,6 +157,14 @@
 			path = Planos;
 			sourceTree = "<group>";
 		};
+		564C3F5D231D9A640082175C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5641ACC5231D8B9900573223 /* JornadaViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		56A99254230F178600A52350 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +172,7 @@
 				56A9925E230F178600A52350 /* Products */,
 				8FECC87EAF6A81EE15833F60 /* Pods */,
 				2A0C843CA0837B703902D39A /* Frameworks */,
+				564C3F5D231D9A640082175C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};

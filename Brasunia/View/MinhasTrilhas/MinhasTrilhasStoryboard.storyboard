@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uBc-HK-TIp">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -96,34 +96,52 @@
                                             <rect key="frame" x="0.0" y="0.0" width="311" height="234"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-3s-ZXn">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="NQR-3s-ZXn">
                                                     <rect key="frame" x="0.0" y="0.0" width="311" height="234"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pochete quadrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrx-rp-9Dp">
-                                                    <rect key="frame" x="20" y="193" width="141" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pochete quadrada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrx-rp-9Dp">
+                                                    <rect key="frame" x="12" y="193.5" width="141" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-vf-fWl">
-                                                    <rect key="frame" x="121" y="20" width="181" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WZM-vf-fWl">
+                                                    <rect key="frame" x="100" y="64" width="200.5" height="62"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-Jh-4K9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="63" height="128"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-Jh-4K9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="eMh-Jh-4K9" secondAttribute="height" multiplier="1:1" id="bb1-ZI-38a"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-27-Ndh">
-                                                            <rect key="frame" x="70" y="0.0" width="50" height="128"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="sF9-27-Ndh">
+                                                            <rect key="frame" x="69" y="0.0" width="62.5" height="62"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="sF9-27-Ndh" secondAttribute="height" multiplier="1:1" id="0sc-CS-xRZ"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Pg-u0-sLF">
-                                                            <rect key="frame" x="127" y="0.0" width="54" height="128"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Pg-u0-sLF">
+                                                            <rect key="frame" x="138.5" y="0.0" width="62" height="62"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="1Pg-u0-sLF" secondAttribute="height" multiplier="1:1" id="SCl-ca-9ac"/>
+                                                            </constraints>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NQR-3s-ZXn" secondAttribute="trailing" id="6Sh-xA-xp2"/>
+                                            <constraint firstItem="WZM-vf-fWl" firstAttribute="top" secondItem="NQR-3s-ZXn" secondAttribute="topMargin" constant="12" id="Bnt-HS-lbq"/>
+                                            <constraint firstItem="jrx-rp-9Dp" firstAttribute="width" secondItem="NQR-3s-ZXn" secondAttribute="height" multiplier="47:78" id="FP3-qA-5UY"/>
+                                            <constraint firstItem="NQR-3s-ZXn" firstAttribute="top" secondItem="D2m-tg-MV7" secondAttribute="top" id="Fqz-66-6Lr"/>
+                                            <constraint firstAttribute="bottom" secondItem="NQR-3s-ZXn" secondAttribute="bottom" id="Hnf-di-caO"/>
+                                            <constraint firstItem="jrx-rp-9Dp" firstAttribute="leading" secondItem="NQR-3s-ZXn" secondAttribute="leading" constant="12" id="SVB-mb-LLx"/>
+                                            <constraint firstItem="eMh-Jh-4K9" firstAttribute="width" secondItem="NQR-3s-ZXn" secondAttribute="width" multiplier="0.2" id="bEb-64-7Ss"/>
+                                            <constraint firstItem="NQR-3s-ZXn" firstAttribute="leading" secondItem="D2m-tg-MV7" secondAttribute="leading" id="hMT-dZ-4ct"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="jrx-rp-9Dp" secondAttribute="bottom" constant="12" id="mYg-Gs-Z7k"/>
+                                            <constraint firstItem="WZM-vf-fWl" firstAttribute="leading" secondItem="D2m-tg-MV7" secondAttribute="leading" constant="100" id="tLv-BV-W2j"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="CellImage" destination="NQR-3s-ZXn" id="KpS-T5-1QG"/>
                                             <outlet property="CellLabel" destination="jrx-rp-9Dp" id="zzT-Pj-PIY"/>
@@ -142,6 +160,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qBv-zq-GzK"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="R6G-eC-rIC"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="minhasTrilhasButton" destination="mlQ-xr-IXI" id="gEp-2J-Pme"/>
                         <outlet property="minhasTrilhasCollectionView" destination="p4J-1a-Twd" id="r3z-da-WOy"/>
@@ -156,4 +176,8 @@
             <point key="canvasLocation" x="168.11594202898553" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TrilhaTeste2" width="1650" height="862"/>
+        <image name="google.png" width="18" height="18"/>
+    </resources>
 </document>
