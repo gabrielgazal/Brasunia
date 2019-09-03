@@ -17,10 +17,11 @@ class JornadaViewController: UIViewController {
     @IBOutlet weak var eletronicaFillView: UIView!
     @IBOutlet weak var marcenariaFullView: UIView!
     @IBOutlet weak var marcenariaFillView: UIView!
+    @IBOutlet weak var costuraLabel: UILabel!
     
     
     
-    let Costura = JornadaInfo(trilha: "Costura", icone: "Costura", conquistas: 2, habilidades: 10, x: 100, y: 300, cor: UIColor.red)
+    let Costura = JornadaInfo(trilha: "Costura", icone: "Costura", conquistas: 3, habilidades: 10, x: 100, y: 300, cor: UIColor.red)
     let Marcenaria = JornadaInfo(trilha: "Marcenaria", icone: "Marcenaria", conquistas: 5, habilidades: 14, x: 300, y: 300, cor: UIColor.blue)
     let Eletronica = JornadaInfo(trilha: "Eletronica", icone: "Eletronica", conquistas: 9, habilidades: 10, x: 100, y: 500, cor: UIColor.green)
     
@@ -32,21 +33,35 @@ class JornadaViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        animaBarraProgresso()
+        criaAnimacao(Fundo: costuraFullView, Progresso: costuraFillView, Trilha: Costura)
+        criaAnimacao(Fundo: eletronicaFullView, Progresso: eletronicaFillView, Trilha: Eletronica)
+        criaAnimacao(Fundo: marcenariaFullView, Progresso: marcenariaFillView, Trilha: Marcenaria)
         
 //        createAnimationLayer(Trilha: Costura)
 //        createAnimationLayer(Trilha: Marcenaria)
 //        createAnimationLayer(Trilha: Eletronica)
     }
     
-    func animaBarraProgresso()
-    {
+    func criaAnimacao(Fundo fundoView: UIView, Progresso progressoView: UIView, Trilha trilha: JornadaInfo){
+        //Define layers das views
+        fundoView.layer.cornerRadius = 10
+        progressoView.layer.cornerRadius = 10
+        progressoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        progressoView.frame.size = CGSize(width: 0, height: fundoView.frame.height)
         
-    }
-    
-    func criaAnimacao(){
+        //define o valor da barra de progresso
+        let progresso = CGFloat(trilha.conquistas)
+        let total = CGFloat(trilha.habilidades)
+        let porcentagem = progresso/total
         
+        
+        UIView.animate(withDuration: 2.0, animations: {
+            progressoView.frame.size = CGSize(width: fundoView.frame.width * porcentagem, height: fundoView.frame.height)
+        }, completion: { finished in
+                self.costuraLabel.text = "\(porcentagem)%"
+            })
     }
+//            "\(progressoView)%"
 //    fundoView.layer.cornerRadius = 10
 //    completoView.layer.cornerRadius = 10
 //    completoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
@@ -122,10 +137,10 @@ class JornadaViewController: UIViewController {
 //
 //        shapeLayer.add(basicAnimation, forKey: "urSoBasic")
 //    }
-}
 
 
 //Como organizar o código e as funções
 //Como colocar os objetos de acordo com o iphone/ipad
 //como ajeitar as constrains
 //Como encontrar o centro do circulo
+}
