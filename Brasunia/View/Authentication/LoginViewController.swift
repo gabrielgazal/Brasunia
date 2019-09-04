@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Model.shared.defaulting()
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +57,6 @@ extension LoginViewController: FUIAuthDelegate{
         let userInfo = UserInfoClass(databaseID: userUID!, email: userEmail!)
         
         userInfo.name = "novoNome"
-        
         
         do {
             let encoder = JSONEncoder()

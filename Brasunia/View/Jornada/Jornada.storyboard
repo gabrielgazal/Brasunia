@@ -104,11 +104,20 @@
                         <outlet property="eletronicaFullView" destination="cPm-29-UOn" id="oT3-pc-M6v"/>
                         <outlet property="marcenariaFillView" destination="HEv-2X-oay" id="3yA-2S-vlM"/>
                         <outlet property="marcenariaFullView" destination="0JT-GK-Fh7" id="ROE-Uw-xv8"/>
+                        <segue destination="Bua-zY-WFa" kind="presentation" identifier="jornada" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Fia-VW-FKA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJj-lG-rJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.04347826086958" y="97.767857142857139"/>
+        </scene>
+        <!--Autentication-->
+        <scene sceneID="cVP-Dz-2jf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Autentication" id="Bua-zY-WFa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ca-oz-6wE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="86"/>
         </scene>
     </scenes>
 </document>

@@ -26,6 +26,7 @@
                     <navigationItem key="navigationItem" id="sXM-ss-vp2"/>
                     <connections>
                         <segue destination="49a-nn-0sh" kind="show" identifier="projetoID" id="e6A-Eu-KF2"/>
+                        <segue destination="6ik-ag-euA" kind="show" identifier="trilhaID" id="Jio-tv-pae"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY7-mD-C4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,24 +34,14 @@
             <point key="canvasLocation" x="3643.4782608695655" y="-82.366071428571431"/>
         </scene>
         <!--Jornada-->
-        <scene sceneID="OVx-zd-IdH">
+        <scene sceneID="zRP-mp-sTK">
             <objects>
-                <viewControllerPlaceholder storyboardName="Jornada" id="30r-F3-5Hy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3iU-GX-bDD"/>
+                <viewControllerPlaceholder storyboardName="Jornada" id="nl1-Ol-Tzs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="c81-6h-6qn"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9eZ-fK-siV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDB-0s-SF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733" y="380"/>
-        </scene>
-        <!--MinhasTrilhasStoryboard-->
-        <scene sceneID="1zJ-Nw-PdK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MinhasTrilhasStoryboard" id="KJY-LT-OLU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="VHl-Xt-veJ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aJW-F7-fSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3695" y="412"/>
+            <point key="canvasLocation" x="3187" y="402"/>
         </scene>
         <!--Projeto-->
         <scene sceneID="H4k-cO-7oJ">
@@ -59,6 +50,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-TN-ICt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4365" y="-82"/>
+        </scene>
+        <!--Trilhas-->
+        <scene sceneID="CbZ-bx-gSh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trilhas" id="6ik-ag-euA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjn-SN-bZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4337" y="160"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pks-ye-OBT">
@@ -92,7 +91,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="q8f-1z-o98" kind="relationship" relationship="viewControllers" id="aHW-1K-vhV"/>
-                        <segue destination="30r-F3-5Hy" kind="relationship" relationship="viewControllers" id="FBS-TZ-ZnB"/>
+                        <segue destination="nl1-Ol-Tzs" kind="relationship" relationship="viewControllers" id="3Qg-4n-tcV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEP-UQ-Pru" userLabel="First Responder" sceneMemberID="firstResponder"/>

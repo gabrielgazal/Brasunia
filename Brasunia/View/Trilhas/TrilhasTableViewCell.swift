@@ -12,7 +12,9 @@ class TrilhasTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var parent: UIViewController?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.delegate = self
@@ -60,5 +62,9 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = floor((collectionView.frame.width-20.0)/3.0)
         return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        parent?.performSegue(withIdentifier: "trilhaID", sender: indexPath.row)
     }
 }
