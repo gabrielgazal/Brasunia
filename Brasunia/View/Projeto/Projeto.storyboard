@@ -156,29 +156,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikR-9p-ZBk">
-                                                    <rect key="frame" x="50" y="11" width="314" height="30"/>
+                                                    <rect key="frame" x="41.5" y="11" width="331" height="30"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button">
                                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="zll-zR-6nc">
-                                                    <rect key="frame" x="20" y="78" width="374" height="150"/>
+                                                    <rect key="frame" x="41.5" y="78" width="331" height="150"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="150" id="s0P-RR-yCN"/>
+                                                        <constraint firstAttribute="width" secondItem="zll-zR-6nc" secondAttribute="height" multiplier="331:150" id="ccm-HE-eNd"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="zll-zR-6nc" secondAttribute="bottom" id="6WI-ep-kg0"/>
-                                                <constraint firstAttribute="trailing" secondItem="zll-zR-6nc" secondAttribute="trailing" constant="20" id="7Qi-IH-TRI"/>
-                                                <constraint firstAttribute="trailing" secondItem="ikR-9p-ZBk" secondAttribute="trailing" constant="50" id="88a-7R-n9G"/>
-                                                <constraint firstItem="zll-zR-6nc" firstAttribute="leading" secondItem="ZLc-0Y-4zO" secondAttribute="leading" constant="20" id="KKY-2K-qpR"/>
-                                                <constraint firstItem="zll-zR-6nc" firstAttribute="top" secondItem="ikR-9p-ZBk" secondAttribute="bottom" constant="37" id="SfE-eO-fk5"/>
+                                                <constraint firstItem="zll-zR-6nc" firstAttribute="top" secondItem="ikR-9p-ZBk" secondAttribute="bottom" constant="37" id="6es-mf-QqG"/>
                                                 <constraint firstItem="ikR-9p-ZBk" firstAttribute="centerX" secondItem="ZLc-0Y-4zO" secondAttribute="centerX" id="WBe-Wb-Suy"/>
-                                                <constraint firstItem="zll-zR-6nc" firstAttribute="centerX" secondItem="ZLc-0Y-4zO" secondAttribute="centerX" id="bIE-vt-Khe"/>
-                                                <constraint firstItem="ikR-9p-ZBk" firstAttribute="leading" secondItem="ZLc-0Y-4zO" secondAttribute="leading" constant="50" id="ozG-uo-YbK"/>
+                                                <constraint firstItem="zll-zR-6nc" firstAttribute="centerX" secondItem="ZLc-0Y-4zO" secondAttribute="centerX" id="ctI-KF-00i"/>
+                                                <constraint firstItem="ikR-9p-ZBk" firstAttribute="width" secondItem="ZLc-0Y-4zO" secondAttribute="width" multiplier="0.8" id="eJO-b6-QHy"/>
                                                 <constraint firstItem="ikR-9p-ZBk" firstAttribute="top" secondItem="ZLc-0Y-4zO" secondAttribute="topMargin" id="tTm-fr-rxh"/>
+                                                <constraint firstItem="zll-zR-6nc" firstAttribute="width" secondItem="ZLc-0Y-4zO" secondAttribute="width" multiplier="0.8" id="zWm-3I-Zcc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

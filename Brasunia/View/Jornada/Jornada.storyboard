@@ -18,30 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jornada de Aprendizado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-fT-uAT">
-                                <rect key="frame" x="10" y="64" width="394" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acompanhe seu progresso aqui, as habilidades que você tem e as que você quer aprender." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSq-CA-Eqz">
-                                <rect key="frame" x="10" y="111.5" width="384" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-29-UOn" userLabel="EletronicaFull">
-                                <rect key="frame" x="10" y="318" width="384" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3Q-59-YVC" userLabel="Eletronica%">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.80102204623287676" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0JT-GK-Fh7" userLabel="MarcenariaFull">
                                 <rect key="frame" x="10" y="455" width="384" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,15 +30,35 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Costura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgN-wZ-MQY">
-                                <rect key="frame" x="10" y="183" width="61" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRX-el-8Iy">
+                                <rect key="frame" x="124" y="76" width="166" height="134.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="vnc-sG-nv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="134.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vnc-sG-nv3" firstAttribute="height" secondItem="lRX-el-8Iy" secondAttribute="height" id="MaM-7D-ybj"/>
+                                    <constraint firstItem="vnc-sG-nv3" firstAttribute="centerX" secondItem="lRX-el-8Iy" secondAttribute="centerX" id="Rzo-y8-qbw"/>
+                                    <constraint firstItem="vnc-sG-nv3" firstAttribute="width" secondItem="lRX-el-8Iy" secondAttribute="width" id="p60-5r-f2U"/>
+                                    <constraint firstItem="vnc-sG-nv3" firstAttribute="centerY" secondItem="lRX-el-8Iy" secondAttribute="centerY" id="zDX-2d-rYO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPm-29-UOn" userLabel="EletronicaFull">
+                                <rect key="frame" x="10" y="350" width="384" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s3Q-59-YVC" userLabel="Eletronica%">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.80102204623287676" green="0.602715373" blue="0.602715373" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-tx-YSh" userLabel="CosturaFull">
-                                <rect key="frame" x="10" y="212" width="384" height="70"/>
+                                <rect key="frame" x="10" y="244" width="384" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-aK-t5U" userLabel="Costura%">
@@ -85,12 +81,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="a5p-gQ-U4v" firstAttribute="leading" secondItem="RSq-CA-Eqz" secondAttribute="leading" constant="-10" id="OYN-OO-OZ1"/>
-                            <constraint firstItem="RSq-CA-Eqz" firstAttribute="top" secondItem="nXk-fT-uAT" secondAttribute="bottom" constant="20" id="PdX-Ju-3G3"/>
-                            <constraint firstItem="a5p-gQ-U4v" firstAttribute="trailing" secondItem="nXk-fT-uAT" secondAttribute="trailing" constant="10" id="azQ-6b-UMb"/>
-                            <constraint firstItem="RSq-CA-Eqz" firstAttribute="trailing" secondItem="a5p-gQ-U4v" secondAttribute="trailing" constant="-20" id="dh6-tM-Ngk"/>
-                            <constraint firstItem="nXk-fT-uAT" firstAttribute="top" secondItem="a5p-gQ-U4v" secondAttribute="top" constant="20" id="oQ4-dm-UV5"/>
-                            <constraint firstItem="nXk-fT-uAT" firstAttribute="leading" secondItem="a5p-gQ-U4v" secondAttribute="leading" constant="10" id="yqm-SQ-5tU"/>
+                            <constraint firstItem="lRX-el-8Iy" firstAttribute="top" secondItem="a5p-gQ-U4v" secondAttribute="top" constant="32" id="64x-Ci-Hyj"/>
+                            <constraint firstItem="lRX-el-8Iy" firstAttribute="height" secondItem="NaM-AG-XhB" secondAttribute="height" multiplier="0.15" id="ELH-0E-0YX"/>
+                            <constraint firstItem="lRX-el-8Iy" firstAttribute="width" secondItem="NaM-AG-XhB" secondAttribute="width" multiplier="0.4" id="Ys9-BY-jbW"/>
+                            <constraint firstItem="lRX-el-8Iy" firstAttribute="centerX" secondItem="a5p-gQ-U4v" secondAttribute="centerX" id="beh-Br-DlH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a5p-gQ-U4v"/>
                     </view>
@@ -105,6 +99,7 @@
                         <outlet property="marcenariaFillView" destination="HEv-2X-oay" id="3yA-2S-vlM"/>
                         <outlet property="marcenariaFullView" destination="0JT-GK-Fh7" id="ROE-Uw-xv8"/>
                         <segue destination="Bua-zY-WFa" kind="presentation" identifier="jornada" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="Fia-VW-FKA"/>
+                        <outlet property="profileView" destination="lRX-el-8Iy" id="Mvn-jU-AzQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJj-lG-rJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,4 +115,7 @@
             <point key="canvasLocation" x="1013" y="86"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TrilhaTeste2" width="1650" height="862"/>
+    </resources>
 </document>

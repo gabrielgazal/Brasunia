@@ -18,6 +18,7 @@ class JornadaViewController: UIViewController {
     @IBOutlet weak var marcenariaFullView: UIView!
     @IBOutlet weak var marcenariaFillView: UIView!
     @IBOutlet weak var costuraLabel: UILabel!
+    @IBOutlet weak var profileView: UIView!
     
     
     
@@ -29,8 +30,12 @@ class JornadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        let width = profileView.frame.width
+        let x = profileView.frame.minX
+        let y = profileView.frame.minY
+        profileView.frame = CGRect(x: x,y: y,width: width,height: width)
+        profileView.layer.masksToBounds = true
+        profileView.layer.cornerRadius = width/2
 //        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
