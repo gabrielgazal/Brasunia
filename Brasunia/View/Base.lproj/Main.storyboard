@@ -26,6 +26,7 @@
                     <navigationItem key="navigationItem" id="sXM-ss-vp2"/>
                     <connections>
                         <segue destination="49a-nn-0sh" kind="show" identifier="projetoID" id="e6A-Eu-KF2"/>
+                        <segue destination="6ik-ag-euA" kind="show" identifier="trilhaID" id="Jio-tv-pae"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY7-mD-C4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,6 +50,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENn-TN-ICt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4365" y="-82"/>
+        </scene>
+        <!--Trilhas-->
+        <scene sceneID="CbZ-bx-gSh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trilhas" id="6ik-ag-euA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjn-SN-bZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4337" y="160"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pks-ye-OBT">

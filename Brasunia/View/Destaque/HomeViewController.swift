@@ -63,6 +63,12 @@ class HomeViewController: UITableViewController {
         if segue.identifier == "projetoID", let vc = segue.destination as? ProjetoViewController{
             vc.curso = Model.shared.cursos[sender as! Int]
         }
+        if segue.identifier == "trilhaID", let vc = segue.destination as? MinhasTrilhasViewController{
+            vc.trail = Model.shared.trilhas[sender as! Int]
+            
+
+        }
     }
+    
 }
 

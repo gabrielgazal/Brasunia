@@ -14,15 +14,13 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
+        Model.shared.defaulting()
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func closePop(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func LoginTap(_ sender: Any) {
@@ -59,7 +57,6 @@ extension LoginViewController: FUIAuthDelegate{
         let userInfo = UserInfoClass(databaseID: userUID!, email: userEmail!)
         
         userInfo.name = "novoNome"
-        
         
         do {
             let encoder = JSONEncoder()

@@ -16,33 +16,47 @@ class Model{
     }
     
     var userID = ""
-    
-    
-    var cursos: [CourseInfo] = [ CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
-                                 CourseInfo(nome: "Jose", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
-                                 CourseInfo(nome: "Louro", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
+    var trilhas: [String] = ["Costura","Eletrônica","Marcenaria"]
+    var cursosPossiveis: [CourseInfo] = []
+    var cursosFilt: [CourseInfo]  = []
+
+
+    var cursos: [CourseInfo] = [
+            CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
+            CourseInfo(nome: "Jose", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
+            CourseInfo(nome: "Louro", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
+            CourseInfo(nome: "Louro2", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Intermediário"),
+            CourseInfo(nome: "Louro3", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Intermediário"),
+            CourseInfo(nome: "Louro4", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Avançado"),
+            CourseInfo(nome: "Louro5", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Avançado"),
+            CourseInfo(nome: "Louro6", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Eletrônica",nivel: "Proficiente")
     ]
     
     
 
-    func SortCurso(trilha: String) -> [CourseInfo]{ // chama uma vez na hora de popular collection
-        var cursosPossiveis: [CourseInfo] = []
+    func SortCurso(trilha: String){ // chama uma vez na hora de popular collection
+        cursosPossiveis.removeAll()
         for curso in cursos{
             if curso.trilha == trilha{
                 cursosPossiveis.append(curso)
             }
         }
-        return cursosPossiveis
+        print(cursosPossiveis.count)
+        print("cff")
     }
     
-    func SortDific(cursosPossiveis: [CourseInfo], nivel:String) -> [CourseInfo]{ // chama na hora de popuklar  toda section
-        var cursosFilt: [CourseInfo]  = []
+    func SortDific(cursosPossiveis: [CourseInfo], nivel:String)->[CourseInfo]{ // chama na hora de popuklar  toda section
+        var cursos = [CourseInfo]()
         for curso in cursosPossiveis{
             if curso.nivel == nivel{
-                cursosFilt.append(curso)
+                cursos.append(curso)
             }
         }
-        return cursosFilt
+        return cursos
+    }
+    func defaulting(){
+        let defaults = UserDefaults.standard
+        defaults.set(Model.shared.userID, forKey: "UID")
     }
 }
 

@@ -29,9 +29,8 @@ class JornadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if Model.shared.userID == "" {
-            performSegue(withIdentifier: "jornada", sender: self)
-        }
+        
+        
 //        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
@@ -43,6 +42,9 @@ class JornadaViewController: UIViewController {
 //        createAnimationLayer(Trilha: Costura)
 //        createAnimationLayer(Trilha: Marcenaria)
 //        createAnimationLayer(Trilha: Eletronica)
+        if Model.shared.userID == "" {
+            performSegue(withIdentifier: "jornada", sender: self)
+        }
     }
     
     func criaAnimacao(Fundo fundoView: UIView, Progresso progressoView: UIView, Trilha trilha: JornadaInfo){

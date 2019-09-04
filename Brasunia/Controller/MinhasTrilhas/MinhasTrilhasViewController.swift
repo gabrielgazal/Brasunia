@@ -10,86 +10,62 @@ import UIKit
 
 class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var minhasTrilhasLabelTitle: UILabel!
-    @IBOutlet weak var minhasTrilhasLabelSubTitle: UILabel!
-    @IBOutlet weak var minhasTrilhasButton: UIButton!
     @IBOutlet weak var minhasTrilhasCollectionView: UICollectionView!
     
-    @IBOutlet weak var minhasTrilhasSkillsCollectionView: UICollectionView!
+    @IBOutlet weak var nometrilhaLabel: UILabel!
+
+//    var trail:String = "Costura"
+    var trail: String = ""
+    var trilha:String = ""
     
-    //Aqui estão os dados que serão *recebidos* pelo banco de dados//
-    
-    var minhasTrilhasCellImage : [UIImage]?
-    var minhasTrilhasCellText : [String]?
-    var minhasTrilhasCellTag0 : [UIImage]?
-    var minhasTrilhasCellTag1 : [UIImage]?
-    var minhasTrilhasCellTag2 : [UIImage]?
-    
-    var minhasTrilhasSkillsCellView : [UIView]?
-    var minhasTrilhasSkillsCellLabel : [UILabel]?
-    
-    ////
-    
-    // Aqui estão os dados que seão *enviados* para o banco de dados//
-    
-    ////
+    var trilhas: [[CourseInfo]] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        minhasTrilhasLabelTitle!.text = "Minhas trilhas"
-        minhasTrilhasLabelSubTitle!.text = "Próximos passos"
-        minhasTrilhasButton.titleLabel!.text = "Trilha completa"
-        
-        minhasTrilhasCollectionView.dataSource = self
         minhasTrilhasCollectionView.delegate = self
-        
-        minhasTrilhasSkillsCollectionView.dataSource = self
-        minhasTrilhasSkillsCollectionView.delegate = self
-        
+        minhasTrilhasCollectionView.dataSource = self
+//        trilha = Model.shared.trilhas[trail]
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        trilhas.removeAll()
+        Model.shared.SortCurso(trilha: trail)
+
+        trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Novato"))
+        trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Intermediário"))
+        trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Avançado"))
+        trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Proficiente"))
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
-        return 1
+        return trilhas.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if collectionView.tag == 1 {
-            return minhasTrilhasCellImage!.count
-        }else{
-            return minhasTrilhasSkillsCellView!.count
-        }
+        return trilhas[section].count
+        
     }
+    
+
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if collectionView.tag == 1 {
+        let curso  = trilhas[indexPath.section][indexPath.row]
+        
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MinhasTrilhasCollectionCell", for: indexPath) as! MinhasTrilhasCollectionViewCell
-            
-            cell.CellImage?.image = minhasTrilhasCellImage![indexPath.row]
-            cell.CellLabel?.text = minhasTrilhasCellText![indexPath.row]
-            
-            if minhasTrilhasCellTag0?[indexPath.row] != nil{
-                cell.CellTag0?.image = minhasTrilhasCellTag0![indexPath.row]
-            }
-            if minhasTrilhasCellTag1?[indexPath.row] != nil{
-                cell.CellTag1?.image = minhasTrilhasCellTag1![indexPath.row]
-            }
-            if minhasTrilhasCellTag2?[indexPath.row] != nil{
-                cell.CellTag2?.image = minhasTrilhasCellTag2![indexPath.row]
-            }
+            print(curso.nome)
+        
+            cell.CellImage?.image = curso.image
+            cell.CellLabel?.text = curso.nome
+        
             return cell
-        }else{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MinhasTrilhasSkillsCollectionCell", for: indexPath) as! MinhasTrilhasSkillsCollectionViewCell
-            
-            cell.CellView? = minhasTrilhasSkillsCellView![indexPath.row]
-            cell.CellLabel? = minhasTrilhasSkillsCellLabel![indexPath.row]
-            
-            return cell
-        }
+        
     }
     
     //Aqui é a configuração do espaçamento da collection//
