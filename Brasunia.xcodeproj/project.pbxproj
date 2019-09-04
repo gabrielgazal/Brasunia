@@ -33,6 +33,7 @@
 		56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */; };
 		56C3B0402310769D00E2E6B4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03F2310769D00E2E6B4 /* Model.swift */; };
 		56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B0412310795500E2E6B4 /* UserInfo.swift */; };
+		56CF20C023203EE60067E473 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CF20BF23203EE60067E473 /* Profile.storyboard */; };
 		56DB42162316F95D0088A287 /* Autentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DB42152316F95D0088A287 /* Autentication.storyboard */; };
 		56DB42192316FB520088A287 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB42182316FB520088A287 /* DesignableView.swift */; };
 		56DB421B2316FE760088A287 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421A2316FE760088A287 /* LoginViewController.swift */; };
@@ -81,6 +82,7 @@
 		56C3B03D2310757000E2E6B4 /* DAOFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFirebase.swift; sourceTree = "<group>"; };
 		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		56CF20BF23203EE60067E473 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		56DB42152316F95D0088A287 /* Autentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autentication.storyboard; sourceTree = "<group>"; };
 		56DB42182316FB520088A287 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		56DB421A2316FE760088A287 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		56A99273230F1CDE00A52350 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56CF20BE23203ED40067E473 /* Profile */,
 				B69D4501231C1F83001401EA /* Jornada */,
 				64512F302316F1FC004DA075 /* Quiz */,
 				641A1F492318444800EDAA1A /* MinhasTrilhas */,
@@ -234,6 +237,14 @@
 				B69D4500231C1F40001401EA /* Jornada */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		56CF20BE23203ED40067E473 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				56CF20BF23203EE60067E473 /* Profile.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		56DB42172316F9630088A287 /* Authentication */ = {
@@ -389,6 +400,7 @@
 				3FBD78DB2314590300D10523 /* PlanoCell.xib in Resources */,
 				56A99268230F178700A52350 /* Assets.xcassets in Resources */,
 				56A99266230F178600A52350 /* Main.storyboard in Resources */,
+				56CF20C023203EE60067E473 /* Profile.storyboard in Resources */,
 				3FBD78D123107B7600D10523 /* DestaqueCell.xib in Resources */,
 				3FCA0F732310744B00313CCE /* PlanosTableViewCell.xib in Resources */,
 				56A99276230F1D0300A52350 /* GoogleService-Info.plist in Resources */,
