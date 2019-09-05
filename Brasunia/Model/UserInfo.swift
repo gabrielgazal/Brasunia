@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class UserInfoClass: Codable{
-    internal init(databaseID: String, name: String, lastName: String, age: Int, adress: String, cellNumb: String, payedCourses: [String], abilities: [String], abilitiesFuture: [String]) {
+    internal init(databaseID: String, name: String, lastName: String, age: Int, adress: String, cellNumb: String, payedCourses: [String], abilities: [String], abilitiesFuture: [String], completedCourses: [String]) {
         self.databaseID = databaseID
         self.name = name
         self.lastName = lastName
@@ -20,6 +20,7 @@ class UserInfoClass: Codable{
         self.payedCourses = payedCourses
         self.abilities = abilities
         self.abilitiesFuture = abilitiesFuture
+        self.completedCourses = completedCourses
     }
     
     public init(databaseID: String, email: String){
@@ -37,5 +38,6 @@ class UserInfoClass: Codable{
     var payedCourses: [String] = []
     var abilities: [String] = []
     var abilitiesFuture: [String] = []
+    var completedCourses: [String] = []
 }
 

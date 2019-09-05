@@ -10,7 +10,7 @@ import UIKit
 
 class ProjetoBotaoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var listaFacilBotao: UIButton!
+    @IBOutlet weak var finalizaProjeto: UIButton!
     @IBOutlet weak var imgProjeto: UIImageView!
     
     override func awakeFromNib() {

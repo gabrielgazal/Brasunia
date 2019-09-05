@@ -41,11 +41,6 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath) as! ProjetoTitleTableViewCell
-            /*             cell.nomeProjetoTxt.text = "Projeto"
-             cell.imgProjeto.image = UIImage(named: "x")
-             cell.notaProjetoTxt.text = "5.0"
-             cell.labelTxt.text = "Você precisará de:"
-             cell.infoTxt.text = "Info"*/
             
             return cell
             
@@ -67,4 +62,13 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
 
+    @IBAction func projetoFinalizadoPressed(_ sender: Any) {
+        if(!Model.shared.VerificaCompleto(curso: curso!))
+        {
+            Model.shared.cursosCompletos.append(curso!)
+            print(Model.shared.cursosCompletos.count)
+        }
+        
+    }
+    
 }

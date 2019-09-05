@@ -19,7 +19,10 @@ class Model{
     var trilhas: [String] = ["Costura","Eletrônica","Marcenaria"]
     var cursosPossiveis: [CourseInfo] = []
     var cursosFilt: [CourseInfo]  = []
+    var cursosCompletos : [CourseInfo] = []
 
+//    var userInfo = UserInfoClass(databaseID: <#T##String#>, name: <#T##String#>, lastName: <#T##String#>, age: <#T##Int#>, adress: <#T##String#>, cellNumb: <#T##String#>, payedCourses: <#T##[String]#>, abilities: <#T##[String]#>, abilitiesFuture: <#T##[String]#>, completedCourses: <#T##[String]#>)
+    
 
     var cursos: [CourseInfo] = [
             CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Costura",nivel: "Novato"),
@@ -73,6 +76,18 @@ class Model{
             }
         }
         return cursos
+    }
+    
+    func VerificaCompleto(curso: CourseInfo) -> Bool
+    {
+        for projeto in Model.shared.cursosCompletos
+        {
+            if (projeto.nome == curso.nome)
+            {
+                return true
+            }
+        }
+        return false
     }
     func defaulting(){
         let defaults = UserDefaults.standard

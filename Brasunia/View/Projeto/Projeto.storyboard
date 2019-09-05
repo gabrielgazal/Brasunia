@@ -161,6 +161,9 @@
                                                     <state key="normal" title="Button">
                                                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="projetoFinalizadoPressed:" destination="BOQ-DG-cj7" eventType="touchUpInside" id="mfN-lD-uei"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="zll-zR-6nc">
                                                     <rect key="frame" x="41.5" y="78" width="331" height="150"/>
@@ -179,8 +182,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="finalizaProjeto" destination="ikR-9p-ZBk" id="UM0-KR-Sih"/>
                                             <outlet property="imgProjeto" destination="zll-zR-6nc" id="QIj-Uu-hZz"/>
-                                            <outlet property="listaFacilBotao" destination="ikR-9p-ZBk" id="UM0-KR-Sih"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
