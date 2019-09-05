@@ -15,6 +15,9 @@ class HomeViewController: UITableViewController {
         tableView.register(UINib(nibName: "DestaqueTableViewCell", bundle: nil), forCellReuseIdentifier: "cellDestaque")
         tableView.register(UINib(nibName: "TrilhasTableViewCell", bundle: nil), forCellReuseIdentifier: "cellTrilhas")
         tableView.register(UINib(nibName: "PlanosTableViewCell", bundle: nil), forCellReuseIdentifier: "cellPlanos")
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png"))
+        self.view.backgroundColor  =  UIColor(patternImage: UIImage(named: "fundo")!)
+
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
