@@ -23,6 +23,7 @@ class TrilhasTableViewCell: UITableViewCell {
         collectionView.register(UINib(nibName: "TrilhaCell", bundle: nil), forCellWithReuseIdentifier: "cellTrilha")
         
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -38,12 +39,13 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTrilha", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTrilha", for: indexPath) as! TrilhaCell
         cell.backgroundColor = UIColor(white: CGFloat(indexPath.row) * 0.1, alpha: 1)
+        cell.trilhaNameLabel.text = Model.shared.trilhas[indexPath.row]
         return cell
     }
     
@@ -60,7 +62,7 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = floor((collectionView.frame.width-20.0)/3.0)
+        let width = floor((collectionView.frame.width-20.0)/2.0)
         return CGSize(width: width, height: width)
     }
     

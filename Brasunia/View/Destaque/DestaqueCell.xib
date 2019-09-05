@@ -20,10 +20,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTT-nt-1Tb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                        <rect key="frame" x="0.0" y="5" width="320" height="245"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste2" translatesAutoresizingMaskIntoConstraints="NO" id="vDh-JJ-XPs">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vDh-JJ-XPs" secondAttribute="height" multiplier="64:49" id="2EA-mY-LSf"/>
+                                </constraints>
                             </imageView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-eR-QAW">
                                 <rect key="frame" x="0.0" y="196" width="320" height="49"/>
@@ -56,7 +59,7 @@
             <constraints>
                 <constraint firstItem="xTT-nt-1Tb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7g7-He-vqI"/>
                 <constraint firstItem="xTT-nt-1Tb" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="ISq-mb-fjB"/>
-                <constraint firstItem="xTT-nt-1Tb" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-5" id="eSj-R4-lnL"/>
+                <constraint firstItem="xTT-nt-1Tb" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="eSj-R4-lnL"/>
                 <constraint firstItem="xTT-nt-1Tb" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="ka5-kv-rb6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
