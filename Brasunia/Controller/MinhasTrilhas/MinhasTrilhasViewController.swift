@@ -24,6 +24,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    nometrilhaLabel.text = trail
         
         minhasTrilhasCollectionView.delegate = self
         minhasTrilhasCollectionView.dataSource = self
