@@ -47,7 +47,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         return trilhas.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width - spacing) / 2.5
+        let width = (collectionView.frame.width - spacing) / 2.3
         return CGSize(width: width, height: width)
     }
     
