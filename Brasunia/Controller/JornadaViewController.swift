@@ -23,9 +23,9 @@ class JornadaViewController: UIViewController {
     
     let Costura = JornadaInfo(trilha: "Costura", icone: "Costura", conquistas: 3, habilidades: 10, x: 100, y: 300, cor: UIColor.red)
     let Marcenaria = JornadaInfo(trilha: "Marcenaria", icone: "Marcenaria", conquistas: 5, habilidades: 14, x: 300, y: 300, cor: UIColor.blue)
-    let Eletronica = JornadaInfo(trilha: "Eletronica", icone: "Eletronica", conquistas: 9, habilidades: 10, x: 100, y: 500, cor: UIColor.green)
-    var cursosCompletos = Model.shared.cursosCompletos
-    
+    let Eletronica = JornadaInfo(trilha: "Eletrônica", icone: "Eletrônica", conquistas: 9, habilidades: 10, x: 100, y: 500, cor: UIColor.green)
+    var cursosCompletos : [CourseInfo] = []
+    var cursosTotais : [CourseInfo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,8 @@ class JornadaViewController: UIViewController {
         if Model.shared.userID == "" {
             performSegue(withIdentifier: "jornada", sender: self)
         }
+        cursosCompletos = Model.shared.cursosCompletos
+        cursosTotais = Model.shared.cursos
         criaAnimacao(Fundo: costuraFullView, Progresso: costuraFillView, Trilha: Costura)
         criaAnimacao(Fundo: eletronicaFullView, Progresso: eletronicaFillView, Trilha: Eletronica)
         criaAnimacao(Fundo: marcenariaFullView, Progresso: marcenariaFillView, Trilha: Marcenaria)
@@ -60,31 +62,32 @@ class JornadaViewController: UIViewController {
         
         //define o valor da barra de progresso
 
-        let progresso = CGFloat(CursosDaTrilha(cursosCompletos, trilha.trilha))
+        let progresso = CursosDaTrilha(cursosCompletos, trilha.trilha)
+
+
+        let cursosTotal = CursosDaTrilha(cursosTotais, trilha.trilha)
+//        let cursosTotal = CGFloat(1)
+
         
-//        let progresso = CGFloat(trilha.conquistas)
-        let cursosTotalTrilha = Model.shared.SortCurso(trilha:  )
-//        let total = CGFloat(Model.shared.SortCurso(trilha: trilha.trilha))
-        let porcentagem = progresso/total
-        
+        let porcentagem = progresso/cursosTotal
         
         UIView.animate(withDuration: 2.0, animations: {
             progressoView.frame.size = CGSize(width: fundoView.frame.width * porcentagem, height: fundoView.frame.height)
         }, completion: { finished in
-                self.costuraLabel.text = "\(porcentagem)%"
+                self.costuraLabel.text = "\(porcentagem * 100)%"
             })
     }
     
-    func CursosDaTrilha(_ cursos: [CourseInfo], _ trilha: String) -> Int
+    func CursosDaTrilha(_ cursos: [CourseInfo], _ trilha: String) -> CGFloat
     {
-        var qtd = 0
+        var qtd = 0.0
         for curso in cursos
         {
             if (curso.trilha == trilha)
             {
-                qtd+=1
+                qtd+=1.0
             }
         }
-        return qtd
+        return CGFloat(qtd)
     }
 }

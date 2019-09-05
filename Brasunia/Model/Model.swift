@@ -44,7 +44,6 @@ class Model{
         CourseInfo(nome: "777", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Eletrônica",nivel: "Avançado"),
         CourseInfo(nome: "888", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Eletrônica",nivel: "Proficiente"),
         
-        
         CourseInfo(nome: "aaa", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Marcenaria",nivel: "Novato"),
         CourseInfo(nome: "bbb", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Marcenaria",nivel: "Novato"),
         CourseInfo(nome: "ccc", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Marcenaria",nivel: "Novato"),
@@ -64,8 +63,16 @@ class Model{
                 cursosPossiveis.append(curso)
             }
         }
-        print(cursosPossiveis.count)
-        print("cff")
+    }
+    
+    func SortCursoTrilha(listaCursos: [CourseInfo], trilha: String) -> Int{ // chama uma vez na hora de popular collection
+        var cursosTrilha : [CourseInfo] = []
+        for curso in listaCursos{
+            if curso.trilha == trilha{
+                cursosTrilha.append(curso)
+            }
+        }
+        return cursosTrilha.count
     }
     
     func SortDific(cursosPossiveis: [CourseInfo], nivel:String)->[CourseInfo]{ // chama na hora de popuklar  toda section

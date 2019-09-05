@@ -35,5 +35,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/Controller/JornadaViewController.swift"
+            timestampString = "589405132.428866"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/Controller/JornadaViewController.swift"
+            timestampString = "589405132.429227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.JornadaViewController.criaAnimacao(Fundo: __C.UIView, Progresso: __C.UIView, Trilha: Brasunia.JornadaInfo) -&gt; ()"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/Controller/JornadaViewController.swift"
+                  timestampString = "589404836.242336"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "978">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Brasunia.JornadaViewController.criaAnimacao(Fundo: __C.UIView, Progresso: __C.UIView, Trilha: Brasunia.JornadaInfo) -&gt; ()"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/Controller/JornadaViewController.swift"
+                  timestampString = "589404836.244866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/Controller/JornadaViewController.swift"
+            timestampString = "589405132.429454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/Controller/JornadaViewController.swift"
+            timestampString = "589405132.429672"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
