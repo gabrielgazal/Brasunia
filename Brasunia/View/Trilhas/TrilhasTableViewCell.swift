@@ -60,7 +60,7 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = floor((collectionView.frame.width-20.0)/3.0)
+        let width = floor((collectionView.frame.width-20.0)/2.0)
         return CGSize(width: width, height: width)
     }
     

@@ -60,11 +60,11 @@ class JornadaViewController: UIViewController {
         
         //define o valor da barra de progresso
 
-        let progresso = CGFloat(CursosDaTrilha(cursosCompletos, trilha.trilha))
+//        let progresso = CGFloat(CursosDaTrilha(cursosCompletos, trilha.trilha))
         
-//        let progresso = CGFloat(trilha.conquistas)
-        let cursosTotalTrilha = Model.shared.SortCurso(trilha:  )
-//        let total = CGFloat(Model.shared.SortCurso(trilha: trilha.trilha))
+        let progresso = CGFloat(1)
+//        let cursosTotalTrilha = Model.shared.SortCurso(trilha:  )
+        let total = CGFloat(1)
         let porcentagem = progresso/total
         
         
