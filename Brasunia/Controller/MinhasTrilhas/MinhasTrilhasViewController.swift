@@ -17,7 +17,8 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
 //    var trail:String = "Costura"
     var trail: String = ""
     var trilha:String = ""
-    
+    var spacing : CGFloat = 0.03 * UIScreen.main.bounds.width
+
     var trilhas: [[CourseInfo]] = []
 
     
@@ -44,7 +45,22 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         
         return trilhas.count
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (collectionView.frame.width - spacing) / 2.5
+        return CGSize(width: width, height: width)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return spacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return spacing
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -70,47 +86,47 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     
     //Aqui é a configuração do espaçamento da collection//
     
-    let spacingCell : CGFloat = round(0.1 * UIScreen.main.bounds.width)
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        if collectionView.tag == 1 {
-            return spacingCell/2
-        }else{
-            return spacingCell/2
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        
-        if collectionView.tag == 1 {
-            return spacingCell/2
-        }else{
-            return spacingCell/2
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        if collectionView.tag == 1 {
-            return UIEdgeInsets(top: spacingCell, left: spacingCell, bottom: spacingCell, right: spacingCell)
-        }else{
-            return UIEdgeInsets(top: spacingCell/2, left: spacingCell/2, bottom: spacingCell/2, right: spacingCell/2)
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width : CGFloat = UIScreen.main.bounds.width - spacingCell/2
-        let height : CGFloat = width
-        
-        if collectionView.tag == 1 {
-            return CGSize(width: width, height: height)
-        }else{
-            return CGSize(width: width/3, height: height/5)
-        }
-    }
-    
+//    let spacingCell : CGFloat = round(0.1 * UIScreen.main.bounds.width)
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//
+//        if collectionView.tag == 1 {
+//            return spacingCell/2
+//        }else{
+//            return spacingCell/2
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//
+//        if collectionView.tag == 1 {
+//            return spacingCell/2
+//        }else{
+//            return spacingCell/2
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//
+//        if collectionView.tag == 1 {
+//            return UIEdgeInsets(top: spacingCell, left: spacingCell, bottom: spacingCell, right: spacingCell)
+//        }else{
+//            return UIEdgeInsets(top: spacingCell/2, left: spacingCell/2, bottom: spacingCell/2, right: spacingCell/2)
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        let width : CGFloat = UIScreen.main.bounds.width - spacingCell/2
+//        let height : CGFloat = width
+//
+//        if collectionView.tag == 1 {
+//            return CGSize(width: width, height: height)
+//        }else{
+//            return CGSize(width: width/3, height: height/5)
+//        }
+//    }
+//
     
     
     
