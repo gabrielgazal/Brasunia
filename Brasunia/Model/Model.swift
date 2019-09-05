@@ -16,7 +16,7 @@ class Model{
     }
     
     var userID = ""
-    var trilhas: [String] = ["Costura","Eletrônica","Marcenaria"]
+    var trilhas: [String] = ["Costura","Eletrônica","Marcenaria","Programação"]
     var cursosPossiveis: [CourseInfo] = []
     var cursosFilt: [CourseInfo]  = []
     var cursosCompletos : [CourseInfo] = []
@@ -50,7 +50,16 @@ class Model{
         CourseInfo(nome: "eee", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Marcenaria",nivel: "Intermediário"),
         CourseInfo(nome: "fff", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Marcenaria",nivel: "Avançado"),
         CourseInfo(nome: "ggg", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Marcenaria",nivel: "Avançado"),
-        CourseInfo(nome: "hhh", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Marcenaria",nivel: "Proficiente")
+        CourseInfo(nome: "hhh", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Marcenaria",nivel: "Proficiente"),
+        
+        CourseInfo(nome: "zzz", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Novato"),
+        CourseInfo(nome: "xxx", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Novato"),
+        CourseInfo(nome: "yyy", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Novato"),
+        CourseInfo(nome: "kkk", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Intermediário"),
+        CourseInfo(nome: "jjj", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Intermediário"),
+        CourseInfo(nome: "iii", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Avançado"),
+        CourseInfo(nome: "lll", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Avançado"),
+        CourseInfo(nome: "ttt", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Programação",nivel: "Proficiente")
     ]
         
     

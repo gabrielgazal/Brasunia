@@ -47,7 +47,7 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let heights : [CGFloat] = [0.4, 0.56, 0.6]
+        let heights : [CGFloat] = [0.55, 0.56, 0.6]
         return UIScreen.main.bounds.height * heights[indexPath.row]
     }
     

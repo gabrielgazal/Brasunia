@@ -19,7 +19,7 @@ class DestaqueCell: UICollectionViewCell {
     }
     
     func configure(for curso: CourseInfo){
-        rateLabel.text = String(describing: curso.nota)
+        rateLabel.text = String(describing: curso.nome)
         destaqueImageView.image = curso.image
     }
 
