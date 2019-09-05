@@ -47,7 +47,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         return trilhas.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width - spacing) / 2.3
+        let width = (collectionView.frame.width - spacing) / 2.2
         return CGSize(width: width, height: width)
     }
     
@@ -56,7 +56,8 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing
+        return spacing * 1.5
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -66,8 +67,9 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return trilhas[section].count
-        
     }
+    
+
     
 
     
@@ -85,50 +87,22 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         
     }
     
-    //Aqui é a configuração do espaçamento da collection//
-    
-//    let spacingCell : CGFloat = round(0.1 * UIScreen.main.bounds.width)
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//
-//        if collectionView.tag == 1 {
-//            return spacingCell/2
-//        }else{
-//            return spacingCell/2
-//        }
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//
-//        if collectionView.tag == 1 {
-//            return spacingCell/2
-//        }else{
-//            return spacingCell/2
-//        }
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//
-//        if collectionView.tag == 1 {
-//            return UIEdgeInsets(top: spacingCell, left: spacingCell, bottom: spacingCell, right: spacingCell)
-//        }else{
-//            return UIEdgeInsets(top: spacingCell/2, left: spacingCell/2, bottom: spacingCell/2, right: spacingCell/2)
-//        }
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let width : CGFloat = UIScreen.main.bounds.width - spacingCell/2
-//        let height : CGFloat = width
-//
-//        if collectionView.tag == 1 {
-//            return CGSize(width: width, height: height)
-//        }else{
-//            return CGSize(width: width/3, height: height/5)
-//        }
-//    }
-//
-    
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as? headerView{
+            if indexPath.section == 0 {
+            sectionHeader.labelHeader.text = "Novato"
+            } else if  indexPath.section == 1{
+                sectionHeader.labelHeader.text = "Intermediário"
+            }else if  indexPath.section == 2{
+                sectionHeader.labelHeader.text = "Avançado"
+            }else if  indexPath.section == 3{
+                sectionHeader.labelHeader.text = "Proficiente"
+            }
+            
+            return sectionHeader
+        }
+        return UICollectionReusableView()
+    }
     
 }

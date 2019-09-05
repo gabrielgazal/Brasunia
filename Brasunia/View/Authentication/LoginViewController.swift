@@ -64,6 +64,7 @@ extension LoginViewController: FUIAuthDelegate{
             let dict = try JSONSerialization.jsonObject(with: data) as! [String:Any]
             ref.collection("users").document(userUID!).setData(dict)
             Model.shared.userID = userUID!
+            
         }catch{
             print("deu merda")
         }

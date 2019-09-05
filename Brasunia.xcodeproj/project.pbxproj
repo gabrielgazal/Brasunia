@@ -34,6 +34,7 @@
 		56C3B0402310769D00E2E6B4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B03F2310769D00E2E6B4 /* Model.swift */; };
 		56C3B0422310795500E2E6B4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C3B0412310795500E2E6B4 /* UserInfo.swift */; };
 		56CF20C023203EE60067E473 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CF20BF23203EE60067E473 /* Profile.storyboard */; };
+		56CF20C22321820E0067E473 /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF20C12321820E0067E473 /* headerView.swift */; };
 		56DB42162316F95D0088A287 /* Autentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DB42152316F95D0088A287 /* Autentication.storyboard */; };
 		56DB42192316FB520088A287 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB42182316FB520088A287 /* DesignableView.swift */; };
 		56DB421B2316FE760088A287 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DB421A2316FE760088A287 /* LoginViewController.swift */; };
@@ -83,6 +84,7 @@
 		56C3B03F2310769D00E2E6B4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56C3B0412310795500E2E6B4 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		56CF20BF23203EE60067E473 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		56CF20C12321820E0067E473 /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		56DB42152316F95D0088A287 /* Autentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Autentication.storyboard; sourceTree = "<group>"; };
 		56DB42182316FB520088A287 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		56DB421A2316FE760088A287 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			children = (
 				6495012F23145BD3006108BC /* MinhasTrilhasViewController.swift */,
 				6456260B2314522C005412FE /* MinhasTrilhasCollectionViewCell.swift */,
+				56CF20C12321820E0067E473 /* headerView.swift */,
 			);
 			path = MinhasTrilhas;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				56DB421D231700740088A287 /* Designablebutton.swift in Sources */,
 				3FBD78D623144FDF00D10523 /* TrilhaCell.swift in Sources */,
 				56C3B03E2310757000E2E6B4 /* DAOFirebase.swift in Sources */,
+				56CF20C22321820E0067E473 /* headerView.swift in Sources */,
 				B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */,
 				B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */,
 				3FBD78DA2314590300D10523 /* PlanoCell.swift in Sources */,

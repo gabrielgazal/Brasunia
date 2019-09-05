@@ -54,7 +54,7 @@ class Model{
         CourseInfo(nome: "ggg", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Marcenaria",nivel: "Avançado"),
         CourseInfo(nome: "hhh", nota: 5.5, image: UIImage(named: "TrilhaTeste"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], feito: false, trilha: "Marcenaria",nivel: "Proficiente")
     ]
-    
+        
     
 
     func SortCurso(trilha: String){ // chama uma vez na hora de popular collection
