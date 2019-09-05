@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
 
         
         let authViewController = authUI!.authViewController()
-        let telaChata = authViewController.navigationController?.children
+//        let telaChata = authViewController.navigationController?.children
         
         
         present(authViewController, animated: true, completion: nil)

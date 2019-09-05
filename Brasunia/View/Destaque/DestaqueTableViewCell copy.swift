@@ -66,25 +66,14 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
         return UIEdgeInsets.zero
     }
     
-    @IBAction func Btn_RightAction(_ sender: Any)
-    {
-        let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
-        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
-        let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
-        if nextItem.row < Model.shared.cursos.count {
-            self.collectionView.scrollToItem(at: nextItem, at: .left, animated: true)
-            
+    @IBAction func nextPageButtonClicked(_ sender: AnyObject) {
+        
+        guard let indexPath = collectionView.indexPathsForVisibleItems.first.flatMap({
+            IndexPath(item: $0.row + 1, section: $0.section)
+        }), collectionView.cellForItem(at: indexPath) != nil else {
+            return
         }
-    }
-    
-    @IBAction func Btn_LeftAction(_ sender: Any)
-    {
-        let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
-        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
-        let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
-        if nextItem.row < Model.shared.cursos.count && nextItem.row >= 0{
-            self.collectionView.scrollToItem(at: nextItem, at: .right, animated: true)
-            
-        }
+        
+        collectionView.scrollToItem(at: indexPath, at: .left, animated: true)
     }
 }
