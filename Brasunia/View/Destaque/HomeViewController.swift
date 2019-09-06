@@ -29,7 +29,7 @@ class HomeViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,9 +52,10 @@ class HomeViewController: UITableViewController {
         }
 
     }
+
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let heights : [CGFloat] = [0.56, 0.56, 0.6]
+        let heights : [CGFloat] = [0.56, 0.48, 0.6]
         return UIScreen.main.bounds.height * heights[indexPath.row]
     }
     

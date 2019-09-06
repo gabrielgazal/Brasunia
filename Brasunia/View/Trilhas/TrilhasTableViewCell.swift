@@ -48,11 +48,16 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTrilha", for: indexPath) as! TrilhaCell
         cell.backgroundColor = UIColor(white: CGFloat(indexPath.row) * 0.1, alpha: 1)
         cell.trilhaNameLabel.text = Model.shared.trilhas[indexPath.row]
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cell.layer.shadowRadius = 2.0
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.masksToBounds = false
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -65,7 +70,7 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = floor((collectionView.frame.width-20.0)/2.0)
-        return CGSize(width: width, height: width)
+        return CGSize(width: width, height: width * 0.8)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

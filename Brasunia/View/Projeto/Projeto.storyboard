@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ZHe-D6-MW9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xKW-by-Wsv">
                                 <rect key="frame" x="0.0" y="5" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -191,10 +194,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZHe-D6-MW9" secondAttribute="trailing" id="0g2-vB-hpu"/>
+                            <constraint firstItem="ZHe-D6-MW9" firstAttribute="top" secondItem="kEZ-vK-4MN" secondAttribute="top" id="2de-39-k5h"/>
+                            <constraint firstItem="ZHe-D6-MW9" firstAttribute="leading" secondItem="BfK-1J-gIO" secondAttribute="leading" id="3w2-Dv-bfi"/>
                             <constraint firstItem="xKW-by-Wsv" firstAttribute="width" secondItem="kEZ-vK-4MN" secondAttribute="width" id="796-zY-JGD"/>
                             <constraint firstItem="xKW-by-Wsv" firstAttribute="centerY" secondItem="BfK-1J-gIO" secondAttribute="centerY" id="Dlu-yc-EBb"/>
                             <constraint firstItem="xKW-by-Wsv" firstAttribute="height" secondItem="kEZ-vK-4MN" secondAttribute="height" id="Mjz-Q2-4aj"/>
                             <constraint firstItem="xKW-by-Wsv" firstAttribute="centerX" secondItem="BfK-1J-gIO" secondAttribute="centerX" id="XvN-uL-IF8"/>
+                            <constraint firstAttribute="bottom" secondItem="ZHe-D6-MW9" secondAttribute="bottom" id="yj2-Pk-H8P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BfK-1J-gIO"/>
                     </view>
@@ -209,5 +216,6 @@
     </scenes>
     <resources>
         <image name="TrilhaTeste2" width="1650" height="862"/>
+        <image name="fundo" width="414" height="896"/>
     </resources>
 </document>
