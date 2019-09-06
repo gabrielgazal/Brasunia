@@ -22,7 +22,7 @@
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTa-F3-gmE">
                         <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-NH-uae">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TesteCostura" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-NH-uae">
                                 <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
                             </imageView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13S-yj-Dlq">
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hSH-NH-uae" firstAttribute="height" secondItem="vTa-F3-gmE" secondAttribute="height" id="7Ol-KZ-eOt"/>
                             <constraint firstAttribute="bottom" secondItem="13S-yj-Dlq" secondAttribute="bottom" constant="15" id="8q5-Bs-LMo"/>
@@ -73,6 +73,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="TrilhaTeste" width="780" height="780"/>
+        <image name="TesteCostura" width="183" height="146"/>
     </resources>
 </document>

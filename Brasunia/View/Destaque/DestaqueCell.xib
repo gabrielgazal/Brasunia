@@ -50,7 +50,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.97591139609999999" green="1" blue="0.66457158279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wsg-eR-QAW" firstAttribute="top" secondItem="xTT-nt-1Tb" secondAttribute="top" constant="50" id="2aX-aX-d3a"/>
                             <constraint firstItem="vDh-JJ-XPs" firstAttribute="height" secondItem="xTT-nt-1Tb" secondAttribute="height" id="IQN-7w-teN"/>
