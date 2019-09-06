@@ -17,6 +17,10 @@ class HomeViewController: UITableViewController {
         tableView.register(UINib(nibName: "PlanosTableViewCell", bundle: nil), forCellReuseIdentifier: "cellPlanos")
 //        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png"))
         self.view.backgroundColor  =  UIColor(patternImage: UIImage(named: "fundo")!)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.isTranslucent = true
 
     }
     
@@ -50,7 +54,7 @@ class HomeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let heights : [CGFloat] = [0.55, 0.56, 0.6]
+        let heights : [CGFloat] = [0.56, 0.56, 0.6]
         return UIScreen.main.bounds.height * heights[indexPath.row]
     }
     

@@ -40,6 +40,8 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Intermediário"))
         trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Avançado"))
         trilhas.append(Model.shared.SortDific(cursosPossiveis: Model.shared.cursosPossiveis, nivel: "Proficiente"))
+        self.navigationController?.navigationBar.isHidden = false
+
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

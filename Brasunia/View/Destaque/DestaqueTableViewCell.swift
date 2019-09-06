@@ -20,6 +20,7 @@ class DestaqueTableViewCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "DestaqueCell", bundle: nil), forCellWithReuseIdentifier: "cellDestaque")
+        collectionView.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

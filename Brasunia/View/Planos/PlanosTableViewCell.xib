@@ -19,6 +19,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="461.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="J21-hj-cxq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="461.5"/>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urw-0w-dnF">
                         <rect key="frame" x="10" y="10" width="300" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -72,16 +75,20 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="KeG-fS-Irk" secondAttribute="bottom" constant="141.5" id="07o-rB-FbF"/>
                     <constraint firstItem="yj5-zc-f93" firstAttribute="centerX" secondItem="YQS-qp-2z3" secondAttribute="centerX" id="0iq-AE-Coh"/>
+                    <constraint firstItem="J21-hj-cxq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="65h-mK-RMD"/>
                     <constraint firstItem="yj5-zc-f93" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="8jl-j3-yWD"/>
                     <constraint firstItem="dth-tn-5Ev" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ahy-kq-4Ek"/>
                     <constraint firstItem="urw-0w-dnF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="C6d-PG-0h6"/>
                     <constraint firstItem="KeG-fS-Irk" firstAttribute="leading" secondItem="YQS-qp-2z3" secondAttribute="leading" id="Da0-bp-Vb9"/>
                     <constraint firstItem="yj5-zc-f93" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="Fif-9D-sM2"/>
+                    <constraint firstAttribute="bottom" secondItem="J21-hj-cxq" secondAttribute="bottom" id="PMd-Mw-7Zv"/>
                     <constraint firstAttribute="trailing" secondItem="urw-0w-dnF" secondAttribute="trailing" constant="10" id="PZL-c9-lEn"/>
                     <constraint firstItem="YQS-qp-2z3" firstAttribute="top" secondItem="urw-0w-dnF" secondAttribute="bottom" constant="15" id="Q8U-BL-W1o"/>
+                    <constraint firstItem="J21-hj-cxq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QWT-hA-YN5"/>
                     <constraint firstItem="KeG-fS-Irk" firstAttribute="top" secondItem="YQS-qp-2z3" secondAttribute="bottom" constant="16" id="Xmi-yH-mZ4"/>
                     <constraint firstItem="YQS-qp-2z3" firstAttribute="trailing" secondItem="urw-0w-dnF" secondAttribute="trailing" id="Ydv-Ah-giQ"/>
                     <constraint firstItem="urw-0w-dnF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Yxg-2O-eJR"/>
+                    <constraint firstAttribute="trailing" secondItem="J21-hj-cxq" secondAttribute="trailing" id="cRQ-iZ-eUj"/>
                     <constraint firstItem="KeG-fS-Irk" firstAttribute="trailing" secondItem="YQS-qp-2z3" secondAttribute="trailing" id="gLE-Lq-bMz"/>
                     <constraint firstItem="dth-tn-5Ev" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.6" id="mZf-OP-kjP"/>
                     <constraint firstAttribute="bottom" secondItem="yj5-zc-f93" secondAttribute="bottom" id="ndZ-CZ-Rw9"/>
@@ -96,4 +103,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="259.15178571428572"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="fundo" width="414" height="896"/>
+    </resources>
 </document>
