@@ -24,6 +24,19 @@ class HomeViewController: UITableViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+//            return
+        }
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
+            present(walkthroughViewController, animated: true, completion: nil)
+        
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
