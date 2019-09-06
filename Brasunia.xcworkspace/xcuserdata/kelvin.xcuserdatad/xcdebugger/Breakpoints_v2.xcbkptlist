@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589405132.428866"
+            timestampString = "589483602.6940891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589405132.429227"
+            timestampString = "589483602.697765"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589405132.429454"
+            timestampString = "589483602.698301"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -122,13 +122,137 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589405132.429672"
+            timestampString = "589483602.698758"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
+            timestampString = "589487718.7126141"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
+            timestampString = "589487718.712973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "ProjetoViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.curso.getter : Swift.Optional&lt;Brasunia.CourseInfo&gt;"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.72188"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.curso.setter : Swift.Optional&lt;Brasunia.CourseInfo&gt;"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.7244101"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.curso.modify : Swift.Optional&lt;Brasunia.CourseInfo&gt;"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.726779"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.curso.modify : Swift.Optional&lt;Brasunia.CourseInfo&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.729526"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Brasunia.ProjetoViewController"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.731923"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "303">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Brasunia.ProjetoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Brasunia.ProjetoViewController&gt;"
+                  moduleName = "Brasunia"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/View/Projeto/ProjetoViewController.swift"
+                  timestampString = "589487718.734126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "205">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
