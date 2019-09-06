@@ -15,6 +15,7 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var table: UITableView!
     
     var curso: CourseInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,16 +50,21 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath) as! ProjetoTitleTableViewCell
+            cell.imgProjeto.image = curso!.image
+            cell.nomeProjetoTxt?.text = curso!.nome
+            let nota = Float(curso!.nota)
+            cell.notaProjetoTxt?.text = String(nota)
             
             return cell
             
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "listasCell", for: indexPath) as! ProjetoListasTableViewCell
             cell.ferramentasTxt.text = "Ferramentas"
-            cell.itensFerramentasTxt.text = "Martelo\nPanela\nTesoura"
             cell.materiaisTxt.text = "Materiais"
-            cell.itensMateriaisTxt.text = "Prego\nOvo\nPapel"
             cell.habilidadesTxt.text = "Habilidades"
+//            cell.itensFerramentasTxt.text = curso?.ferramentas
+//            cell.itensMateriaisTxt.text = curso?.materiais
+//            cell.itensHabilidadesTxt = curso?.habilidades
             return cell
             
         case 2:
@@ -78,5 +84,6 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
     }
+    
     
 }

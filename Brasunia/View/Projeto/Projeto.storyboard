@@ -69,6 +69,11 @@
                                                 <constraint firstItem="JvR-rH-dTb" firstAttribute="centerX" secondItem="WVZ-b8-1Ne" secondAttribute="centerX" id="aSq-yi-ENT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgProjeto" destination="dhe-BA-jdK" id="Op5-ci-ItA"/>
+                                            <outlet property="nomeProjetoTxt" destination="I8f-fH-0f9" id="MAO-HM-Sxu"/>
+                                            <outlet property="notaProjetoTxt" destination="iiY-c4-Pbg" id="PI8-4o-n3g"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listasCell" rowHeight="192" id="JhM-L1-Tx9" customClass="ProjetoListasTableViewCell" customModule="Brasunia" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="278" width="414" height="192"/>
@@ -212,6 +217,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7x-4V-EYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="-496.20535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y3c-jM-hHe">
+            <objects>
+                <viewController id="bib-nv-RN0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dwm-ri-aAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0nC-mC-S1J"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-q9-AyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="-501"/>
         </scene>
     </scenes>
     <resources>
