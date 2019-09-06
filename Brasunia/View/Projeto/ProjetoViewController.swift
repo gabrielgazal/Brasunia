@@ -17,7 +17,7 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     var curso: CourseInfo?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         table.delegate = self
         table.dataSource = self
         
@@ -25,6 +25,10 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             
         }
     
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+
     }
     
 

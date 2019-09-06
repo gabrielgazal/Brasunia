@@ -20,6 +20,7 @@ class DestaqueTableViewCell: UITableViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "DestaqueCell", bundle: nil), forCellWithReuseIdentifier: "cellDestaque")
+        collectionView.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -64,5 +65,27 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
+    }
+    
+    @IBAction func Btn_RightAction(_ sender: Any)
+    {
+        let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
+        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
+        let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
+        if nextItem.row < Model.shared.cursos.count {
+            self.collectionView.scrollToItem(at: nextItem, at: .left, animated: true)
+            
+        }
+    }
+    
+    @IBAction func Btn_LeftAction(_ sender: Any)
+    {
+        let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
+        let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
+        let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
+        if nextItem.row < Model.shared.cursos.count && nextItem.row >= 0{
+            self.collectionView.scrollToItem(at: nextItem, at: .right, animated: true)
+            
+        }
     }
 }

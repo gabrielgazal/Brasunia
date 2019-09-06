@@ -29,26 +29,33 @@
                                 </constraints>
                             </imageView>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-eR-QAW">
-                                <rect key="frame" x="0.0" y="196" width="320" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="50" width="150" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como  fazer  um banquiinho" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-eB-ozw">
+                                        <rect key="frame" x="10" y="5" width="135" height="45"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7Y1-LJ-Shk"/>
+                                    <constraint firstItem="Gxh-eB-ozw" firstAttribute="leading" secondItem="wsg-eR-QAW" secondAttribute="leading" constant="10" id="ASz-2P-cOY"/>
+                                    <constraint firstAttribute="width" constant="150" id="FKN-Ao-MDT"/>
+                                    <constraint firstItem="Gxh-eB-ozw" firstAttribute="top" secondItem="wsg-eR-QAW" secondAttribute="top" constant="5" id="ILJ-qw-DKd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gxh-eB-ozw" secondAttribute="bottom" constant="5" id="TAM-sk-3z4"/>
+                                    <constraint firstItem="Gxh-eB-ozw" firstAttribute="centerY" secondItem="wsg-eR-QAW" secondAttribute="centerY" id="hIz-AU-M7G"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gxh-eB-ozw" secondAttribute="trailing" constant="5" id="sPk-7G-YZW"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-eB-ozw">
-                                <rect key="frame" x="10" y="204" width="47.5" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97591139609999999" green="1" blue="0.66457158279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="wsg-eR-QAW" firstAttribute="bottom" secondItem="vDh-JJ-XPs" secondAttribute="bottom" id="56A-ff-f2Z"/>
-                            <constraint firstAttribute="bottom" secondItem="Gxh-eB-ozw" secondAttribute="bottom" constant="5" id="Hwh-Wd-C9q"/>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="top" secondItem="xTT-nt-1Tb" secondAttribute="top" constant="50" id="2aX-aX-d3a"/>
                             <constraint firstItem="vDh-JJ-XPs" firstAttribute="height" secondItem="xTT-nt-1Tb" secondAttribute="height" id="IQN-7w-teN"/>
-                            <constraint firstItem="wsg-eR-QAW" firstAttribute="centerX" secondItem="vDh-JJ-XPs" secondAttribute="centerX" id="Jd0-Bg-KIP"/>
-                            <constraint firstItem="wsg-eR-QAW" firstAttribute="width" secondItem="vDh-JJ-XPs" secondAttribute="width" id="Qzy-2t-jU4"/>
                             <constraint firstItem="vDh-JJ-XPs" firstAttribute="centerX" secondItem="xTT-nt-1Tb" secondAttribute="centerX" id="RfF-si-Zgl"/>
-                            <constraint firstItem="wsg-eR-QAW" firstAttribute="height" secondItem="vDh-JJ-XPs" secondAttribute="height" multiplier="0.2" id="aaz-qT-BR4"/>
-                            <constraint firstItem="Gxh-eB-ozw" firstAttribute="leading" secondItem="xTT-nt-1Tb" secondAttribute="leading" constant="10" id="fj5-4T-keT"/>
+                            <constraint firstItem="wsg-eR-QAW" firstAttribute="leading" secondItem="xTT-nt-1Tb" secondAttribute="leading" id="meF-52-2tz"/>
                             <constraint firstItem="vDh-JJ-XPs" firstAttribute="centerY" secondItem="xTT-nt-1Tb" secondAttribute="centerY" id="oAa-QL-AIC"/>
                             <constraint firstItem="vDh-JJ-XPs" firstAttribute="width" secondItem="xTT-nt-1Tb" secondAttribute="width" id="oki-Tv-jkg"/>
                         </constraints>

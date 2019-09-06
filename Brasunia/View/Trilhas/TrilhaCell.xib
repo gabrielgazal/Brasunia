@@ -25,29 +25,35 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrilhaTeste" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-NH-uae">
                                 <rect key="frame" x="0.0" y="0.0" width="105" height="110"/>
                             </imageView>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13S-yj-Dlq">
-                                <rect key="frame" x="0.0" y="77" width="105" height="33"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13S-yj-Dlq">
+                                <rect key="frame" x="10" y="70" width="95" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trilha 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="53F-ma-mol">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="25"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="36h-WD-udX"/>
+                                    <constraint firstAttribute="width" constant="95" id="CsZ-nm-BKR"/>
+                                    <constraint firstAttribute="trailing" secondItem="53F-ma-mol" secondAttribute="trailing" id="dUa-Nv-s9I"/>
+                                    <constraint firstAttribute="bottom" secondItem="53F-ma-mol" secondAttribute="bottom" id="gKd-Yr-PUw"/>
+                                    <constraint firstItem="53F-ma-mol" firstAttribute="leading" secondItem="13S-yj-Dlq" secondAttribute="leading" id="jCb-O9-eZP"/>
+                                    <constraint firstItem="53F-ma-mol" firstAttribute="top" secondItem="13S-yj-Dlq" secondAttribute="top" id="pdm-ru-HnE"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trilha 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53F-ma-mol">
-                                <rect key="frame" x="5" y="84" width="58.5" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="53F-ma-mol" secondAttribute="bottom" constant="5" id="1K3-7H-6vz"/>
                             <constraint firstItem="hSH-NH-uae" firstAttribute="height" secondItem="vTa-F3-gmE" secondAttribute="height" id="7Ol-KZ-eOt"/>
+                            <constraint firstAttribute="bottom" secondItem="13S-yj-Dlq" secondAttribute="bottom" constant="15" id="8q5-Bs-LMo"/>
                             <constraint firstItem="hSH-NH-uae" firstAttribute="centerY" secondItem="vTa-F3-gmE" secondAttribute="centerY" id="A2q-91-Stb"/>
-                            <constraint firstItem="13S-yj-Dlq" firstAttribute="centerX" secondItem="hSH-NH-uae" secondAttribute="centerX" id="MyI-Lu-HqM"/>
                             <constraint firstItem="hSH-NH-uae" firstAttribute="centerX" secondItem="vTa-F3-gmE" secondAttribute="centerX" id="OnS-vN-JHy"/>
-                            <constraint firstItem="13S-yj-Dlq" firstAttribute="width" secondItem="hSH-NH-uae" secondAttribute="width" id="gdv-ie-D9V"/>
-                            <constraint firstAttribute="bottom" secondItem="13S-yj-Dlq" secondAttribute="bottom" id="lxO-Y6-oKT"/>
-                            <constraint firstItem="53F-ma-mol" firstAttribute="leading" secondItem="vTa-F3-gmE" secondAttribute="leading" constant="5" id="mL4-Zw-Tl4"/>
+                            <constraint firstAttribute="trailing" secondItem="13S-yj-Dlq" secondAttribute="trailing" id="Yw1-WU-gWi"/>
                             <constraint firstItem="hSH-NH-uae" firstAttribute="width" secondItem="vTa-F3-gmE" secondAttribute="width" id="qvn-wt-VJ8"/>
-                            <constraint firstItem="13S-yj-Dlq" firstAttribute="height" secondItem="hSH-NH-uae" secondAttribute="height" multiplier="0.3" id="rvP-QO-hyr"/>
                         </constraints>
                     </view>
                 </subviews>
