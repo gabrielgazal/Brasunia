@@ -73,7 +73,7 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
         let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
         let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
         if nextItem.row < Model.shared.cursos.count {
-            self.collectionView.scrollToItem(at: nextItem, at: .left, animated: true)
+            self.collectionView.scrollToItem(at: nextItem, at: .left, animated: true) //depois de ter assets colocar false ali e no outro button
             
         }
     }

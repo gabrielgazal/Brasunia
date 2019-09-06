@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KeG-fS-Irk">
-                        <rect key="frame" x="10" y="100" width="300" height="146"/>
+                        <rect key="frame" x="15" y="100" width="290" height="146"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9by-SA-j2p">
                             <size key="itemSize" width="50" height="50"/>
@@ -56,9 +56,9 @@
                     <constraint firstItem="Kuz-FP-Vz8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="9If-x1-xYG"/>
                     <constraint firstItem="KeG-fS-Irk" firstAttribute="top" secondItem="Kuz-FP-Vz8" secondAttribute="bottom" constant="15" id="LUk-Bh-5Y4"/>
                     <constraint firstAttribute="bottom" secondItem="VHm-rJ-kEH" secondAttribute="bottom" id="O0G-0C-r6x"/>
-                    <constraint firstAttribute="trailing" secondItem="KeG-fS-Irk" secondAttribute="trailing" constant="10" id="YjD-4a-jkh"/>
+                    <constraint firstAttribute="trailing" secondItem="KeG-fS-Irk" secondAttribute="trailing" constant="15" id="YjD-4a-jkh"/>
                     <constraint firstItem="Kuz-FP-Vz8" firstAttribute="trailing" secondItem="urw-0w-dnF" secondAttribute="trailing" constant="10" id="bF0-gA-UoT"/>
-                    <constraint firstItem="KeG-fS-Irk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fFV-sW-h9c"/>
+                    <constraint firstItem="KeG-fS-Irk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fFV-sW-h9c"/>
                     <constraint firstItem="Kuz-FP-Vz8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fJd-eL-usc"/>
                     <constraint firstItem="urw-0w-dnF" firstAttribute="centerY" secondItem="Kuz-FP-Vz8" secondAttribute="centerY" id="gde-iJ-mAN"/>
                     <constraint firstAttribute="trailing" secondItem="VHm-rJ-kEH" secondAttribute="trailing" id="r0F-sl-MuC"/>
