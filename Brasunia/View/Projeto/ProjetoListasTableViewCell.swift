@@ -10,12 +10,9 @@ import UIKit
 
 class ProjetoListasTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var ferramentasTxt: UILabel!
-    @IBOutlet weak var itensFerramentasTxt: UILabel!
-    @IBOutlet weak var materiaisTxt: UILabel!
-    @IBOutlet weak var itensMateriaisTxt: UILabel!
-    @IBOutlet weak var habilidadesTxt: UILabel!
-    @IBOutlet weak var itensHabilidadesTxt: UILabel!
+
+    @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var listaLabel: UILabel!
     
     
     override func awakeFromNib() {
