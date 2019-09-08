@@ -15,6 +15,7 @@ class ProjetoTitleTableViewCell: UITableViewCell {
     @IBOutlet weak var notaProjetoTxt: UILabel!
     @IBOutlet weak var labelTxt: UILabel!
     @IBOutlet weak var infoTxt: UILabel!
+    @IBOutlet weak var formaView: DesignableView!
     
     
     override func awakeFromNib() {
