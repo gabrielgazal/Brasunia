@@ -53,6 +53,20 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
         cell.layer.shadowRadius = 2.0
         cell.layer.shadowOpacity = 0.5
         cell.layer.masksToBounds = false
+        
+        switch indexPath.row {
+        case 0:
+            cell.trilhaImage.image = UIImage(named: "TesteCostura")!
+        case 1:
+            cell.trilhaImage.image = UIImage(named: "error")!
+        case 2:
+            cell.trilhaImage.image = UIImage(named: "MarcenariaTrilha")!
+        case 3:
+            cell.trilhaImage.image = UIImage(named: "error")!
+            
+        default:
+            cell.trilhaImage.image = UIImage(named: "error")!
+        }
         return cell
     }
     
