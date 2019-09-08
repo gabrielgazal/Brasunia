@@ -13,11 +13,12 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var minhasTrilhasCollectionView: UICollectionView!
     
     @IBOutlet weak var nometrilhaLabel: UILabel!
-
+    @IBOutlet weak var formaView: DesignableView!
+    
 //    var trail:String = "Costura"
     var trail: String = ""
     var trilha:String = ""
-    var spacing : CGFloat = 0.03 * UIScreen.main.bounds.width
+    var spacing : CGFloat = 0.01  * UIScreen.main.bounds.width
 
     var trilhas: [[CourseInfo]] = []
 
@@ -29,7 +30,9 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         minhasTrilhasCollectionView.delegate = self
         minhasTrilhasCollectionView.dataSource = self
 //        trilha = Model.shared.trilhas[trail]
-
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +48,6 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .white
-
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -53,7 +55,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         return trilhas.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.frame.width - spacing) / 2.2
+        let width = (collectionView.frame.width - spacing) / 3.5
         return CGSize(width: width, height: width)
     }
     
@@ -62,7 +64,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return spacing * 1.5
+        return spacing
         
     }
     
@@ -86,9 +88,28 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MinhasTrilhasCollectionCell", for: indexPath) as! MinhasTrilhasCollectionViewCell
             print(curso.nome)
         
-            cell.CellImage?.image = curso.image
+            cell.CellImage?.image = curso.image2
             cell.CellLabel?.text = curso.nome
-        
+            Model.shared.trilhaAtual = curso.trilha
+        let  trilhaAt = Model.shared.trilhaAtual
+        if trilhaAt == "Costura"{
+            formaView.cornerRadius = 47.5
+            formaView.backgroundColor = #colorLiteral(red: 0.9176470588, green: 0.7450980392, blue: 0.09019607843, alpha: 1)
+            
+        } else if trilhaAt  == "Eletrônica"{
+            formaView.cornerRadius = 0
+            formaView.backgroundColor = #colorLiteral(red: 0.1450980392, green: 0.3019607843, blue: 1, alpha: 1)
+            
+            
+        }else if trilhaAt  == "Marcenaria"{
+            formaView.cornerRadius = 0
+            formaView.backgroundColor = #colorLiteral(red: 0.7058823529, green: 0.01176470588, blue: 0.01176470588, alpha: 1)
+            
+            
+        }else if trilhaAt  == "Programação"{
+            formaView.cornerRadius = 0
+            formaView.backgroundColor = #colorLiteral(red: 0, green: 0.4352941176, blue: 0.1215686275, alpha: 1)
+        }
             return cell
         
     }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CourseInfo{
-    internal init(nome: String, nota: CGFloat, image: UIImage?, habilidades: [String], ferramentas: [String], materiais: [String], feito: Bool, trilha: String, nivel: String) {
+    internal init(nome: String, nota: CGFloat, image: UIImage?, habilidades: [String], ferramentas: [String], materiais: [String], feito: Bool, trilha: String, nivel: String, image2:UIImage?) {
         self.nome = nome
         self.nota = nota
         self.image = image
@@ -20,6 +20,7 @@ class CourseInfo{
         self.feito = feito
         self.trilha = trilha
         self.nivel = nivel
+        self.image2 = image2
     }
     
     
@@ -33,6 +34,7 @@ class CourseInfo{
     var feito: Bool
     var trilha: String
     var nivel: String
+    var image2: UIImage!
     
     
    

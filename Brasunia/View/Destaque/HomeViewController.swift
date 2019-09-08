@@ -27,7 +27,7 @@ class HomeViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
-//            return
+            return
         }
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
