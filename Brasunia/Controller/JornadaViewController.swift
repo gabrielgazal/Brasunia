@@ -40,6 +40,7 @@ class JornadaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        nomeUsuarioLbl.text = "Olá,\(Model.shared.)"
         linha.move(to: CGPoint(x: 50, y: 50))
         linha.addLine(to: CGPoint(x: 100, y: 100))
         linha.close()

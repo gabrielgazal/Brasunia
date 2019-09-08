@@ -27,15 +27,20 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gL-8c-Z6O" customClass="DesignableView" customModule="Brasunia" customModuleProvider="target">
                                             <rect key="frame" x="41" y="248.5" width="332" height="399"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel2" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-Fq-xOs">
+                                                    <rect key="frame" x="-10" y="-10" width="352" height="419"/>
+                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30I-jD-BXz">
-                                                    <rect key="frame" x="298" y="15" width="19" height="19"/>
+                                                    <rect key="frame" x="264" y="15" width="43" height="43"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="30I-jD-BXz" secondAttribute="height" multiplier="1:1" id="M7Y-eg-rGM"/>
-                                                        <constraint firstAttribute="width" constant="19" id="rMv-rX-1Yj"/>
+                                                        <constraint firstAttribute="width" secondItem="30I-jD-BXz" secondAttribute="height" multiplier="1:1" id="lkn-ae-3t4"/>
+                                                        <constraint firstAttribute="height" constant="43" id="sfi-jI-ZZp"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="X">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="closePop:" destination="iVB-Cc-Ejk" eventType="touchUpInside" id="dFs-bh-fXa"/>
@@ -44,13 +49,17 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="30I-jD-BXz" secondAttribute="trailing" constant="15" id="8Az-pu-g7Y"/>
+                                                <constraint firstAttribute="trailing" secondItem="30I-jD-BXz" secondAttribute="trailing" constant="25" id="8K2-VW-7zD"/>
+                                                <constraint firstItem="QdJ-Fq-xOs" firstAttribute="leading" secondItem="8gL-8c-Z6O" secondAttribute="leading" constant="-10" id="BPC-gF-Wpk"/>
+                                                <constraint firstAttribute="bottom" secondItem="QdJ-Fq-xOs" secondAttribute="bottom" constant="-10" id="PIn-nw-35b"/>
+                                                <constraint firstAttribute="trailing" secondItem="QdJ-Fq-xOs" secondAttribute="trailing" constant="-10" id="PnI-tI-YKa"/>
+                                                <constraint firstItem="QdJ-Fq-xOs" firstAttribute="top" secondItem="8gL-8c-Z6O" secondAttribute="top" constant="-10" id="Vu0-Wp-0I0"/>
                                                 <constraint firstAttribute="width" secondItem="8gL-8c-Z6O" secondAttribute="height" multiplier="5:6" id="bYj-OP-mg3"/>
-                                                <constraint firstItem="30I-jD-BXz" firstAttribute="top" secondItem="8gL-8c-Z6O" secondAttribute="top" constant="15" id="boW-Dt-1cr"/>
+                                                <constraint firstItem="30I-jD-BXz" firstAttribute="top" secondItem="QdJ-Fq-xOs" secondAttribute="top" constant="25" id="sSm-fA-kwm"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="10"/>
+                                                    <real key="value" value="5"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -60,10 +69,10 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYi-wv-dWz">
                                                     <rect key="frame" x="0.0" y="0.0" width="282" height="223"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ei Fulano, você precisa  estar logado para acessar esta funcionalidade. Clique no  botão abaixo para criar/acessar sua Conta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh3-gE-eeF">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você precisa  estar logado para acessar esta funcionalidade. Clique no  botão abaixo para criar/acessar sua Conta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jh3-gE-eeF">
                                                             <rect key="frame" x="0.0" y="0.0" width="282" height="223"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                            <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -78,15 +87,16 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-5k-ESx">
                                                     <rect key="frame" x="0.0" y="223" width="282" height="56"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcV-HK-uyt" customClass="Designablebutton" customModule="Brasunia" customModuleProvider="target">
+                                                        <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcV-HK-uyt" customClass="Designablebutton" customModule="Brasunia" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="282" height="56"/>
-                                                            <color key="backgroundColor" red="0.92941176469999998" green="0.095733892070000007" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                             <state key="normal" title="Acessar">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="10"/>
+                                                                    <real key="value" value="0.0"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
@@ -136,4 +146,7 @@
             <point key="canvasLocation" x="100.00000000000001" y="128.57142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="papel2" width="358" height="368"/>
+    </resources>
 </document>

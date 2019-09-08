@@ -25,6 +25,8 @@
 		5641ACC6231D8B9900573223 /* JornadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641ACC5231D8B9900573223 /* JornadaViewController.swift */; };
 		564C3F5F231EF5280082175C /* Trilhas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564C3F5E231EF5280082175C /* Trilhas.storyboard */; };
 		567E1693231D8DA500499188 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567E1692231D8DA500499188 /* HomeViewController.swift */; };
+		56A434A02324B96800AD2D09 /* tutDone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A4349F2324B96800AD2D09 /* tutDone.storyboard */; };
+		56A434A22324B97500AD2D09 /* doneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A434A12324B97500AD2D09 /* doneViewController.swift */; };
 		56A99261230F178600A52350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A99260230F178600A52350 /* AppDelegate.swift */; };
 		56A99266230F178600A52350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99264230F178600A52350 /* Main.storyboard */; };
 		56A9926B230F178700A52350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A99269230F178700A52350 /* LaunchScreen.storyboard */; };
@@ -77,6 +79,8 @@
 		5641ACC5231D8B9900573223 /* JornadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JornadaViewController.swift; path = Brasunia/Controller/JornadaViewController.swift; sourceTree = SOURCE_ROOT; };
 		564C3F5E231EF5280082175C /* Trilhas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Trilhas.storyboard; sourceTree = "<group>"; };
 		567E1692231D8DA500499188 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		56A4349F2324B96800AD2D09 /* tutDone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tutDone.storyboard; sourceTree = "<group>"; };
+		56A434A12324B97500AD2D09 /* doneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doneViewController.swift; sourceTree = "<group>"; };
 		56A9925D230F178600A52350 /* Brasunia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brasunia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A99260230F178600A52350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A99265230F178600A52350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +180,15 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		56A4349E2324B94C00AD2D09 /* Done Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				56A4349F2324B96800AD2D09 /* tutDone.storyboard */,
+				56A434A12324B97500AD2D09 /* doneViewController.swift */,
+			);
+			path = "Done Tutorial";
+			sourceTree = "<group>";
+		};
 		56A99254230F178600A52350 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +211,7 @@
 		56A9925F230F178600A52350 /* Brasunia */ = {
 			isa = PBXGroup;
 			children = (
+				56A4349E2324B94C00AD2D09 /* Done Tutorial */,
 				56D25F932322D4E40099791F /* onboard */,
 				56A99272230F1CC400A52350 /* Model */,
 				56A99273230F1CDE00A52350 /* View */,
@@ -419,6 +433,7 @@
 				B68E6EDF2316F50900793BA2 /* Projeto.storyboard in Resources */,
 				3FBD78D723144FDF00D10523 /* TrilhaCell.xib in Resources */,
 				3FBD78D023107B7600D10523 /* DestaqueTableViewCell.xib in Resources */,
+				56A434A02324B96800AD2D09 /* tutDone.storyboard in Resources */,
 				3FCA0F722310744500313CCE /* TrilhasTableViewCell.xib in Resources */,
 				3FBD78DB2314590300D10523 /* PlanoCell.xib in Resources */,
 				56A99266230F178600A52350 /* Main.storyboard in Resources */,
@@ -507,6 +522,7 @@
 				56CF20C22321820E0067E473 /* headerView.swift in Sources */,
 				B68E6EE82316FEC000793BA2 /* ProjetoBotaoTableViewCell.swift in Sources */,
 				B68E6EE62316FE8800793BA2 /* ProjetoListasTableViewCell.swift in Sources */,
+				56A434A22324B97500AD2D09 /* doneViewController.swift in Sources */,
 				3FBD78DA2314590300D10523 /* PlanoCell.swift in Sources */,
 				56D25F992322D5030099791F /* WalkthroughViewController.swift in Sources */,
 				5641ACC6231D8B9900573223 /* JornadaViewController.swift in Sources */,

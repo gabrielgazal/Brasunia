@@ -16,11 +16,13 @@ class Model{
     }
     
     var userID = ""
+    var userName = ""
     var trilhas: [String] = ["Costura","Eletrônica","Marcenaria","Programação"]
     var cursosPossiveis: [CourseInfo] = []
     var cursosFilt: [CourseInfo]  = []
     var cursosCompletos : [CourseInfo] = []
     var trilhaAtual: String = ""
+    var habilidadesAdquiridas: [String] = []
     
 
     var cursos: [CourseInfo] = [
@@ -109,6 +111,8 @@ class Model{
         let defaults = UserDefaults.standard
         defaults.set(Model.shared.userID, forKey: "UID")
     }
+    
+    
 }
 
 
