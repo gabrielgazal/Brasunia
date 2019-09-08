@@ -198,7 +198,7 @@
 		56A9925F230F178600A52350 /* Brasunia */ = {
 			isa = PBXGroup;
 			children = (
-				56D25F932322D4E40099791F /* New Group */,
+				56D25F932322D4E40099791F /* onboard */,
 				56A99272230F1CC400A52350 /* Model */,
 				56A99273230F1CDE00A52350 /* View */,
 				56A99274230F1CED00A52350 /* Controller */,
@@ -258,7 +258,7 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		56D25F932322D4E40099791F /* New Group */ = {
+		56D25F932322D4E40099791F /* onboard */ = {
 			isa = PBXGroup;
 			children = (
 				56D25F942322D5020099791F /* WalkthroughContentViewController.swift */,
@@ -266,7 +266,7 @@
 				56D25F962322D5030099791F /* WalkthroughViewController.swift */,
 				56D25F9A2322D5190099791F /* Onboarding.storyboard */,
 			);
-			path = "New Group";
+			path = onboard;
 			sourceTree = "<group>";
 		};
 		56DB42172316F9630088A287 /* Authentication */ = {
