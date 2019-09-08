@@ -24,7 +24,7 @@ class Model{
     
 
     var cursos: [CourseInfo] = [
-        CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "TestImage"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Costura",nivel: "Novato",image2: UIImage(named: "costura2")),
+        CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "Bitmap"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Costura",nivel: "Novato",image2: UIImage(named: "costura2")),
             CourseInfo(nome: "Jose", nota: 5.5, image: UIImage(named: "TestImage"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Costura",nivel: "Novato",image2: UIImage(named: "costura2")),
             CourseInfo(nome: "Louro", nota: 5.5, image: UIImage(named: "TestImage"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Costura",nivel: "Novato",image2: UIImage(named: "costura2")),
             CourseInfo(nome: "Louro2", nota: 5.5, image: UIImage(named: "TestImage"), habilidades: ["kelvin","gazal","gabs","kevin","lary"],ferramentas: ["martelo","serra"], materiais: ["pao","jiose"], feito: false, trilha: "Costura",nivel: "Intermediário",image2: UIImage(named: "costura2")),

@@ -15,6 +15,8 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var table: UITableView!
     
     var curso: CourseInfo?
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,35 +38,40 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
 
     }
     
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 1{
+            return 2
+        }
+        return 1
     }
+    
+        
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 200
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.row {
+        switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath) as! ProjetoTitleTableViewCell
             cell.imgProjeto.image = curso!.image
             cell.nomeProjetoTxt?.text = curso!.nome
             let nota = Float(curso!.nota)
             cell.notaProjetoTxt?.text = String(nota)
+            cell.formaView.cornerRadius = 24
+            cell.formaView.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
             
             return cell
             
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "listasCell", for: indexPath) as! ProjetoListasTableViewCell
-            cell.ferramentasTxt.text = "Ferramentas"
-            cell.materiaisTxt.text = "Materiais"
-            cell.habilidadesTxt.text = "Habilidades"
-//            cell.itensFerramentasTxt.text = curso?.ferramentas
-//            cell.itensMateriaisTxt.text = curso?.materiais
-//            cell.itensHabilidadesTxt = curso?.habilidades
+            cell.itemLabel.text = curso?.ferramentas[indexPath.row]
+            cell.listaLabel.text = "teste\n-Segundo\n- Terceiro\n -Quarto"
             return cell
             
         case 2:
