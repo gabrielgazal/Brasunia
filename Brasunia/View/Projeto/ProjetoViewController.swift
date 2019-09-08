@@ -81,6 +81,9 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         {
             Model.shared.cursosCompletos.append(curso!)
             print(Model.shared.cursosCompletos.count)
+            performSegue(withIdentifier: "dontut", sender: self)
+        } else{
+//            performSegue(withIdentifier: "done", sender: self)
         }
         
     }

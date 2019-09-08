@@ -4,16 +4,15 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Done View Controller-->
         <scene sceneID="mGU-xk-WEA">
             <objects>
-                <viewController id="iVB-Cc-Ejk" customClass="LoginViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iVB-Cc-Ejk" customClass="DoneViewController" customModule="Brasunia" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7jP-0P-dcM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

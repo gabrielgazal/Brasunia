@@ -212,26 +212,20 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="xKW-by-Wsv" id="4QO-mk-OVV"/>
+                        <segue destination="Xpa-ul-dTf" kind="presentation" identifier="dontut" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ewT-CW-UL8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7x-4V-EYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="-496.20535714285711"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Y3c-jM-hHe">
+        <!--tutDone-->
+        <scene sceneID="xZs-pE-aGz">
             <objects>
-                <viewController id="bib-nv-RN0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dwm-ri-aAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="0nC-mC-S1J"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-q9-AyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="tutDone" id="Xpa-ul-dTf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2B-ks-rQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746" y="-501"/>
+            <point key="canvasLocation" x="2902" y="-651"/>
         </scene>
     </scenes>
     <resources>

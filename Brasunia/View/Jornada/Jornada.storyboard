@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, Gabrielle." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-md-C3Y">
-                                <rect key="frame" x="105.5" y="72" width="203.5" height="41"/>
+                                <rect key="frame" x="105.5" y="99" width="203.5" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -297,11 +297,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQh-w2-Ho3" userLabel="LinhaVertical">
-                                <rect key="frame" x="71" y="44" width="6" height="90"/>
+                                <rect key="frame" x="71" y="0.0" width="6" height="135"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="6" id="3uZ-MT-RaK"/>
-                                    <constraint firstAttribute="height" constant="90" id="GUa-wJ-dnw"/>
+                                    <constraint firstAttribute="height" constant="135" id="GUa-wJ-dnw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -316,8 +316,8 @@
                             <constraint firstItem="2vT-LG-g2h" firstAttribute="centerX" secondItem="5tZ-yd-2V0" secondAttribute="centerX" id="UtZ-2A-4HI"/>
                             <constraint firstAttribute="bottom" secondItem="5tZ-yd-2V0" secondAttribute="bottom" id="YaK-J6-gsf"/>
                             <constraint firstAttribute="trailing" secondItem="5tZ-yd-2V0" secondAttribute="trailing" id="cb9-2F-Sc2"/>
-                            <constraint firstItem="a5p-gQ-U4v" firstAttribute="top" secondItem="oQh-w2-Ho3" secondAttribute="top" id="fLa-Lt-r4e"/>
-                            <constraint firstItem="SP1-md-C3Y" firstAttribute="top" secondItem="a5p-gQ-U4v" secondAttribute="top" constant="28" id="ffg-f4-iRC"/>
+                            <constraint firstAttribute="top" secondItem="oQh-w2-Ho3" secondAttribute="top" id="fLa-Lt-r4e"/>
+                            <constraint firstItem="SP1-md-C3Y" firstAttribute="top" secondItem="a5p-gQ-U4v" secondAttribute="top" constant="55" id="ffg-f4-iRC"/>
                             <constraint firstItem="aVf-iq-LNP" firstAttribute="width" secondItem="5tZ-yd-2V0" secondAttribute="width" priority="750" id="g7w-bq-A7o"/>
                             <constraint firstItem="SP1-md-C3Y" firstAttribute="centerX" secondItem="5tZ-yd-2V0" secondAttribute="centerX" id="gfZ-LU-Wma"/>
                             <constraint firstItem="a5p-gQ-U4v" firstAttribute="bottom" secondItem="pVn-je-rsS" secondAttribute="bottom" id="nNR-1p-NT6"/>
