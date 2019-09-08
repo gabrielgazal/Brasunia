@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Jornada View Controller-->
+        <!--Jornada-->
         <scene sceneID="cuH-u2-tEu">
             <objects>
                 <viewController id="KyI-fm-TTh" customClass="JornadaViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,8 +21,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="5tZ-yd-2V0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, Gabrielle." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-md-C3Y">
-                                <rect key="frame" x="105.5" y="99" width="203.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-md-C3Y">
+                                <rect key="frame" x="174.5" y="99" width="65" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -297,7 +297,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQh-w2-Ho3" userLabel="LinhaVertical">
-                                <rect key="frame" x="71" y="0.0" width="6" height="135"/>
+                                <rect key="frame" x="68.5" y="0.0" width="6" height="135"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="6" id="3uZ-MT-RaK"/>
@@ -312,7 +312,7 @@
                             <constraint firstItem="pVn-je-rsS" firstAttribute="centerX" secondItem="5tZ-yd-2V0" secondAttribute="centerX" id="BbH-Ye-ZMM"/>
                             <constraint firstItem="pVn-je-rsS" firstAttribute="width" secondItem="5tZ-yd-2V0" secondAttribute="width" id="DfR-ma-T9z"/>
                             <constraint firstAttribute="trailing" secondItem="aVf-iq-LNP" secondAttribute="trailing" id="NEB-3T-Gsa"/>
-                            <constraint firstItem="SP1-md-C3Y" firstAttribute="leading" secondItem="oQh-w2-Ho3" secondAttribute="trailing" constant="28.5" id="U0N-L3-AcP"/>
+                            <constraint firstItem="SP1-md-C3Y" firstAttribute="leading" secondItem="oQh-w2-Ho3" secondAttribute="trailing" constant="100" id="U0N-L3-AcP"/>
                             <constraint firstItem="2vT-LG-g2h" firstAttribute="centerX" secondItem="5tZ-yd-2V0" secondAttribute="centerX" id="UtZ-2A-4HI"/>
                             <constraint firstAttribute="bottom" secondItem="5tZ-yd-2V0" secondAttribute="bottom" id="YaK-J6-gsf"/>
                             <constraint firstAttribute="trailing" secondItem="5tZ-yd-2V0" secondAttribute="trailing" id="cb9-2F-Sc2"/>
@@ -324,10 +324,13 @@
                             <constraint firstItem="5tZ-yd-2V0" firstAttribute="top" secondItem="NaM-AG-XhB" secondAttribute="top" id="rbW-ji-uVl"/>
                             <constraint firstItem="5tZ-yd-2V0" firstAttribute="leading" secondItem="NaM-AG-XhB" secondAttribute="leading" id="sQG-mH-ces"/>
                             <constraint firstItem="pVn-je-rsS" firstAttribute="top" secondItem="aVf-iq-LNP" secondAttribute="bottom" id="v79-CB-Wb5"/>
+                            <constraint firstItem="SP1-md-C3Y" firstAttribute="centerX" secondItem="NaM-AG-XhB" secondAttribute="centerX" id="xPa-U1-QcF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a5p-gQ-U4v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="eCf-XJ-JDT"/>
+                    <tabBarItem key="tabBarItem" title="Jornada" image="jornada" id="eCf-XJ-JDT">
+                        <color key="badgeColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="costuraFillView" destination="cfA-aK-t5U" id="lfp-k3-rhr"/>
@@ -362,5 +365,6 @@
     <resources>
         <image name="JornadaStruct" width="375" height="503"/>
         <image name="fundo" width="414" height="896"/>
+        <image name="jornada" width="23" height="25.5"/>
     </resources>
 </document>

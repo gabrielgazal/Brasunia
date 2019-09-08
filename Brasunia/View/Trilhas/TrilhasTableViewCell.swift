@@ -62,7 +62,7 @@ extension TrilhasTableViewCell: UICollectionViewDelegate, UICollectionViewDelega
         case 2:
             cell.trilhaImage.image = UIImage(named: "MarcenariaTrilha")!
         case 3:
-            cell.trilhaImage.image = UIImage(named: "error")!
+            cell.trilhaImage.image = UIImage(named: "progTrilhas")!
             
         default:
             cell.trilhaImage.image = UIImage(named: "error")!

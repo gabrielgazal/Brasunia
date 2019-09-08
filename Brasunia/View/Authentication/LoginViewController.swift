@@ -31,13 +31,8 @@ class LoginViewController: UIViewController {
         
         authUI?.delegate = self
         authUI?.providers = [FUIEmailAuth()]
-//        authUI.viewCon
-
-
         
         let authViewController = authUI!.authViewController()
-//        let telaChata = authViewController.navigationController?.children
-        
         
         present(authViewController, animated: true, completion: nil)
     }
