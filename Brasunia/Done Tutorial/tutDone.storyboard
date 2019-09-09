@@ -49,7 +49,7 @@
                                                         <constraint firstItem="q5w-aA-esi" firstAttribute="leading" secondItem="f19-s8-an9" secondAttribute="leading" constant="10" id="tGK-4k-AJQ"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acaba de completar mais um tutorial desta trilha! Dê uma olhada em sua jornada de aprendixado para acompanhar o progresso." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-4k-MEm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acaba de completar mais um tutorial desta trilha! Dê uma olhada em sua jornada de aprendizado para acompanhar o progresso." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-4k-MEm">
                                                     <rect key="frame" x="15" y="105" width="301" height="262"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

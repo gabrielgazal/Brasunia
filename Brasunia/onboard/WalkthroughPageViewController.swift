@@ -14,9 +14,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["Tricks 'n' Trips", "Tricks in your pocket", "Import and Export"]
+    var pageHeadings = ["DIY App", "A smart device can help you to learn neww skills", "Create anything today"]
     var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
-    var pageSubheadings = ["Add your travels and create your own guide", "Search and locate your favorite activites", "Find new things to do and share your experiences!"]
+    var pageSubheadings = ["Create anything", "Search for courses", "Finish a tutorial and tracking your progress"]
     
     var currentIndex = 0
 
@@ -56,6 +56,8 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         if index < 0 || index >= pageHeadings.count {
             return nil
         }
+        
+        //Create a new view controller and pass suitable data
         
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {

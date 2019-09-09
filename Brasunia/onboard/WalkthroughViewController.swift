@@ -22,7 +22,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     
     @IBOutlet weak var nextButton: UIButton! {
         didSet {
-            nextButton.layer.cornerRadius = 25.0
+            nextButton.layer.cornerRadius = 10.0
             nextButton.layer.masksToBounds = true
         }
     }
