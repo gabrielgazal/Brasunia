@@ -135,4 +135,14 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
         return UICollectionReusableView()
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "apresentaPRojeto", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "apresentaPRojeto", let vc = segue.destination as? ProjetoViewController{
+            vc.curso = Model.shared.cursos[sender as! Int]
+        }
+    }
 }

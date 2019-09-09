@@ -150,9 +150,9 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         if(!Model.shared.VerificaCompleto(curso: curso!))
         {
             Model.shared.cursosCompletos.append(curso!)
-            UserDefaults.standard.set(Model.shared.cursosCompletos, forKey: "cursosCompletos")
+//            UserDefaults.standard.set(Model.shared.cursosCompletos, forKey: "cursosCompletos")
             print(Model.shared.cursosCompletos.count)
-            //performSegue(withIdentifier: "dontut", sender: self)
+            performSegue(withIdentifier: "dontut", sender: self)
         } else{
 //            performSegue(withIdentifier: "done", sender: self)
         }
