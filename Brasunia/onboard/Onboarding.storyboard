@@ -13,7 +13,7 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="K2z-Eg-Uwh">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="Jwf-Bl-Rmf" customClass="WalkthroughViewController" customModule="StoryboardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" id="Jwf-Bl-Rmf" customClass="WalkthroughViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIU-vP-X7b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,14 +30,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="E5C-Rh-yy4">
                                         <rect key="frame" x="112" y="34" width="190" height="204"/>
                                         <subviews>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uCy-PR-f4W">
+                                            <pageControl opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uCy-PR-f4W">
                                                 <rect key="frame" x="75.5" y="0.0" width="39" height="37"/>
                                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="currentPageIndicatorTintColor" red="0.43263920659999999" green="0.44277281940000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </pageControl>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPh-Mr-jxx">
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPh-Mr-jxx">
                                                 <rect key="frame" x="0.0" y="79" width="190" height="50"/>
-                                                <color key="backgroundColor" red="0.43263920664475763" green="0.44277281943821267" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="qR0-pK-y4C"/>
                                                     <constraint firstAttribute="width" constant="190" id="vQw-6e-KWS"/>
@@ -99,7 +99,7 @@
         <!--Walkthrough Page View Controller-->
         <scene sceneID="6im-kM-l4U">
             <objects>
-                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="59D-5X-KLk" customClass="WalkthroughPageViewController" customModule="StoryboardProject" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="59D-5X-KLk" customClass="WalkthroughPageViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyZ-OA-y5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="80"/>
@@ -107,7 +107,7 @@
         <!--Walkthrough Content View Controller-->
         <scene sceneID="pxj-4p-2va">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughContentViewController" id="xef-DO-yJp" customClass="WalkthroughContentViewController" customModule="StoryboardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughContentViewController" id="xef-DO-yJp" customClass="WalkthroughContentViewController" customModule="Brasunia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygX-JI-tEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="623.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
