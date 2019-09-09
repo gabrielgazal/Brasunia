@@ -15,10 +15,15 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var table: UITableView!
     
     var curso: CourseInfo?
+    //Imagens de cada etapa do passo a passo
     var PaPimg = [UIImage(named: "Bitmap"), UIImage(named: "Bitmap"), UIImage(named: "Bitmap")]
+    //Texto explicando cada etapa do passo a passo
     var PaPtext = ["Passo um: Coloque o pao em cima da mesa e passe margarina nele.", "Passo um: Coloque o pao em cima da mesa e passe margarina nele.","Passo um: Coloque o pao em cima da mesa e passe margarina nele."]
+    //Subtitulo de cada etapa
     var PaPsubtitle = ["Passo 1", "Passo 2", "Passo 3"]
-    
+    //Quantidade de etapas
+    let qtdPassos = 3
+    //Categoria das listas
     let listaTitle = ["Ferramentas", "Materiais"]
     
     
@@ -48,10 +53,10 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 1{
-            return 2
+            return listaTitle.count
         }
         if section == 2{
-            return 2
+            return qtdPassos
         }
         return 1
     }
@@ -108,7 +113,8 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.explanation.text = PaPtext[etapa]
             cell.finalizaProjeto.isHidden = true
             cell.finalizaProjeto.layer.cornerRadius = 30
-            if (etapa == 1)
+            //Verifica se é a ultima etapa e insere o botao de finalizar projeto
+            if (etapa == qtdPassos - 1)
             {
                 cell.finalizaProjeto.isHidden = false
             }
@@ -146,7 +152,7 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             Model.shared.cursosCompletos.append(curso!)
             UserDefaults.standard.set(Model.shared.cursosCompletos, forKey: "cursosCompletos")
             print(Model.shared.cursosCompletos.count)
-            performSegue(withIdentifier: "dontut", sender: self)
+            //performSegue(withIdentifier: "dontut", sender: self)
         } else{
 //            performSegue(withIdentifier: "done", sender: self)
         }

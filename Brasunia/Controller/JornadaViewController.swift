@@ -10,7 +10,6 @@ import UIKit
 
 class JornadaViewController: UIViewController {
 
-    
     @IBOutlet weak var costuraFullView: UIView!
     @IBOutlet weak var costuraFillView: UIView!
     @IBOutlet weak var costuraPorcentagem: UILabel!
@@ -28,63 +27,62 @@ class JornadaViewController: UIViewController {
     @IBOutlet weak var marcenariaPorcentagem: UILabel!
     @IBOutlet weak var marcenariaRazao: UILabel!
     
+    @IBOutlet weak var programacaoFullView: UIView!
+    @IBOutlet weak var programacaoFillView: UIView!
+    @IBOutlet weak var programacaoPorcentagem: UILabel!
+    @IBOutlet weak var programacaoRazao: UILabel!
+    
+    var FullViewList : [UIView] = []
+    var FillViewList : [UIView] = []
+    var PorcentagemLabelList : [UILabel] = []
+    var RazaoLabelList : [UILabel] = []
+    
     @IBOutlet weak var nomeUsuarioLbl: UILabel!
     
     
-    let Costura = JornadaInfo(trilha: "Costura", icone: "Costura", conquistas: 3, habilidades: 10, x: 100, y: 300, cor: UIColor.red)
-    let Marcenaria = JornadaInfo(trilha: "Marcenaria", icone: "Marcenaria", conquistas: 5, habilidades: 14, x: 300, y: 300, cor: UIColor.blue)
-    let Eletronica = JornadaInfo(trilha: "Eletrônica", icone: "Eletrônica", conquistas: 9, habilidades: 10, x: 100, y: 500, cor: UIColor.green)
     var cursosCompletos : [CourseInfo] = []
     var cursosTotais : [CourseInfo] = []
-    var linha = UIBezierPath()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        nomeUsuarioLbl.text = "Olá,\(Model.shared.)"
-//        linha.move(to: CGPoint(x: 50, y: 50))
-//        linha.addLine(to: CGPoint(x: 100, y: 100))
-//        linha.close()
-//        UIColor.red.set()
-//        linha.lineWidth = 2
-//        linha.fill()
-//        linha.stroke()
-//        linha.addClip()
-//        self.view.addSubview(linha)
-//        let width = profileView.frame.width
-//        let x = profileView.frame.minX
-//        let y = profileView.frame.minY
-//        profileView.frame = CGRect(x: x,y: y,width: width,height: width)
-//        profileView.layer.masksToBounds = true
-//        profileView.layer.cornerRadius = width/2
-//        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
+        FullViewList = [costuraFullView, marcenariaFullView, eletronicaFullView, programacaoFullView]
+        FillViewList = [costuraFillView, marcenariaFillView, eletronicaFillView, programacaoFillView]
+        PorcentagemLabelList = [costuraPorcentagem, marcenariaPorcentagem, eletronicaPorcentagem, programacaoPorcentagem]
+        RazaoLabelList = [costuraRazao, marcenariaRazao, eletronicaRazao, programacaoRazao]
+        
+//        for index in 0...3
+//        {
+//            FillViewList[index].frame.size = CGSize(width: 0.0, height: FillViewList[index].frame.height)
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        createAnimationLayer(Trilha: Costura)
-//        createAnimationLayer(Trilha: Marcenaria)
-//        createAnimationLayer(Trilha: Eletronica)
-        if Model.shared.userID == "" {
-            performSegue(withIdentifier: "jornada", sender: self)
-        }
+//        if Model.shared.userID == "" {
+//            performSegue(withIdentifier: "jornada", sender: self)
+//        }
         cursosCompletos = Model.shared.cursosCompletos
         cursosTotais = Model.shared.cursos
-        criaAnimacao(Fundo: costuraFullView, Progresso: costuraFillView, Trilha: Costura)
-        criaAnimacao(Fundo: eletronicaFullView, Progresso: eletronicaFillView, Trilha: Eletronica)
-        criaAnimacao(Fundo: marcenariaFullView, Progresso: marcenariaFillView, Trilha: Marcenaria)
+        criaAnimacao(Fundo: costuraFullView, Progresso: costuraFillView, Trilha: "Costura")
+        criaAnimacao(Fundo: eletronicaFullView, Progresso: eletronicaFillView, Trilha: "Eletrônica")
+        criaAnimacao(Fundo: marcenariaFullView, Progresso: marcenariaFillView, Trilha: "Marcenaria")
+        criaAnimacao(Fundo: programacaoFullView, Progresso: programacaoFillView, Trilha: "Programação")
+        HiddenSettings(bool: true)
+      
     }
     
-    func criaAnimacao(Fundo fundoView: UIView, Progresso progressoView: UIView, Trilha trilha: JornadaInfo){
+    func criaAnimacao(Fundo fundoView: UIView, Progresso progressoView: UIView, Trilha trilha: String){
         //Define layers das views
 //        fundoView.layer.cornerRadius = 10
 //        progressoView.layer.cornerRadius = 10
 //        progressoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-        progressoView.frame.size = CGSize(width: 0, height: fundoView.frame.height)
+//        progressoView.transform.
+        progressoView.frame.size = CGSize(width: 0.0, height: fundoView.frame.height)
         //define o valor da barra de progresso
         
-        let progresso = CursosDaTrilha(cursosCompletos, trilha.trilha)
+        let progresso = CursosDaTrilha(cursosCompletos, trilha)
 
 
-        let cursosTotal = CursosDaTrilha(cursosTotais, trilha.trilha)
+        let cursosTotal = CursosDaTrilha(cursosTotais, trilha)
 //        let cursosTotal = CGFloat(1)
 
         
@@ -94,21 +92,26 @@ class JornadaViewController: UIViewController {
         UIView.animate(withDuration: 4.0, animations: {
             progressoView.frame.size = CGSize(width: fundoView.frame.width * porcentagem, height: fundoView.frame.height)
         }, completion: { finished in
-            if(trilha.trilha == "Costura"){
-                self.costuraPorcentagem.text = "\(porcentagem)%"
+            //Transforma em int para mostrar em texto um unico algarismo
+            let progresso = Int(progresso)
+            let cursosTotal = Int(cursosTotal)
+            //Mostra as labels da trilha somente após concluir a animacao
+            self.HiddenSettings(bool: false)
+            if(trilha == "Costura"){
+                self.costuraPorcentagem.text = "\(porcentagem * 100)%"
                 self.costuraRazao.text = "\(progresso)/\(cursosTotal)"
             }
-            else if (trilha.trilha == "Marcenaria"){
-                self.marcenariaPorcentagem.text = "\(porcentagem)%"
+            else if (trilha == "Marcenaria"){
+                self.marcenariaPorcentagem.text = "\(porcentagem * 100)%"
                 self.marcenariaRazao.text = "\(progresso)/\(cursosTotal)"
             }
-            else if (trilha.trilha == "Eletronica"){
-                self.eletronicaPorcentagem.text = "\(porcentagem)%"
+            else if (trilha == "Eletrônica"){
+                self.eletronicaPorcentagem.text = "\(porcentagem * 100)%"
                 self.eletronicaRazao.text = "\(progresso)/\(cursosTotal)"
             }
             else{
-                self.costuraPorcentagem.text = "\(porcentagem)%"
-                self.costuraRazao.text = "\(progresso)/\(cursosTotal)"
+                self.programacaoPorcentagem.text = "\(porcentagem * 100)%"
+                self.programacaoRazao.text = "\(progresso)/\(cursosTotal)"
             }
             })
     }
@@ -124,5 +127,14 @@ class JornadaViewController: UIViewController {
             }
         }
         return CGFloat(qtd)
+    }
+    
+    func HiddenSettings(bool : Bool)
+    {
+        for index in 0...3
+        {
+            PorcentagemLabelList[index].isHidden = bool
+            RazaoLabelList[index].isHidden = bool
+        }
     }
 }

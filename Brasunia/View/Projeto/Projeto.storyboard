@@ -41,9 +41,9 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="dhe-BA-jdK">
-                                                    <rect key="frame" x="28.5" y="92" width="357.5" height="286"/>
+                                                    <rect key="frame" x="28.5" y="92" width="357" height="286"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="dhe-BA-jdK" secondAttribute="height" multiplier="350:280" id="JWd-ft-U1k"/>
+                                                        <constraint firstAttribute="width" secondItem="dhe-BA-jdK" secondAttribute="height" multiplier="357:286" id="rrm-KY-bMX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-l6-jx4" userLabel="BarraPreta">
@@ -69,7 +69,7 @@
                                                 <constraint firstItem="dhe-BA-jdK" firstAttribute="top" secondItem="CIg-l6-jx4" secondAttribute="bottom" constant="20" id="24i-Z6-kh9"/>
                                                 <constraint firstItem="wYp-WD-zbg" firstAttribute="leading" secondItem="WVZ-b8-1Ne" secondAttribute="leading" constant="211" id="4wt-4n-Ycg"/>
                                                 <constraint firstItem="CIg-l6-jx4" firstAttribute="top" secondItem="WVZ-b8-1Ne" secondAttribute="top" constant="22" id="6Tj-HB-Z5v"/>
-                                                <constraint firstItem="dhe-BA-jdK" firstAttribute="width" secondItem="WVZ-b8-1Ne" secondAttribute="width" multiplier="0.8" id="Hsr-7k-Z3k"/>
+                                                <constraint firstItem="dhe-BA-jdK" firstAttribute="width" secondItem="WVZ-b8-1Ne" secondAttribute="width" multiplier="0.85" id="Hsr-7k-Z3k"/>
                                                 <constraint firstItem="CIg-l6-jx4" firstAttribute="leading" secondItem="WVZ-b8-1Ne" secondAttribute="leading" id="P81-lk-cvz"/>
                                                 <constraint firstItem="dhe-BA-jdK" firstAttribute="centerX" secondItem="WVZ-b8-1Ne" secondAttribute="centerX" id="XBD-7B-Ykr"/>
                                                 <constraint firstAttribute="bottom" secondItem="dhe-BA-jdK" secondAttribute="bottom" constant="25" id="p76-OG-ddj"/>
@@ -90,10 +90,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hQt-kI-ikv" userLabel="ViewdaImagem">
-                                                    <rect key="frame" x="31" y="-84" width="352" height="368"/>
+                                                    <rect key="frame" x="31" y="92" width="352" height="16"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel2" translatesAutoresizingMaskIntoConstraints="NO" id="qgA-Wb-TQp">
-                                                            <rect key="frame" x="0.0" y="0.0" width="352" height="368"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="352" height="16"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -174,7 +174,7 @@
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel2" translatesAutoresizingMaskIntoConstraints="NO" id="TnA-UW-vEP">
                                                                     <rect key="frame" x="0.0" y="0.0" width="352" height="680"/>
                                                                 </imageView>
-                                                                <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvp-8t-dRR" userLabel="quadradoPreto">
+                                                                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvp-8t-dRR" userLabel="quadradoPreto">
                                                                     <rect key="frame" x="-31" y="20" width="180" height="36"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passo a passo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBI-hH-FeY">
@@ -193,13 +193,13 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JornadaStruct" translatesAutoresizingMaskIntoConstraints="NO" id="kvu-dA-9jL" userLabel="ImageFotoDetalhe">
-                                                                    <rect key="frame" x="17.5" y="100" width="317" height="362"/>
+                                                                    <rect key="frame" x="17.5" y="100" width="317" height="316.5"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" secondItem="kvu-dA-9jL" secondAttribute="height" multiplier="350:400" id="u6A-xc-Jpg"/>
+                                                                        <constraint firstAttribute="width" secondItem="kvu-dA-9jL" secondAttribute="height" multiplier="300:300" id="u6A-xc-Jpg"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explanation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGu-qq-GO0">
-                                                                    <rect key="frame" x="20" y="467" width="312" height="95"/>
+                                                                    <rect key="frame" x="20" y="416.5" width="312" height="135.5"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -221,7 +221,7 @@
                                                                 <constraint firstItem="Kvp-8t-dRR" firstAttribute="top" secondItem="yD6-6y-dQW" secondAttribute="top" constant="20" id="Rfj-Q2-1kv"/>
                                                                 <constraint firstItem="dGu-qq-GO0" firstAttribute="leading" secondItem="yD6-6y-dQW" secondAttribute="leading" constant="20" id="WOV-Ph-UKR"/>
                                                                 <constraint firstItem="TnA-UW-vEP" firstAttribute="centerY" secondItem="yD6-6y-dQW" secondAttribute="centerY" id="ZTM-Mk-caQ"/>
-                                                                <constraint firstItem="dGu-qq-GO0" firstAttribute="top" secondItem="kvu-dA-9jL" secondAttribute="bottom" constant="5" id="cIR-si-jao"/>
+                                                                <constraint firstItem="dGu-qq-GO0" firstAttribute="top" secondItem="kvu-dA-9jL" secondAttribute="bottom" id="cIR-si-jao"/>
                                                                 <constraint firstItem="TnA-UW-vEP" firstAttribute="width" secondItem="yD6-6y-dQW" secondAttribute="width" id="dGF-fZ-9ZL"/>
                                                                 <constraint firstAttribute="bottom" secondItem="TnA-UW-vEP" secondAttribute="bottom" id="sDQ-Zz-14p"/>
                                                                 <constraint firstItem="kvu-dA-9jL" firstAttribute="centerX" secondItem="yD6-6y-dQW" secondAttribute="centerX" id="teP-Y3-2t6"/>
@@ -230,8 +230,8 @@
                                                                 <constraint firstItem="kvu-dA-9jL" firstAttribute="top" secondItem="ipp-0T-uQ3" secondAttribute="bottom" id="yGU-In-OB4"/>
                                                             </constraints>
                                                         </view>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikR-9p-ZBk">
-                                                            <rect key="frame" x="66" y="592" width="282" height="68"/>
+                                                        <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikR-9p-ZBk">
+                                                            <rect key="frame" x="66" y="582" width="282" height="68"/>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="68" id="9d0-dC-bpp"/>
@@ -262,7 +262,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="vay-Ni-Dcc" secondAttribute="bottom" id="6g7-Yq-vxy"/>
                                                 <constraint firstItem="vay-Ni-Dcc" firstAttribute="centerX" secondItem="ZLc-0Y-4zO" secondAttribute="centerX" id="DZV-gz-b24"/>
-                                                <constraint firstAttribute="bottom" secondItem="ikR-9p-ZBk" secondAttribute="bottom" constant="20" id="GSz-wC-yTV"/>
+                                                <constraint firstAttribute="bottom" secondItem="ikR-9p-ZBk" secondAttribute="bottom" constant="30" id="GSz-wC-yTV"/>
+                                                <constraint firstAttribute="bottom" secondItem="dGu-qq-GO0" secondAttribute="bottom" priority="750" constant="70" id="Uu6-Au-d8n"/>
                                                 <constraint firstItem="vay-Ni-Dcc" firstAttribute="width" secondItem="ZLc-0Y-4zO" secondAttribute="width" id="V80-Ol-X1r"/>
                                                 <constraint firstItem="vay-Ni-Dcc" firstAttribute="top" secondItem="ZLc-0Y-4zO" secondAttribute="top" constant="20" id="eF1-9Z-5bv"/>
                                             </constraints>
