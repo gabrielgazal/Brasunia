@@ -30,32 +30,14 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papel2" translatesAutoresizingMaskIntoConstraints="NO" id="QdJ-Fq-xOs">
                                                     <rect key="frame" x="-10" y="-10" width="352" height="419"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30I-jD-BXz">
-                                                    <rect key="frame" x="264" y="15" width="43" height="43"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="30I-jD-BXz" secondAttribute="height" multiplier="1:1" id="lkn-ae-3t4"/>
-                                                        <constraint firstAttribute="height" constant="43" id="sfi-jI-ZZp"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
-                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" title="X">
-                                                        <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="closePop:" destination="iVB-Cc-Ejk" eventType="touchUpInside" id="dFs-bh-fXa"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="30I-jD-BXz" secondAttribute="trailing" constant="25" id="8K2-VW-7zD"/>
                                                 <constraint firstItem="QdJ-Fq-xOs" firstAttribute="leading" secondItem="8gL-8c-Z6O" secondAttribute="leading" constant="-10" id="BPC-gF-Wpk"/>
                                                 <constraint firstAttribute="bottom" secondItem="QdJ-Fq-xOs" secondAttribute="bottom" constant="-10" id="PIn-nw-35b"/>
                                                 <constraint firstAttribute="trailing" secondItem="QdJ-Fq-xOs" secondAttribute="trailing" constant="-10" id="PnI-tI-YKa"/>
                                                 <constraint firstItem="QdJ-Fq-xOs" firstAttribute="top" secondItem="8gL-8c-Z6O" secondAttribute="top" constant="-10" id="Vu0-Wp-0I0"/>
                                                 <constraint firstAttribute="width" secondItem="8gL-8c-Z6O" secondAttribute="height" multiplier="5:6" id="bYj-OP-mg3"/>
-                                                <constraint firstItem="30I-jD-BXz" firstAttribute="top" secondItem="QdJ-Fq-xOs" secondAttribute="top" constant="25" id="sSm-fA-kwm"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
