@@ -14,9 +14,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["DIY App", "A smart device can help you to learn neww skills", "Create anything today"]
+    var pageHeadings = ["DIY App", "Aplicação inteligente que te ajuda a criar coisas", "Crie o que quiser hoje!"]
     var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
-    var pageSubheadings = ["Create anything", "Search for courses", "Finish a tutorial and tracking your progress"]
+    var pageSubheadings = ["Crie o que quiser", "Busque por cursos", "Termine um curso e acompanhe sua evolução"]
     
     var currentIndex = 0
 
