@@ -15,7 +15,11 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var table: UITableView!
     
     var curso: CourseInfo?
-
+    var PaPimg = [UIImage(named: "Bitmap"), UIImage(named: "Bitmap"), UIImage(named: "Bitmap")]
+    var PaPtext = ["Passo um: Coloque o pao em cima da mesa e passe margarina nele.", "Passo um: Coloque o pao em cima da mesa e passe margarina nele.","Passo um: Coloque o pao em cima da mesa e passe margarina nele."]
+    var PaPsubtitle = ["Passo 1", "Passo 2", "Passo 3"]
+    
+    let listaTitle = ["Ferramentas", "Materiais"]
     
     
     override func viewDidLoad() {
@@ -46,6 +50,9 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         if section == 1{
             return 2
         }
+        if section == 2{
+            return 2
+        }
         return 1
     }
     
@@ -68,14 +75,48 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
             
             return cell
             
+               //Celula das Listas
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "listasCell", for: indexPath) as! ProjetoListasTableViewCell
-            cell.itemLabel.text = curso?.ferramentas[indexPath.row]
-            cell.listaLabel.text = "teste\n-Segundo\n- Terceiro\n -Quarto"
+            cell.itemLabel.text = listaTitle[indexPath.row]
+            switch (indexPath.row)
+            {
+                //Preenche as infos, label e view das ferramentas
+            case 0:
+                cell.listaLabel.text = adicionaBarraNStrings(lista: curso!.ferramentas)
+                break
+                
+                //Preenche as infos, label e view dos materiais
+            case 1:
+                var listaMateriais = adicionaBarraNStrings(lista: curso!.materiais)
+                //Adiciona mais uma linha a string pq a constrain é bugada #CHUNCHO
+                listaMateriais += "\n"
+                cell.listaLabel.text = listaMateriais
+                break
+                
+            default:
+                break
+            }
             return cell
             
+            //Celula do Passo a Passo
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "botaoCell", for: indexPath) as! ProjetoBotaoTableViewCell
+            let etapa = indexPath.row
+            cell.subTitle.text = PaPsubtitle[etapa]
+            cell.imgPassoapasso.image = PaPimg[etapa]
+            cell.explanation.text = PaPtext[etapa]
+            cell.finalizaProjeto.isHidden = true
+            cell.finalizaProjeto.layer.cornerRadius = 30
+            if (etapa == 1)
+            {
+                cell.finalizaProjeto.isHidden = false
+            }
+            if (etapa != 0)
+            {
+                cell.quadradoPreto.isHidden = true
+                cell.passoAPassoLbl.isHidden = true
+            }
             return cell
             
         default:
@@ -83,6 +124,22 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
 
+    func adicionaBarraNStrings(lista : [String]) -> String
+    {
+        var string = ""
+        for (index, text) in lista.enumerated()
+        {
+            if (index == lista.endIndex - 1)
+            {
+                string += "\(text)"
+                break
+            }
+            string += "\(text)\n"
+        }
+        return string
+        
+    }
+    
     @IBAction func projetoFinalizadoPressed(_ sender: Any) {
         if(!Model.shared.VerificaCompleto(curso: curso!))
         {

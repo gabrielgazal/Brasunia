@@ -41,14 +41,14 @@ class JornadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        nomeUsuarioLbl.text = "Olá,\(Model.shared.)"
-        linha.move(to: CGPoint(x: 50, y: 50))
-        linha.addLine(to: CGPoint(x: 100, y: 100))
-        linha.close()
-        UIColor.red.set()
-        linha.lineWidth = 2
-        linha.fill()
-        linha.stroke()
-        linha.addClip()
+//        linha.move(to: CGPoint(x: 50, y: 50))
+//        linha.addLine(to: CGPoint(x: 100, y: 100))
+//        linha.close()
+//        UIColor.red.set()
+//        linha.lineWidth = 2
+//        linha.fill()
+//        linha.stroke()
+//        linha.addClip()
 //        self.view.addSubview(linha)
 //        let width = profileView.frame.width
 //        let x = profileView.frame.minX

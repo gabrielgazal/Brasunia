@@ -11,7 +11,11 @@ import UIKit
 class ProjetoBotaoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var finalizaProjeto: UIButton!
-    @IBOutlet weak var imgProjeto: UIImageView!
+    @IBOutlet weak var subTitle: UILabel!
+    @IBOutlet weak var imgPassoapasso: UIImageView!
+    @IBOutlet weak var explanation: UILabel!
+    @IBOutlet weak var quadradoPreto: UIView!
+    @IBOutlet weak var passoAPassoLbl: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
