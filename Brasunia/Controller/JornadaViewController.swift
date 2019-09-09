@@ -49,11 +49,6 @@ class JornadaViewController: UIViewController {
         FillViewList = [costuraFillView, marcenariaFillView, eletronicaFillView, programacaoFillView]
         PorcentagemLabelList = [costuraPorcentagem, marcenariaPorcentagem, eletronicaPorcentagem, programacaoPorcentagem]
         RazaoLabelList = [costuraRazao, marcenariaRazao, eletronicaRazao, programacaoRazao]
-        
-//        for index in 0...3
-//        {
-//            FillViewList[index].frame.size = CGSize(width: 0.0, height: FillViewList[index].frame.height)
-//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,23 +66,36 @@ class JornadaViewController: UIViewController {
     }
     
     func criaAnimacao(Fundo fundoView: UIView, Progresso progressoView: UIView, Trilha trilha: String){
-        //Define layers das views
-//        fundoView.layer.cornerRadius = 10
-//        progressoView.layer.cornerRadius = 10
-//        progressoView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-//        progressoView.transform.
         progressoView.frame.size = CGSize(width: 0.0, height: fundoView.frame.height)
         //define o valor da barra de progresso
         
-        let progresso = CursosDaTrilha(cursosCompletos, trilha)
-
+        let progressoo = CursosDaTrilha(cursosCompletos, trilha)
 
         let cursosTotal = CursosDaTrilha(cursosTotais, trilha)
-//        let cursosTotal = CGFloat(1)
 
-        
-        var porcentagem = progresso/cursosTotal
-        porcentagem = 0.6
+        var progresso = 0
+        var porcentagem = progressoo/cursosTotal
+        switch trilha {
+        case "Costura":
+            porcentagem = 0.8
+            progresso = Int(porcentagem * cursosTotal)
+            break
+        case "Marcenaria":
+            porcentagem = 0.4
+            progresso = Int(porcentagem * cursosTotal)
+            break
+        case "Eletrônica":
+            porcentagem = 0.9
+            progresso = Int(porcentagem * cursosTotal)
+            break
+        case "Programação":
+            porcentagem = 0.15
+            progresso = Int(porcentagem * cursosTotal)
+            break
+        default:
+            break
+        }
+//        porcentagem = 0.6
         
         UIView.animate(withDuration: 4.0, animations: {
             progressoView.frame.size = CGSize(width: fundoView.frame.width * porcentagem, height: fundoView.frame.height)
@@ -137,4 +145,6 @@ class JornadaViewController: UIViewController {
             RazaoLabelList[index].isHidden = bool
         }
     }
+
 }
+

@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589690620.784052"
+            timestampString = "589740880.907177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "HiddenSettings(bool:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,76 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589690620.784237"
+            timestampString = "589740880.907248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Brasunia.JornadaViewController.criaAnimacao(Fundo: __C.UIView, Progresso: __C.UIView, Trilha: Brasunia.JornadaInfo) -&gt; ()"
-                  moduleName = "Brasunia"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/Controller/JornadaViewController.swift"
-                  timestampString = "589404836.242336"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
-                  offsetFromSymbolStart = "978">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Brasunia.JornadaViewController.criaAnimacao(Fundo: __C.UIView, Progresso: __C.UIView, Trilha: Brasunia.JornadaInfo) -&gt; ()"
-                  moduleName = "Brasunia"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kelvin/Documents/Academy/MiniChallenge/Brasunia/Brasunia/Controller/JornadaViewController.swift"
-                  timestampString = "589404836.244866"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589690620.7843339"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Brasunia/Controller/JornadaViewController.swift"
-            timestampString = "589690620.7844"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "criaAnimacao(Fundo:Progresso:Trilha:)"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "CursosDaTrilha(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784543"
+            timestampString = "589740880.907306"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -154,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784645"
+            timestampString = "589740880.907369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -262,7 +198,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784729"
+            timestampString = "589740880.907428"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -278,7 +214,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784796"
+            timestampString = "589740880.9074709"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -294,7 +230,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784885"
+            timestampString = "589740880.907514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
@@ -310,7 +246,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.784951"
+            timestampString = "589740880.907585"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
@@ -326,7 +262,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.785018"
+            timestampString = "589740880.9076591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -342,7 +278,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Brasunia/View/Projeto/ProjetoViewController.swift"
-            timestampString = "589690620.785082"
+            timestampString = "589740880.907704"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"

@@ -21,6 +21,7 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     var spacing : CGFloat = 0.01  * UIScreen.main.bounds.width
 
     var trilhas: [[CourseInfo]] = []
+    var curso : [CourseInfo] = []
 
     
     override func viewDidLoad() {
@@ -142,7 +143,8 @@ class MinhasTrilhasViewController: UIViewController, UICollectionViewDelegate, U
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "apresentaPRojeto", let vc = segue.destination as? ProjetoViewController{
-            vc.curso = Model.shared.cursos[sender as! Int]
+            curso = Model.shared.Sort(trilha: Model.shared.trilhaAtual)
+            vc.curso = curso[sender as! Int]
         }
     }
 }

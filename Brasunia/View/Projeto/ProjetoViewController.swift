@@ -18,7 +18,7 @@ class ProjetoViewController: UIViewController, UITableViewDataSource, UITableVie
     //Imagens de cada etapa do passo a passo
     var PaPimg = [UIImage(named: "Bitmap"), UIImage(named: "Bitmap"), UIImage(named: "Bitmap")]
     //Texto explicando cada etapa do passo a passo
-    var PaPtext = ["Passo um: Coloque o pao em cima da mesa e passe margarina nele.", "Passo um: Coloque o pao em cima da mesa e passe margarina nele.","Passo um: Coloque o pao em cima da mesa e passe margarina nele."]
+    var PaPtext = ["Passo um: Dobre a barra na largura que você deseja", "Costure", "Fim"]
     //Subtitulo de cada etapa
     var PaPsubtitle = ["Passo 1", "Passo 2", "Passo 3"]
     //Quantidade de etapas
