@@ -46,8 +46,8 @@
                                                 <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-l6-jx4" userLabel="BarraPreta">
                                                     <rect key="frame" x="0.0" y="22" width="235" height="50"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costura I" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8f-fH-0f9">
-                                                            <rect key="frame" x="54" y="7" width="127" height="36"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costura I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="I8f-fH-0f9">
+                                                            <rect key="frame" x="10" y="5" width="215" height="40"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -55,10 +55,14 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="I8f-fH-0f9" firstAttribute="top" secondItem="CIg-l6-jx4" secondAttribute="top" constant="5" id="0Rs-Lr-8WW"/>
+                                                        <constraint firstAttribute="bottom" secondItem="I8f-fH-0f9" secondAttribute="bottom" constant="5" id="PgO-hT-3GZ"/>
                                                         <constraint firstItem="I8f-fH-0f9" firstAttribute="centerY" secondItem="CIg-l6-jx4" secondAttribute="centerY" id="UPA-ZX-T47"/>
                                                         <constraint firstItem="I8f-fH-0f9" firstAttribute="centerX" secondItem="CIg-l6-jx4" secondAttribute="centerX" id="aBg-h5-V1G"/>
+                                                        <constraint firstAttribute="trailing" secondItem="I8f-fH-0f9" secondAttribute="trailing" constant="10" id="gmE-jh-Xsg"/>
                                                         <constraint firstAttribute="height" constant="50" id="nRs-Rr-2ZU"/>
                                                         <constraint firstAttribute="width" constant="235" id="yWx-Gf-8cw"/>
+                                                        <constraint firstItem="I8f-fH-0f9" firstAttribute="leading" secondItem="CIg-l6-jx4" secondAttribute="leading" constant="10" id="zkx-A5-2rh"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

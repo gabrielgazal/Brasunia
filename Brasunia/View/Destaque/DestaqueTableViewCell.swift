@@ -37,7 +37,7 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Model.shared.cursos.count
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -72,7 +72,7 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
         let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
         let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
         let nextItem: IndexPath = IndexPath(item: currentItem.item + 1, section: 0)
-        if nextItem.row < Model.shared.cursos.count {
+        if nextItem.row < 4 {
             self.collectionView.scrollToItem(at: nextItem, at: .left, animated: true) //depois de ter assets colocar false ali e no outro button
             
         }
@@ -83,7 +83,7 @@ extension DestaqueTableViewCell: UICollectionViewDelegate, UICollectionViewDeleg
         let visibleItems: NSArray = self.collectionView.indexPathsForVisibleItems as NSArray
         let currentItem: IndexPath = visibleItems.object(at: 0) as! IndexPath
         let nextItem: IndexPath = IndexPath(item: currentItem.item - 1, section: 0)
-        if nextItem.row < Model.shared.cursos.count && nextItem.row >= 0{
+        if nextItem.row < 4 && nextItem.row >= 0{
             self.collectionView.scrollToItem(at: nextItem, at: .right, animated: true)
             
         }

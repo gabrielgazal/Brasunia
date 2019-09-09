@@ -57,9 +57,9 @@ class JornadaViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        if Model.shared.userID == "" {
-//            performSegue(withIdentifier: "jornada", sender: self)
-//        }
+        if Model.shared.userID == "" {
+            performSegue(withIdentifier: "jornada", sender: self)
+        }
         cursosCompletos = Model.shared.cursosCompletos
         cursosTotais = Model.shared.cursos
         criaAnimacao(Fundo: costuraFullView, Progresso: costuraFillView, Trilha: "Costura")
