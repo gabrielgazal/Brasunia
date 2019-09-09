@@ -24,6 +24,7 @@ class Model{
     var trilhaAtual: String = ""
     var habilidadesAdquiridas: [String] = []
     
+    
 
     var cursos: [CourseInfo] = [
         CourseInfo(nome: "kelvin", nota: 5.5, image: UIImage(named: "Bitmap"), habilidades: ["kelvin","gazal","gabs","kevin","lary"], ferramentas: ["Martelo","Serra"], materiais: ["Pao","Jiose"], feito: false, trilha: "Costura",nivel: "Novato",image2: UIImage(named: "costura2")),

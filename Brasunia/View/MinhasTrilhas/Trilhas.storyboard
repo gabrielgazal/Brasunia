@@ -196,11 +196,20 @@ Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh
                         <outlet property="formaView" destination="kbq-mO-gRg" id="y10-Qp-qE5"/>
                         <outlet property="minhasTrilhasCollectionView" destination="2o1-0d-PCE" id="Zv9-8c-TsG"/>
                         <outlet property="nometrilhaLabel" destination="LfB-4P-mh8" id="L1V-y6-HWU"/>
+                        <segue destination="bZK-Po-dZH" kind="show" identifier="apresentaPRojeto" id="bxS-SR-FC5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ya-kv-Ock" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-226.08695652173915" y="-159.375"/>
+        </scene>
+        <!--Projeto-->
+        <scene sceneID="pzp-Yh-CId">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Projeto" id="bZK-Po-dZH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOz-DK-12Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="-185"/>
         </scene>
     </scenes>
     <resources>
